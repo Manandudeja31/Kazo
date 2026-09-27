@@ -153,7 +153,7 @@ export default function Consultation() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-[10px] font-bold tracking-[1.5px] text-[#aaa] uppercase mb-2">
-                    Spatial Typology
+                    Spatial Glazing & Door Typology
                   </label>
                   <select
                     value={formData.typology}
@@ -162,11 +162,12 @@ export default function Consultation() {
                     }
                     className="w-full rounded-md border border-white/10 bg-[#181818] px-4 py-3 text-[13px] text-[#e8b95d] focus:border-[#e8b95d] focus:outline-none transition"
                   >
-                    <option value="Penthouse">Penthouse / Duplex</option>
-                    <option value="Private Villa">Private Estate / Villa</option>
-                    <option value="Alpine Chalet">Alpine Chalet</option>
-                    <option value="Superyacht Interior">Superyacht Interior</option>
-                    <option value="Boutique Commercial">Boutique Commercial / Atelier</option>
+                    <option value="Bespoke Pivot Doors">Bespoke Pivot Doors (Internal / Entrance)</option>
+                    <option value="Sliding Glass Partitions">Telescopic & Sliding Glass Partitions</option>
+                    <option value="Wardrobe Glass Doors">Bespoke Glass Wardrobe Doors</option>
+                    <option value="Acoustic Partitions">Acoustic Fluted Glass Dividers</option>
+                    <option value="Shower Enclosures">Luxury Shower Cubicles & Enclosures</option>
+                    <option value="Glass Railings">Glass Railings & Architectural Facades</option>
                   </select>
                 </div>
 
@@ -181,9 +182,10 @@ export default function Consultation() {
                     }
                     className="w-full rounded-md border border-white/10 bg-[#181818] px-4 py-3 text-[13px] text-[#e8b95d] focus:border-[#e8b95d] focus:outline-none transition"
                   >
-                    <option value="$1M - $3M">$1,000,000 — $3,000,000</option>
-                    <option value="$3M - $7M">$3,000,000 — $7,000,000</option>
-                    <option value="$7M+">$7,000,000+</option>
+                    <option value="Under ₹5 Lakhs">Under ₹5,00,000</option>
+                    <option value="₹5L - ₹15L">₹5,00,000 — ₹15,00,000</option>
+                    <option value="₹15L - ₹35L">₹15,00,000 — ₹35,00,000</option>
+                    <option value="₹35L+">₹35,00,000+ (Full Residence / Estate)</option>
                   </select>
                 </div>
               </div>
@@ -199,7 +201,7 @@ export default function Consultation() {
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
-                  placeholder="Describe your property volume, desired stone finishes, or target timeline..."
+                  placeholder="Describe your aperture dimensions, door mechanism (pivot/sliding), glass texture (fluted/low-iron), or architectural requirements..."
                   className="w-full rounded-md border border-white/10 bg-[#181818] px-4 py-3 text-[13px] text-white placeholder-[#555] focus:border-[#e8b95d] focus:outline-none transition resize-none"
                 ></textarea>
               </div>

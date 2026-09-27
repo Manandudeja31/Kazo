@@ -4,45 +4,45 @@ import { FiArrowRight, FiClock, FiX } from "react-icons/fi";
 const articles = [
   {
     id: 1,
-    tag: "MATERIALITY • 5 MIN READ",
-    category: "MATERIALITY",
-    title: "The Poetics of Roman Travertine in Contemporary Dwellings",
+    tag: "OPTICAL CLARITY • 5 MIN READ",
+    category: "GLASS INNOVATION",
+    title: "The Optical Purity of Low-Iron Crystal in Contemporary Spaces",
     summary:
-      "Why monolithic porous stone provides both acoustic serenity and geological permanence in modern brutalist interiors.",
+      "Why eliminating iron oxide creates crystal-clear transparency, truer color fidelity, and breathtaking light transmission.",
     image:
       "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=1000&auto=format&fit=crop",
     date: "OCTOBER 2025",
-    author: "Alistair Vance",
+    author: "Kazo Glazing Bureau",
     content:
-      "Travertine is not merely a sedimentary limestone; it is frozen hydrothermal time. When extracted from subterranean quarries near Tivoli, its natural voids capture acoustic reverberations, creating an intrinsic acoustic dampen effect unattainable with synthetic surfaces. In our recent penthouse commissions, cross-cut unhoned travertine serves as the tactile spine connecting public salons with private quarters.",
+      "Standard architectural glass contains ferric oxide, casting a greenish hue that compromises modern neutral interiors. Low-iron glass (Starphire) eliminates this tint, offering 91% light transmittance and absolute color neutrality. When applied in full-height partitions and luxury shower cubicles, the glass virtually dissolves, allowing continuous spatial sightlines.",
   },
   {
     id: 2,
-    tag: "ACOUSTICS • 4 MIN READ",
-    category: "ACOUSTICS",
-    title: "Designing for Silence: Acoustic Stucco & Concealed Baffles",
+    tag: "DOOR MECHANICS • 4 MIN READ",
+    category: "PIVOT SYSTEMS",
+    title: "The Engineering of Silent Glide: Pivot & Telescopic Sliding Doors",
     summary:
-      "Balancing cavernous double-height volumes with intimate, whisper-soft domestic tranquility.",
+      "Balancing monumental glass weights with effortless zero-resistance movement and concealed hydraulic dampening.",
     image:
       "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1000&auto=format&fit=crop",
     date: "NOVEMBER 2025",
-    author: "Elena Rostova",
+    author: "Kazo Technical Team",
     content:
-      "Acoustic luxury is defined not by the absence of sound, but by the absence of tension. Through hand-troweled lime plasters infused with recycled volcanic pumice and microscopic shadow-reveal perimeter dampers, we reduce reverberation decay times from 2.4 seconds to an intimate 0.6 seconds without a single visible acoustic foam or synthetic panel.",
+      "A 3.5-meter glass pivot door can easily weigh upwards of 180 kilograms. Our German concealed floor pivots distribute this structural load directly onto the sub-floor slab, eliminating structural frame sag. Paired with magnetic acoustic drop seals and magnetic latch catches, closing the door produces a deep, satisfying tactile thud with zero mechanical rattle.",
   },
   {
     id: 3,
-    tag: "CRAFTSMANSHIP • 7 MIN READ",
-    category: "CRAFTSMANSHIP",
-    title: "The Lost Art of Hand-Rubbed Patinated Bronze Joinery",
+    tag: "FRAMELESS SYSTEMS • 7 MIN READ",
+    category: "ARCHITECTURAL GLAZING",
+    title: "The Art of Minimalist Profiles: Fluted Glass & PVD Titanium Finishes",
     summary:
-      "A study of Venetian metallurgical finishes that evolve living patinas over decades of human contact.",
+      "A study of textured architectural glass, acoustic transmission barriers, and surgical PVD surface metallurgy.",
     image:
       "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=1000&auto=format&fit=crop",
     date: "DECEMBER 2025",
-    author: "Matteo Rossi",
+    author: "Kazo Design Atelier",
     content:
-      "Unlike modern PVD coatings that degrade under ultraviolet exposure, authentic patinated bronze is chemically activated with sulfurated potassium and natural beeswax. Each door pull, reveal trim, and pivot hinge darkens and warms precisely where the client's hand makes contact, recording the organic biography of the residence over centuries.",
+      "Fluted and reeded architectural glass introduces tactile rhythm while diffusing directional glare into soft ambient illumination. When framed with ultra-slim aerospace-grade aluminium finished with vacuum-deposited PVD titanium in champagne bronze or deep matte obsidian, doors become sculptural architectural thresholds rather than utilitarian barriers.",
   },
 ];
 

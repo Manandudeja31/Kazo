@@ -1,72 +1,92 @@
 import { useState } from "react";
 import {
   FiCheckCircle,
-  FiSliders,
+  FiMessageSquare,
+  FiCompass,
   FiLayers,
   FiFileText,
-  FiShield,
+  FiCpu,
   FiAward,
+  FiShield,
 } from "react-icons/fi";
 
 const phases = [
   {
     step: "01",
-    icon: FiSliders,
-    title: "SPATIAL AUDIT & CONCEPT",
-    tagline: "Weeks 1–2",
-    summary: "Site tomography, lifestyle blueprint, initial monolithic volume exploration.",
+    icon: FiMessageSquare,
+    title: "QUERY REQUIREMENTS",
+    tagline: "Step 01",
+    summary:
+      "Initial client consultation to understand spatial design intent, functional criteria, and design vision.",
     deliverables: [
-      "3D volumetric spatial scans",
-      "Acoustic and natural solar orientation mapping",
-      "Material palette sensory boards",
+      "Consultation on spatial aesthetics & usage needs",
+      "Acoustic and transparency requirement analysis",
+      "Preliminary typology & mechanism guidance",
     ],
   },
   {
     step: "02",
-    icon: FiLayers,
-    title: "MATERIAL PROVENANCE",
-    tagline: "Weeks 3–4",
-    summary: "Private quarry visits, custom millwork mockups, rare veneer selection.",
+    icon: FiCompass,
+    title: "MEASUREMENTS OF AREA",
+    tagline: "Step 02",
+    summary:
+      "On-site precision laser surveying to inspect opening dimensions, floor level variances, and wall plumb.",
     deliverables: [
-      "Quarry slab inspection in Carrara & Verona",
-      "Bookmatch alignment simulations",
-      "Custom patinated bronze alloy testing",
+      "Sub-millimeter laser-calibrated aperture mapping",
+      "Floor level, ceiling track, and plumb check",
+      "Structural load & jamb capacity verification",
     ],
   },
   {
     step: "03",
-    icon: FiFileText,
-    title: "TECHNICAL SCHEMATICS",
-    tagline: "Weeks 5–6",
-    summary: "0.4mm tolerance shop drawings, integrated MEP acoustics, lighting simulations.",
+    icon: FiLayers,
+    title: "CHOOSE OF PRODUCT",
+    tagline: "Step 03",
+    summary:
+      "Selecting bespoke door typologies, fluted or clear glass variants, profile aesthetics, and hardware finishes.",
     deliverables: [
-      "Sub-millimeter BIM coordination",
-      "Concealed air-handling acoustic baffles",
-      "Lutron & 2400K circadian lighting engineering",
+      "Door system choice (pivot, sliding, telescopic, partition)",
+      "Glass texture selection (low-iron, fluted, reeded, tinted)",
+      "Anodized aluminium & PVD titanium hardware sampling",
     ],
   },
   {
     step: "04",
-    icon: FiShield,
-    title: "ATELIER FABRICATION",
-    tagline: "Weeks 7–10",
-    summary: "In-house European artisans craft every custom element offsite with surgical precision.",
+    icon: FiFileText,
+    title: "QUOTATION OFFER",
+    tagline: "Step 04",
+    summary:
+      "Transparent commercial quotation detailing engineered specifications, material costs, and delivery timeline.",
     deliverables: [
-      "Hand-finished Veneto joinery & timber ceilings",
-      "CNC precision waterjet stone carving",
-      "Pre-assembly dry fit at the Zurich atelier",
+      "Transparent, itemized pricing breakdown",
+      "Production timeline and handover schedule",
+      "Engineering specifications & warranty coverage terms",
     ],
   },
   {
     step: "05",
-    icon: FiAward,
-    title: "WHITE-GLOVE COMMISSION",
-    tagline: "Handover",
-    summary: "Final turnkey staging, acoustic tuning, art curation, and ceremonial handover.",
+    icon: FiCpu,
+    title: "PRODUCTION & MANUFACTURING",
+    tagline: "Step 05",
+    summary:
+      "High-precision CNC cutting, automated tempering furnaces, and custom profile joinery off-site in our atelier.",
     deliverables: [
-      "Dust-free micro-installation",
-      "Acoustic calibration & final decibel report",
-      "Bound provenance archive & master keys in bronze chest",
+      "Automated CNC glass edge-polishing and waterjet cutouts",
+      "Thermal glass tempering with distortion quality testing",
+      "Factory dry-fit assembly & pivot mechanism calibration",
+    ],
+  },
+  {
+    step: "06",
+    icon: FiAward,
+    title: "INSTALLATION",
+    tagline: "Step 06",
+    summary:
+      "White-glove on-site installation by certified glaziers, laser alignment, and soft-close calibration.",
+    deliverables: [
+      "Dust-free on-site mounting by specialized technicians",
+      "Hydraulic soft-close speed and zero-gap alignment tuning",
+      "Final optical polish, inspection, and ceremonial handover",
     ],
   },
 ];
@@ -93,18 +113,19 @@ export default function Process() {
             Rigorous Execution Framework
             <br />
             <em className="text-[#e8b95d] not-italic italic font-serif">
-              5 Phases of Mastery.
+              6 Steps of Our Process.
             </em>
           </h2>
 
           <p className="mt-5 text-[13px] sm:text-[15px] leading-[1.8] text-[#9a948c]">
-            A bespoke architectural process engineered to eliminate friction,
-            ensuring surgical precision and total transparency at every milestone.
+            A seamless, transparent architectural journey from initial query
+            consultation through laser measurement, production, and white-glove
+            installation.
           </p>
         </div>
 
-        {/* ================= 5 STEPS ROW ================= */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5 mb-12">
+        {/* ================= 6 STEPS GRID ================= */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mb-12">
           {phases.map((phase, idx) => {
             const Icon = phase.icon;
             const isSelected = activeStep === idx;
@@ -113,19 +134,21 @@ export default function Process() {
               <div
                 key={phase.step}
                 onClick={() => setActiveStep(idx)}
-                className={`group relative cursor-pointer rounded-xl p-6 sm:p-7 transition-all duration-300 border text-left flex flex-col justify-between ${isSelected
+                className={`group relative cursor-pointer rounded-xl p-5 sm:p-6 transition-all duration-300 border text-left flex flex-col justify-between ${
+                  isSelected
                     ? "bg-[#171614] border-[#e8b95d] shadow-xl shadow-[#e8b95d]/10 translate-y-[-4px]"
                     : "bg-[#101010] border-white/5 hover:border-white/20 hover:bg-[#131313]"
-                  }`}
+                }`}
               >
                 <div>
                   {/* Step Badge */}
-                  <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center justify-between mb-5">
                     <div
-                      className={`flex h-12 w-12 items-center justify-center rounded-full font-serif text-[15px] font-bold border transition-all ${isSelected
+                      className={`flex h-11 w-11 items-center justify-center rounded-full font-serif text-[14px] font-bold border transition-all ${
+                        isSelected
                           ? "bg-[#e8b95d] text-black border-[#e8b95d]"
                           : "bg-[#1a1a1a] text-[#e8b95d] border-[#e8b95d]/30 group-hover:border-[#e8b95d]"
-                        }`}
+                      }`}
                     >
                       {phase.step}
                     </div>
@@ -136,24 +159,25 @@ export default function Process() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-serif text-[16px] sm:text-[17px] text-[#f1eee9] leading-[1.3] group-hover:text-[#e8b95d] transition-colors">
+                  <h3 className="font-serif text-[15px] sm:text-[16px] text-[#f1eee9] leading-[1.3] group-hover:text-[#e8b95d] transition-colors">
                     {phase.title}
                   </h3>
 
                   {/* Summary */}
-                  <p className="mt-3 text-[11px] leading-[1.6] text-[#8e8880]">
+                  <p className="mt-2.5 text-[11px] leading-[1.6] text-[#8e8880]">
                     {phase.summary}
                   </p>
                 </div>
 
                 {/* Status Indicator */}
-                <div className="mt-6 pt-4 border-t border-white/5 flex items-center gap-2">
+                <div className="mt-5 pt-3.5 border-t border-white/5 flex items-center gap-2">
                   <span
-                    className={`h-1.5 w-1.5 rounded-full ${isSelected ? "bg-[#e8b95d] animate-pulse" : "bg-[#444]"
-                      }`}
+                    className={`h-1.5 w-1.5 rounded-full ${
+                      isSelected ? "bg-[#e8b95d] animate-pulse" : "bg-[#444]"
+                    }`}
                   />
                   <span className="text-[9px] tracking-[1px] font-medium text-[#aaa]">
-                    {isSelected ? "ACTIVE PHASE" : "VIEW DETAILS"}
+                    {isSelected ? "ACTIVE STEP" : "VIEW DETAILS"}
                   </span>
                 </div>
               </div>
@@ -161,12 +185,12 @@ export default function Process() {
           })}
         </div>
 
-        {/* ================= EXPANDED ACTIVE PHASE DETAILS ================= */}
+        {/* ================= EXPANDED ACTIVE STEP DETAILS ================= */}
         <div className="rounded-xl border border-[#e8b95d]/30 bg-[#121110] p-6 sm:p-10 mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-8 items-center">
             <div>
               <div className="flex items-center gap-3 text-[#e8b95d] text-[10px] font-bold tracking-[2px] mb-2">
-                <span>PHASE {phases[activeStep].step} DEEP DIVE</span>
+                <span>STEP {phases[activeStep].step} DEEP DIVE</span>
                 <span>•</span>
                 <span>{phases[activeStep].tagline}</span>
               </div>
@@ -176,9 +200,9 @@ export default function Process() {
               </h4>
 
               <p className="mt-3 text-[13px] sm:text-[14px] leading-[1.8] text-[#9f9a91]">
-                {phases[activeStep].summary} All specifications are coordinated
-                directly through dedicated bureau partners in Zurich, Milan, and
-                New York, eliminating intermediary contractors.
+                {phases[activeStep].summary} Executed by Kazo Glass & Door’s
+                in-house engineering team and certified glazier technicians to
+                guarantee 0.4mm tolerance standards.
               </p>
             </div>
 
@@ -214,10 +238,10 @@ export default function Process() {
 
             <div>
               <h5 className="font-serif text-[18px] sm:text-[20px] text-[#f4efe8]">
-                Rigorous 40 Working Days Handover Guarantee*
+                Rigorous Turnkey Delivery & Handover Guarantee*
               </h5>
               <p className="text-[11px] text-[#8e8880] mt-0.5">
-                Applicable for fully pre-fabricated salon suites and bespoke modular penthouses.
+                Applicable across custom pivot doors, sliding partitions, and architectural glazing systems.
               </p>
             </div>
           </div>
@@ -226,7 +250,7 @@ export default function Process() {
             href="#contact"
             className="shrink-0 bg-[#e8b95d] px-6 py-3 text-[10px] font-bold tracking-[1.5px] text-black hover:bg-[#f5d084] transition"
           >
-            REQUEST TIMELINE AUDIT
+            START YOUR INQUIRY
           </a>
         </div>
       </div>

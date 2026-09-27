@@ -2,12 +2,12 @@ import { FiAward } from "react-icons/fi";
 
 const highlights = [
   {
-    title: "DIRECT QUARRY ACCESS",
-    text: "Hand-selected bookmatched slabs with verified provenance.",
+    title: "DELHI SHOWROOM",
+    text: "Visit our showroom to experience our doors, windows, partitions, and architectural glass in person.",
   },
   {
-    title: "IN-HOUSE MILLWORK",
-    text: "Private Italian fabrication centers achieving sub-millimeter tolerances.",
+    title: "BESPOKE SPATIAL SOLUTIONS",
+    text: "Tailored options engineered to elevate your residential or commercial space with refined practicality.",
   },
 ];
 
@@ -24,44 +24,56 @@ export default function About() {
           <div className="mb-7 flex items-center gap-3">
             <span className="h-2 w-2 rounded-full bg-[#e7b85d]" />
 
-            <span className="text-[10px] font-semibold tracking-[2px] text-[#e7b85d]">
-              ARTISANAL HERITAGE & ETHOS
+            <span className="text-[10px] font-semibold tracking-[2px] text-[#e7b85d] uppercase">
+              About Kazo Glass & Door™
             </span>
           </div>
 
           {/* Heading */}
-          <h2 className="font-serif text-[38px] leading-[1.2] text-[#f1eee9] sm:text-[45px] lg:text-[43px]">
-            Where Monolithic Stone
+          <h2 className="font-serif text-[38px] leading-[1.2] text-[#f1eee9] sm:text-[45px] lg:text-[48px]">
+            Elevating Spaces.
             <br />
-            Meets <em className="text-[#e4b45c]">Sensory Restraint.</em>
+            <em className="text-[#e4b45c]">Defining Luxury.</em>
           </h2>
 
           {/* Quote Card */}
-          <div className="mt-8 rounded-xl bg-[#1d1d1d] px-6 py-7 sm:px-7">
-            <blockquote className="font-serif text-[18px] italic leading-[1.8] text-[#e8d9b7] sm:text-[19px]">
-              “Design is not merely visual; it is an intimate sensory sanctuary
-              crafted from silence, shadow, and unyielding materiality.”
+          <div className="mt-8 rounded-xl bg-[#1d1d1d] px-6 py-7 sm:px-7 border border-white/5">
+            <blockquote className="font-serif text-[17px] italic leading-[1.8] text-[#e8d9b7] sm:text-[18px]">
+              “At Kazo Glass & Door™, we believe the right details can transform
+              a space. From the clarity of an acoustic glass partition to the
+              silent glide of a monolithic pivot door, we bring together
+              materials and engineering that make interiors and exteriors feel
+              considered, functional, and distinctly yours.”
             </blockquote>
 
-            <p className=" text-[9px] font-medium tracking-[1px] text-[#aaa49b]">
-              — ALISTAIR VANCE, PRINCIPAL ARCHITECT
+            <p className="mt-3 text-[9px] font-medium tracking-[1.5px] text-[#aaa49b] uppercase">
+              — KAZO GLASS & DOOR™
             </p>
           </div>
 
           {/* Description */}
-          <p className="py-4 text-[14px] leading-[1.7] text-[#99948e]">
-            Founded in Zurich with active design bureaus in New York, Milan, and
-            Dubai, Atelier Obsidian bridges the rigor of classical European
-            joinery with bold contemporary spatial planning. We bypass mass
-            supply chains, sourcing exclusively through generational quarries in
-            Carrara, bespoke cabinetmakers in the Veneto, and hand-applied
-            acoustic plasters.
-          </p>
+          <div className="py-5 space-y-3.5 text-[14px] leading-[1.75] text-[#99948e]">
+            <p>
+              Our Delhi showroom offers a wide range of solutions, including
+              aluminium and uPVC doors and windows, partitions and sliding
+              systems, wardrobe glass doors, shower cubicles, glass railings,
+              exterior façade systems, architectural louvers, surfaces,
+              ceilings, and specialized acoustic glass.
+            </p>
+            <p>
+              Whether you’re planning a home, renovating a room, or shaping a
+              commercial space, we help you explore options that suit your
+              vision and practical needs.
+            </p>
+          </div>
 
           {/* Feature Cards */}
-          <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
             {highlights.map((item) => (
-              <div key={item.title} className="rounded-md bg-[#0d0d0d] p-4">
+              <div
+                key={item.title}
+                className="rounded-md bg-[#0d0d0d] p-4 border border-white/5"
+              >
                 <h3 className="text-[10px] font-semibold tracking-[0.8px] text-[#e7b85d]">
                   {item.title}
                 </h3>
@@ -80,7 +92,7 @@ export default function About() {
           <div className="relative h-[470px] overflow-hidden rounded-t-xl sm:h-[550px] lg:h-[650px] bg-[#141414]">
             <img
               src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
-              alt="Calacatta Viola marble architectural interior"
+              alt="Kazo Glass & Door architectural space"
               className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
               loading="lazy"
             />
@@ -90,20 +102,20 @@ export default function About() {
           </div>
 
           {/* Precision Standard Card */}
-          <div className="absolute -bottom-8 left-0 z-10 w-[90%] rounded-xl bg-[#292929] p-5 shadow-2xl sm:-left-8 sm:w-[310px]">
+          <div className="absolute -bottom-8 left-0 z-10 w-[90%] rounded-xl bg-[#292929] p-5 shadow-2xl sm:-left-8 sm:w-[320px] border border-white/10">
             <div className="flex items-center gap-3">
               <div className="flex h-8 w-8 items-center justify-center text-[#e7b85d]">
                 <FiAward size={19} />
               </div>
 
-              <h3 className="text-[10px] font-bold tracking-[0.8px] text-[#ded9d2]">
-                PRECISION STANDARD
+              <h3 className="text-[10px] font-bold tracking-[0.8px] text-[#ded9d2] uppercase">
+                Kazo Glass & Door™
               </h3>
             </div>
 
             <p className="mt-3 text-[12px] leading-[1.7] text-[#a39e98]">
-              Every joinery joint and shadow reveal is engineered to 0.4mm
-              tolerance before site installation.
+              Elevating Spaces. Defining Luxury — bringing together materials and
+              designs that make every interior and exterior distinctly yours.
             </p>
           </div>
         </div>

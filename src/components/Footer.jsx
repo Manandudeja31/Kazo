@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FiArrowUp, FiCheck, FiMail } from "react-icons/fi";
 import Logo from "./Logo";
 
-export default function Footer() {
+export default function Footer({ onNavClick }) {
   const [newsletterEmail, setNewsletterEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
@@ -19,6 +19,13 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const handleLinkClick = (e, id) => {
+    if (onNavClick) {
+      e.preventDefault();
+      onNavClick(id);
+    }
+  };
+
   return (
     <footer className="relative overflow-hidden bg-[#060606] text-left border-t border-white/10 pt-20 pb-12 px-6 sm:px-10 md:px-20">
       <div className="mx-auto max-w-[1700px]">
@@ -27,46 +34,63 @@ export default function Footer() {
           {/* Col 1: Brand & Logo */}
           <div className="flex flex-col justify-between">
             <div>
-              <Logo size="footer" className="mb-6" />
+              <button
+                onClick={(e) => handleLinkClick(e, "home")}
+                className="text-left bg-transparent border-none p-0 cursor-pointer block mb-6"
+                aria-label="Kazo Home"
+              >
+                <Logo size="footer" />
+              </button>
               <p className="text-[12px] sm:text-[13px] leading-[1.8] text-[#8e8880] max-w-sm">
-                Atelier Obsidian bridges the rigor of classical European joinery
-                with monolithic stone architecture. Curating ultra-prime private
-                sanctuaries worldwide.
+                Kazo Glass & Door™ — Masters of bespoke architectural glazing,
+                precision pivot doors, and custom sliding systems. Elevating
+                residential and commercial spaces with refined practicality.
               </p>
             </div>
 
             <div className="mt-8">
               <span className="text-[10px] font-bold tracking-[2px] text-[#e8b95d]">
-                REGISTERED BUREAUS:
+                SHOWROOM & STUDIOS:
               </span>
               <p className="text-[11px] text-[#666] mt-1">
-                Zurich • New York • Milan • Dubai
+                Delhi NCR • Mansarover Garden, Ring Road Showroom
               </p>
             </div>
           </div>
 
-          {/* Col 2: Global Ateliers */}
+          {/* Col 2: Experience Centres */}
           <div>
             <h4 className="text-[11px] font-bold tracking-[2px] text-[#e8b95d] uppercase mb-6">
-              Global Bureaus
+              Experience Centres
             </h4>
 
             <ul className="space-y-4 text-[12px] text-[#8e8880]">
               <li>
-                <strong className="block text-white text-[12px]">ZURICH ATELIER</strong>
-                <span>Bahnhofstrasse 42, 8001 Zürich, Switzerland</span>
+                <strong className="block text-white text-[12px]">
+                  DELHI FLAGSHIP SHOWROOM
+                </strong>
+                <span>
+                  Experience full-scale pivot doors, acoustic sliding
+                  partitions, and walk-in shower suites
+                </span>
               </li>
               <li>
-                <strong className="block text-white text-[12px]">NEW YORK BUREAU</strong>
-                <span>740 Madison Avenue, New York, NY 10065</span>
+                <strong className="block text-white text-[12px]">
+                  GURUGRAM DESIGN STUDIO
+                </strong>
+                <span>
+                  Architectural consultations, glass sampling, and custom profile
+                  curation
+                </span>
               </li>
               <li>
-                <strong className="block text-white text-[12px]">MILAN JOINERY</strong>
-                <span>Via Montenapoleone 18, 20121 Milano, Italy</span>
-              </li>
-              <li>
-                <strong className="block text-white text-[12px]">DUBAI SALON</strong>
-                <span>DIFC Gate Village, Building 03, Dubai, UAE</span>
+                <strong className="block text-white text-[12px]">
+                  FABRICATION ATELIER
+                </strong>
+                <span>
+                  Precision CNC edge-polishing, tempering, and PVD titanium metal
+                  finishing
+                </span>
               </li>
             </ul>
           </div>
@@ -79,37 +103,65 @@ export default function Footer() {
 
             <ul className="space-y-3 text-[12px] text-[#9a948c]">
               <li>
-                <a href="#home" className="hover:text-[#e8b95d] transition">
+                <a
+                  href="#home"
+                  onClick={(e) => handleLinkClick(e, "home")}
+                  className="hover:text-[#e8b95d] transition"
+                >
                   Principal Overview
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-[#e8b95d] transition">
+                <a
+                  href="#about"
+                  onClick={(e) => handleLinkClick(e, "about")}
+                  className="hover:text-[#e8b95d] transition"
+                >
                   Artisanal Heritage & Ethos
                 </a>
               </li>
               <li>
-                <a href="#portfolio" className="hover:text-[#e8b95d] transition">
-                  Curated Commissions (2020–2026)
+                <a
+                  href="#portfolio"
+                  onClick={(e) => handleLinkClick(e, "portfolio")}
+                  className="hover:text-[#e8b95d] transition"
+                >
+                  Product Categories (11 Collections)
                 </a>
               </li>
               <li>
-                <a href="#process" className="hover:text-[#e8b95d] transition">
-                  5-Phase Execution Methodology
+                <a
+                  href="#process"
+                  onClick={(e) => handleLinkClick(e, "process")}
+                  className="hover:text-[#e8b95d] transition"
+                >
+                  6-Step Execution Methodology
                 </a>
               </li>
               <li>
-                <a href="#artisans" className="hover:text-[#e8b95d] transition">
+                <a
+                  href="#artisans"
+                  onClick={(e) => handleLinkClick(e, "artisans")}
+                  className="hover:text-[#e8b95d] transition"
+                >
                   Master Joiners & Leadership
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="hover:text-[#e8b95d] transition">
+                <a
+                  href="#testimonials"
+                  onClick={(e) => handleLinkClick(e, "testimonials")}
+                  className="hover:text-[#e8b95d] transition"
+                >
                   Client Perspectives & Endorsements
                 </a>
               </li>
               <li>
-                <a href="#journal" className="hover:text-[#e8b95d] transition">
+                <a
+                  href="#journal"
+                  onClick={(e) => handleLinkClick(e, "journal")}
+                  className="hover:text-[#e8b95d] transition"
+                >
                   Materiality & Acoustic Journal
                 </a>
               </li>
@@ -123,8 +175,8 @@ export default function Footer() {
             </h4>
 
             <p className="text-[12px] leading-[1.7] text-[#8e8880] mb-4">
-              Receive confidential biannual monographs on rare marble acquisitions,
-              architectural acoustics, and private residential commissions.
+              Receive confidential biannual monographs on rare architectural
+              glass innovations and residential door systems.
             </p>
 
             <form onSubmit={handleSubscribe} className="space-y-3">
@@ -142,28 +194,63 @@ export default function Footer() {
                   aria-label="Subscribe"
                   className="absolute right-1 top-1 bottom-1 px-3 bg-[#e8b95d] text-black rounded text-[10px] font-bold hover:bg-[#f5d084] transition"
                 >
-                  <FiMail size={13} />
+                  JOIN
                 </button>
               </div>
-
               {subscribed && (
-                <p className="text-[11px] text-[#e8b95d] flex items-center gap-1.5 mt-2">
-                  <FiCheck size={13} />
-                  <span>Subscribed to private atelier dispatches.</span>
-                </p>
+                <div className="flex items-center gap-2 text-[11px] text-[#e8b95d]">
+                  <FiCheck size={12} />
+                  <span>Subscribed to Private Dispatch</span>
+                </div>
               )}
             </form>
 
-            <div className="mt-8 pt-4 border-t border-white/5">
-              <p className="text-[10px] tracking-[1px] text-[#777]">
-                DIRECT CLIENT DESK:
-              </p>
-              <a
-                href="mailto:concierge@atelierobsidian.com"
-                className="text-[12px] text-[#e8b95d] hover:underline"
-              >
-                concierge@atelierobsidian.com
-              </a>
+            <div className="mt-8 pt-4 border-t border-white/5 space-y-3">
+              <div>
+                <p className="text-[9px] font-bold tracking-[1.5px] text-[#777] uppercase">
+                  DIRECT EMAIL INQUIRIES:
+                </p>
+                <a
+                  href="mailto:kazoglassndoor@gmail.com"
+                  className="text-[12px] text-[#e8b95d] hover:underline font-medium break-all"
+                >
+                  kazoglassndoor@gmail.com
+                </a>
+              </div>
+
+              <div>
+                <p className="text-[9px] font-bold tracking-[1.5px] text-[#777] uppercase">
+                  WHATSAPP DIRECT:
+                </p>
+                <a
+                  href="https://wa.me/918810369142"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-[12px] text-white hover:text-[#25D366] transition font-medium"
+                >
+                  +91 88103 69142
+                </a>
+              </div>
+
+              <div>
+                <p className="text-[9px] font-bold tracking-[1.5px] text-[#777] uppercase">
+                  ALTERNATIVE HELPLINES:
+                </p>
+                <div className="flex flex-col text-[11px] text-[#bbb] mt-0.5 space-y-0.5">
+                  <a
+                    href="tel:+919217505300"
+                    className="hover:text-[#e8b95d] transition"
+                  >
+                    +91 92175 05300
+                  </a>
+                  <a
+                    href="tel:+919315201616"
+                    className="hover:text-[#e8b95d] transition"
+                  >
+                    +91 93152 01616
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -171,8 +258,7 @@ export default function Footer() {
         {/* ================= BOTTOM BAR ================= */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#666]">
           <p>
-            © {new Date().getFullYear()} KAZO / ATELIER OBSIDIAN. ALL RIGHTS
-            RESERVED.
+            © {new Date().getFullYear()} KAZO GLASS & DOOR™. ALL RIGHTS RESERVED.
           </p>
 
           <div className="flex items-center gap-6">
@@ -189,7 +275,7 @@ export default function Footer() {
             {/* Back to top */}
             <button
               onClick={scrollToTop}
-              className="flex h-8 w-8 items-center justify-center rounded-full bg-[#181818] text-[#e8b95d] hover:bg-[#e8b95d] hover:text-black transition"
+              className="flex h-8 w-8 items-center justify-center rounded-full bg-[#181818] text-[#e8b95d] hover:bg-[#e8b95d] hover:text-black transition cursor-pointer"
               aria-label="Back to top"
             >
               <FiArrowUp size={14} />

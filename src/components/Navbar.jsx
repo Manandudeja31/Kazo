@@ -8,7 +8,8 @@ const navLinks = [
   { name: "PORTFOLIO", id: "portfolio" },
   { name: "CONTACT", id: "contact" },
 ];
-export default function Navbar() {
+
+export default function Navbar({ onNavClick }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedLink, setSelectedLink] = useState("");
 
@@ -16,18 +17,30 @@ export default function Navbar() {
     setMenuOpen(false);
     setSelectedLink(id);
 
-    document.getElementById(id)?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    if (onNavClick) {
+      onNavClick(id);
+    } else {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
   };
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-[#0d0d0d]/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1700px] items-center justify-between px-5 sm:px-8 lg:px-14 py-2">
         {/* Sharp High-Clarity Logo */}
-        <Logo />
-        {/* Logo */}
+        <button
+          onClick={() => handleNavClick("home")}
+          className="cursor-pointer text-left bg-transparent border-none p-0 focus:outline-none"
+          aria-label="Kazo Home"
+        >
+          <Logo />
+        </button>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-7">
@@ -35,10 +48,11 @@ export default function Navbar() {
             <button
               key={link.name}
               onClick={() => handleNavClick(link.id)}
-              className={`relative py-7 text-[10px] font-semibold tracking-[1.5px] cursor-pointer transition-colors ${link.id === selectedLink
-                ? "text-[#e8bb68]"
-                : "text-[#aaa39a] hover:text-[#e8bb68]"
-                }`}
+              className={`relative py-7 text-[10px] font-semibold tracking-[1.5px] cursor-pointer transition-colors ${
+                link.id === selectedLink
+                  ? "text-[#e8bb68]"
+                  : "text-[#aaa39a] hover:text-[#e8bb68]"
+              }`}
             >
               {link.name}
 
@@ -57,43 +71,45 @@ export default function Navbar() {
             </p>
 
             <a
-              href="tel:+12128400210"
-              className="flex items-center gap-1 text-[12px] font-medium text-[#e7bb68]"
+              href="tel:+918810369142"
+              className="text-xs font-semibold tracking-wider text-[#e8bb68] hover:text-[#f3cd82] transition"
             >
-              <FiPhone size={11} />
-              +1 (212) 840-0210
+              +91 88103 69142
             </a>
           </div>
 
           <button
             onClick={() => handleNavClick("contact")}
-            className="h-9 cursor-pointer border border-[#6e5b3d] bg-transparent px-5 text-[10px] font-semibold tracking-wide text-[#e7bb68] transition hover:bg-[#e7bb68] hover:text-black">
+            className="rounded bg-[#e8bb68] px-5 py-3 text-[10px] font-semibold tracking-[1.5px] text-black transition hover:bg-[#f3cd82] cursor-pointer"
+          >
             BOOK CONSULTATION
           </button>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Hamburger Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="flex h-10 w-10 items-center justify-center border border-white/10 text-white xl:hidden"
-          aria-label="Toggle menu"
+          className="flex h-10 w-10 items-center justify-center rounded border border-white/20 text-[#e8bb68] lg:hidden cursor-pointer"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
-          {menuOpen ? <FiX size={22} /> : <FiMenu size={22} />}
+          {menuOpen ? <FiX size={20} /> : <FiMenu size={20} />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`overflow-hidden border-t border-white/10 bg-[#0d0d0d] transition-all duration-300 xl:hidden ${menuOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
-          }`}
+        className={`overflow-hidden border-t border-white/10 bg-[#0d0d0d] transition-all duration-300 lg:hidden ${
+          menuOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+        }`}
       >
         <nav className="px-6 py-5">
           {navLinks.map((link) => (
             <button
               key={link.name}
               onClick={() => handleNavClick(link.id)}
-              className={`block w-full text-left border-b border-white/5 py-4 text-[11px] font-semibold tracking-[1.5px] cursor-pointer ${link.id === selectedLink ? "text-[#e8bb68]" : "text-[#aaa39a]"
-                }`}
+              className={`block w-full text-left border-b border-white/5 py-4 text-[11px] font-semibold tracking-[1.5px] cursor-pointer ${
+                link.id === selectedLink ? "text-[#e8bb68]" : "text-[#aaa39a]"
+              }`}
             >
               {link.name}
             </button>
@@ -105,15 +121,16 @@ export default function Navbar() {
             </p>
 
             <a
-              href="tel:+12128400210"
-              className="mt-1 block text-sm text-[#e7bb68]"
+              href="tel:+918810369142"
+              className="mt-1 block text-sm text-[#e7bb68] hover:text-[#f4d186]"
             >
-              +1 (212) 840-0210
+              +91 88103 69142
             </a>
 
             <button
               onClick={() => handleNavClick("contact")}
-              className="mt-4 w-full bg-[#e7bb68] py-3 text-[10px] font-semibold tracking-wide text-black cursor-pointer hover:bg-[#f5d084] transition">
+              className="mt-4 w-full bg-[#e7bb68] py-3 text-[10px] font-semibold tracking-wide text-black cursor-pointer hover:bg-[#f5d084] transition"
+            >
               BOOK CONSULTATION
             </button>
           </div>

@@ -1,21 +1,27 @@
-import { FiArrowRight, FiPlay, FiAward, FiGrid } from "react-icons/fi";
+import {
+  FiArrowRight,
+  FiPlay,
+  FiCheckCircle,
+  FiAward,
+  FiLayers,
+} from "react-icons/fi";
 import HeroBg from "../assets/HeroBg.png";
 
 const stats = [
   {
-    icon: FiAward,
-    title: "40 Working Days*",
-    description: "Rigorous turnkey execution guarantee from permit to handover",
-  },
-  {
-    icon: FiGrid,
-    title: "350+ Global Sanctuaries",
-    description: "Private villas, penthouses & megayachts across 14 capitals",
+    icon: FiCheckCircle,
+    title: "200+ Projects Delivered",
+    description: "Custom architectural glass facades, pivot doors & slimline systems",
   },
   {
     icon: FiAward,
-    title: "15 Architectural Laurels",
-    description: "Including Prix Versailles & AD100 International Recognition",
+    title: "40+ Years of Craftsmanship",
+    description: "Generational mastery in precision tempering, architectural glass & frame engineering",
+  },
+  {
+    icon: FiLayers,
+    title: "11+ Bespoke Categories",
+    description: "Pivot doors, fluted glass partitions, sliding systems & acoustic enclosures",
   },
 ];
 
@@ -69,42 +75,49 @@ export default function Hero() {
             <span className="h-px w-9 bg-[#dcae59]" />
 
             <span className="text-[9px] font-semibold tracking-[2px] text-[#dcae59] sm:text-[10px]">
-              ATELIER OBSIDIAN HAUTE ARCHITECTURE
+              KAZO ARCHITECTURAL GLASS & DOORS
             </span>
           </div>
 
           {/* Heading */}
           <h1 className="font-serif text-[42px] leading-[1.05] text-[#f4f1ec] sm:text-[56px] md:text-[64px] lg:text-[66px]">
-            Curators of Bespoke Sanctuaries
+            Curators of Bespoke Glass
             <br />
             <span>
-              & <em className="text-[#e8b961]">Architectural Elegance.</em>
+              & <em className="text-[#e8b961]">Architectural Doors.</em>
             </span>
           </h1>
 
           {/* Description */}
           <p className="mt-6 max-w-[650px] pb-10 text-[15px] leading-[1.75] text-[#aaa49d] sm:text-[16px]">
-            Boutique architectural interiors tailored to discerning clientele
-            worldwide. We sculpt monolithic stone, rare veneers, and luminous
-            atmosphere into bespoke private residences.
+            Boutique architectural glazing, monolithic pivot doors, and custom
+            sliding partitions tailored to discerning clientele worldwide. We
+            sculpt light, spatial transparency, and acoustic comfort into bespoke
+            private sanctuaries.
           </p>
 
           {/* Buttons */}
           <div className="mt-9 flex flex-col gap-3 sm:flex-row mb-40">
-            <button className="group flex h-12 items-center justify-center gap-4 bg-[#edc16e] px-8 text-[10px] font-semibold tracking-[1px] text-black transition hover:bg-[#f5d084]">
-              EXPLORE PORTFOLIO
+            <a
+              href="#portfolio"
+              className="group flex h-12 items-center justify-center gap-4 bg-[#edc16e] px-8 text-[10px] font-semibold tracking-[1px] text-black transition hover:bg-[#f5d084]"
+            >
+              EXPLORE GLASS & DOORS
               <FiArrowRight
                 size={16}
                 className="transition-transform group-hover:translate-x-1"
               />
-            </button>
+            </a>
 
-            <button className="flex h-12 items-center justify-center gap-3 border border-white/5 bg-[#202020]/90 px-7 text-[10px] font-semibold tracking-[1px] text-[#ddd] transition hover:bg-[#292929]">
+            <a
+              href="#contact"
+              className="flex h-12 items-center justify-center gap-3 border border-white/5 bg-[#202020]/90 px-7 text-[10px] font-semibold tracking-[1px] text-[#ddd] transition hover:bg-[#292929]"
+            >
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#3b3425] text-[#e9b95e]">
                 <FiPlay size={10} fill="currentColor" />
               </span>
               WATCH ATELIER FILM (2:14)
-            </button>
+            </a>
           </div>
         </div>
       </section>
