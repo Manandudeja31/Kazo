@@ -63,7 +63,7 @@ export default function Hero() {
 
       {/* Hero Content */}
       <section className="relative z-10 mx-auto flex min-h-[calc(100vh-72px)] text-left items-center justify-center md:pb-36 pb-66 pt-16 px-10 md:px-20">
-        <div className="w-full max-w-[820px] md:mr-20">
+        <div className="w-full md:mr-20">
           {/* Eyebrow */}
           <div className="mb-6 flex items-center gap-3">
             <span className="h-px w-9 bg-[#dcae59]" />
@@ -110,7 +110,7 @@ export default function Hero() {
       </section>
 
       {/* Stats */}
-      <section className="absolute bottom-24 left-1/2 z-20 w-[calc(100%-40px)] max-w-[950px] -translate-x-1/2">
+      <section className="absolute bottom-24 left-1/2 z-20 w-[calc(100%-40px)] -translate-x-1/2 px-10 md:px-14">
         <div className="grid gap-7 bg-[#101010]/95 px-6 py-7 backdrop-blur-md md:w-full grid-cols-1 md:grid-cols-3 lg:px-8">
           {stats.map((stat) => (
             <StatCard

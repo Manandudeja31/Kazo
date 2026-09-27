@@ -77,15 +77,16 @@ export default function About() {
         {/* ================= RIGHT IMAGE ================= */}
         <div className="relative">
           {/* Image */}
-          <div className="relative h-[470px] overflow-hidden rounded-t-xl sm:h-[550px] lg:h-[650px]">
+          <div className="relative h-[470px] overflow-hidden rounded-t-xl sm:h-[550px] lg:h-[650px] bg-[#141414]">
             <img
-              src="/src/assets/story.jpg"
-              alt="Luxury architectural interior"
-              className="h-full w-full object-cover"
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
+              alt="Calacatta Viola marble architectural interior"
+              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+              loading="lazy"
             />
 
             {/* Image dark gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
           </div>
 
           {/* Precision Standard Card */}
