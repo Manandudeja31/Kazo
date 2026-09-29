@@ -27,14 +27,14 @@ export default function Consultation() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-[#090909] py-24 sm:py-28 lg:py-32 px-6 sm:px-10 md:px-20 text-center border-t border-white/5"
+      className="relative overflow-hidden bg-[#090909] py-20 sm:py-28 lg:py-32 px-5 sm:px-10 md:px-20 text-center border-t border-white/5"
     >
       {/* Background Glow */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-[700px] rounded-full bg-[#e8b95d]/5 blur-[140px]" />
 
       <div className="relative z-10 mx-auto max-w-4xl">
         {/* ================= HEADER ================= */}
-        <div className="mb-12">
+        <div className="mb-10 sm:mb-12">
           <div className="mb-4 inline-flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-[#e8b95d]" />
             <span className="text-[10px] font-semibold tracking-[2px] text-[#e8b95d]">
@@ -42,7 +42,7 @@ export default function Consultation() {
             </span>
           </div>
 
-          <h2 className="font-serif text-[34px] sm:text-[46px] lg:text-[52px] leading-[1.1] text-[#f1eee9]">
+          <h2 className="font-serif text-[32px] sm:text-[46px] lg:text-[52px] leading-[1.1] text-[#f1eee9]">
             Let’s Talk About{" "}
             <em className="text-[#e8b95d] not-italic italic font-serif">
               Your Project.
@@ -57,7 +57,7 @@ export default function Consultation() {
         </div>
 
         {/* ================= FORM CARD ================= */}
-        <div className="rounded-2xl border border-white/10 bg-[#121212]/90 p-8 sm:p-12 text-left shadow-2xl backdrop-blur-xl">
+        <div className="rounded-2xl border border-white/10 bg-[#121212]/90 p-5 sm:p-10 md:p-12 text-left shadow-2xl backdrop-blur-xl">
           {submitted ? (
             <div className="py-12 text-center">
               <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#1f1b13] text-[#e8b95d] border border-[#e8b95d]/30">

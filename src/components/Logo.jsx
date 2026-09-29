@@ -40,15 +40,15 @@ export default function Logo({ size = "navbar", className = "" }) {
   return (
     <a
       href="#home"
-      className={`group flex items-center gap-3 select-none py-2 transition-all duration-300 ${className}`}
+      className={`group flex items-center gap-3 select-none transition-all duration-300 ${className}`}
       aria-label="Kazo Home"
     >
       {/* Precision Emblem Container - Zooms in to crop out dead black margins and enhances contrast & gold luster */}
-      <div className="relative h-16 w-16 sm:h-13 sm:w-13 overflow-hidden rounded-md bg-[#12110e] border border-[#e8b95d]/40 shadow-md shadow-[#e8b95d]/15 flex items-center justify-center transition-all duration-300 group-hover:border-[#e8b95d] group-hover:shadow-[#e8b95d]/30">
+      <div className="relative h-12 w-12 sm:h-14 sm:w-14 overflow-hidden rounded-md bg-[#12110e] border border-[#e8b95d]/40 shadow-md shadow-[#e8b95d]/15 flex items-center justify-center transition-all duration-300 group-hover:border-[#e8b95d] group-hover:shadow-[#e8b95d]/30">
         <img
           src={logo}
           alt="KAZO Logo"
-          className="object-center -translate-y-1 filter contrast-130 brightness-125 drop-shadow-[0_2px_8px_rgba(232,185,93,0.5)] transition-transform duration-500 group-hover:scale-110"
+          className="object-center object-cover -translate-y-1 filter contrast-130 brightness-125 drop-shadow-[0_2px_8px_rgba(232,185,93,0.5)] transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
       </div>
