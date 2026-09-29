@@ -75,17 +75,17 @@ export default function Philosophy() {
 
         {/* Big Serif Heading */}
         <blockquote className="font-serif text-[34px] sm:text-[48px] md:text-[56px] lg:text-[62px] leading-[1.15] text-[#f4efe8] drop-shadow-md">
-          “Crafting spaces that whisper{" "}
+          “Great design feels effortless, functional,{" "}
           <span className="font-serif italic font-normal text-[#e8b95d] drop-shadow-[0_2px_12px_rgba(232,185,93,0.3)]">
-            absolute prestige.”
+            and distinctly yours.”
           </span>
         </blockquote>
 
         {/* Subtext */}
         <p className="mx-auto mt-7 max-w-2xl text-[13px] sm:text-[15px] leading-[1.85] text-[#cfc8be] font-light">
-          True architectural luxury does not clamor for attention. It resides in
-          acoustic serenity, monolithic proportions, and tactile materials that
-          mature gracefully across generations.
+          True quality doesn't have to shout. You experience it in how smoothly
+          a door glides, the peaceful quiet of sound-insulated glass, and the
+          warm, open feel of natural light flowing through your home.
         </p>
 
         {/* Gold Diamond Ornament Divider */}

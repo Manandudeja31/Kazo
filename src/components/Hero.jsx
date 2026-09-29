@@ -11,17 +11,17 @@ const stats = [
   {
     icon: FiCheckCircle,
     title: "200+ Projects Delivered",
-    description: "Custom architectural glass facades, pivot doors & slimline systems",
+    description: "Custom doors, windows, and glass installations for homes, villas, and workspaces",
   },
   {
     icon: FiAward,
     title: "40+ Years of Craftsmanship",
-    description: "Generational mastery in precision tempering, architectural glass & frame engineering",
+    description: "Generations of hands-on experience in glass processing, frame making, and on-site fitting",
   },
   {
     icon: FiLayers,
-    title: "11+ Bespoke Categories",
-    description: "Pivot doors, fluted glass partitions, sliding systems & acoustic enclosures",
+    title: "11 Product Categories",
+    description: "Pivot doors, sliding partitions, windows, shower cubicles, and architectural glass",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function Hero() {
 
           {/* Heading */}
           <h1 className="font-serif text-[42px] leading-[1.05] text-[#f4f1ec] sm:text-[56px] md:text-[64px] lg:text-[66px]">
-            Curators of Bespoke Glass
+            Crafting Beautiful Glass
             <br />
             <span>
               & <em className="text-[#e8b961]">Architectural Doors.</em>
@@ -90,10 +90,9 @@ export default function Hero() {
 
           {/* Description */}
           <p className="mt-6 max-w-[650px] pb-10 text-[15px] leading-[1.75] text-[#aaa49d] sm:text-[16px]">
-            Boutique architectural glazing, monolithic pivot doors, and custom
-            sliding partitions tailored to discerning clientele worldwide. We
-            sculpt light, spatial transparency, and acoustic comfort into bespoke
-            private sanctuaries.
+            We design and craft custom doors, windows, and glass solutions that
+            bring natural light, quiet comfort, and effortless elegance into your
+            home or office. Built with precision, installed with care.
           </p>
 
           {/* Buttons */}
@@ -116,7 +115,7 @@ export default function Hero() {
               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#3b3425] text-[#e9b95e]">
                 <FiPlay size={10} fill="currentColor" />
               </span>
-              WATCH ATELIER FILM (2:14)
+              WATCH OUR STORY (2:14)
             </a>
           </div>
         </div>

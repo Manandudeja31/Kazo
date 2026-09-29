@@ -29,7 +29,7 @@ export default function Logo({ size = "navbar", className = "" }) {
             </span>
           </div>
           <span className="text-[8.5px] sm:text-[9.5px] font-semibold tracking-[3px] text-[#e8b95d] mt-1.5 leading-none uppercase">
-            Glass & Door Atelier
+            Glass & Door
           </span>
         </div>
       </a>

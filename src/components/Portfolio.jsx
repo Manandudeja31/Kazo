@@ -23,25 +23,25 @@ export default function Portfolio({ onSelectCategory }) {
             <div className="mb-4 flex items-center gap-3">
               <span className="h-2 w-2 rounded-full bg-[#e7b85d]" />
               <span className="text-[10px] font-semibold tracking-[2px] text-[#e7b85d] uppercase">
-                Product Categories & Solutions
+                Explore Our Range
               </span>
             </div>
 
             {/* Heading */}
             <h2 className="font-serif text-[34px] sm:text-[44px] lg:text-[50px] leading-[1.1] text-[#f1eee9]">
-              Architectural Glazing{" "}
+              Doors, Windows & Glass{" "}
               <br className="hidden sm:inline" />
               <em className="text-[#e4b45c] not-italic italic font-serif">
-                & Door Systems.
+                Crafted for Your Space.
               </em>
             </h2>
           </div>
 
           <div className="max-w-[500px]">
             <p className="text-[13px] sm:text-[14px] leading-[1.8] text-[#9a948c]">
-              Explore our 11 core product categories. Select any category to view
-              the dedicated architectural product images and bespoke
-              installations.
+              Explore our 11 product categories. Click any category to view real
+              photos, design styles, and ideas for your home or commercial
+              space.
             </p>
           </div>
         </div>
@@ -104,14 +104,14 @@ export default function Portfolio({ onSelectCategory }) {
         {/* ================= BOTTOM BAR ================= */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6 text-left">
           <p className="text-[12px] sm:text-[13px] tracking-wide text-[#8a857e]">
-            Experience all 11 product categories at our Delhi Flagship Showroom
+            Visit our Delhi showroom to test our doors, windows, and glass partitions in person
           </p>
 
           <a
             href="#contact"
             className="group inline-flex items-center gap-3 text-[11px] font-bold tracking-[2px] text-[#e8b95d] transition hover:text-[#f3cd82]"
           >
-            <span>SCHEDULE ARCHITECTURAL CONSULTATION</span>
+            <span>BOOK A SHOWROOM VISIT OR CONSULTATION</span>
             <FiArrowRight
               size={15}
               className="transition-transform group-hover:translate-x-1"

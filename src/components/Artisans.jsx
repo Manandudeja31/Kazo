@@ -2,29 +2,29 @@ import { FiAward, FiArrowRight } from "react-icons/fi";
 
 const team = [
   {
-    name: "ALISTAIR VANCE",
-    role: "PRINCIPAL ARCHITECT & FOUNDER",
-    location: "ZURICH / NEW YORK",
-    bio: "Former protégé of Peter Zumthor, leading conceptual architecture and monolithic stone curation across Europe and North America for over two decades.",
-    credentials: "RIBA • SIA • 22 YRS LEADERSHIP",
+    name: "RAJESH MALHOTRA",
+    role: "FOUNDER & MANAGING DIRECTOR",
+    location: "DELHI NCR",
+    bio: "Over 25 years guiding architectural glass solutions and custom door engineering for residences, villas, and commercial spaces across India.",
+    credentials: "25+ YRS INDUSTRY EXPERIENCE",
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=900&auto=format&fit=crop",
   },
   {
-    name: "ELENA ROSTOVA",
-    role: "HEAD OF INTERIOR ARCHITECTURE & MATERIALS",
-    location: "MILAN ATELIER",
-    bio: "Specializing in rare timber joinery, tactile sensory acoustics, and museum-grade material finishes. Featured in AD100 International Designers.",
-    credentials: "MILAN POLY • AD100 • 16 YRS PRACTICE",
+    name: "PRIYA SHARMA",
+    role: "HEAD OF ARCHITECTURAL CONSULTING",
+    location: "DELHI STUDIO",
+    bio: "Works closely with architects, interior designers, and homeowners to select the ideal glass textures, partition layouts, and acoustic solutions.",
+    credentials: "B.ARCH • 14 YRS SPATIAL DESIGN",
     image:
       "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=900&auto=format&fit=crop",
   },
   {
-    name: "MATTEO ROSSI",
-    role: "MASTER CABINETMAKER & ATELIER DIRECTOR",
-    location: "VENETO ATELIER",
-    bio: "Third-generation Venetian guild master supervising bespoke millwork fabrication, bookmatched rare veneers, and lost-wax cast bronzes.",
-    credentials: "VENETO GUILD MASTER • 28 YRS MASTERY",
+    name: "SUNIL VERMA",
+    role: "CHIEF FABRICATION & INSTALLATION LEAD",
+    location: "CENTRAL WORKSHOP",
+    bio: "Supervises precision glass cutting, tempering quality, and on-site fitting to make sure every pivot door swings silently and every frame aligns perfectly.",
+    credentials: "MASTER FABRICATOR • 20 YRS MASTERY",
     image:
       "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=900&auto=format&fit=crop",
   },
@@ -43,22 +43,23 @@ export default function Artisans() {
             <div className="mb-4 flex items-center gap-3">
               <span className="h-2 w-2 rounded-full bg-[#e8b95d]" />
               <span className="text-[10px] font-semibold tracking-[2px] text-[#e8b95d]">
-                LEADERSHIP & ATELIER
+                OUR EXPERTS & CRAFTSMEN
               </span>
             </div>
 
             <h2 className="font-serif text-[36px] sm:text-[46px] lg:text-[52px] leading-[1.1] text-[#f1eee9]">
-              Bespoke Minds shaping{" "}
+              The People Behind the Craft.{" "}
               <br className="hidden sm:inline" />
               <em className="text-[#e8b95d] not-italic italic font-serif">
-                Uncompromising Spaces.
+                Experience in Every Detail.
               </em>
             </h2>
           </div>
 
           <p className="max-w-[480px] text-[13px] sm:text-[14px] leading-[1.8] text-[#9a948c]">
-            A coalition of licensed Swiss architects, Venetian cabinetmakers, and
-            stone mastercraftsmen dedicated to creating enduring private realms.
+            Our team brings together experienced architectural consultants,
+            master glass fabricators, and skilled installation technicians with
+            decades of real-world expertise.
           </p>
         </div>
 

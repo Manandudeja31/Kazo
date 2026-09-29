@@ -71,7 +71,7 @@ export default function Footer({ onNavClick }) {
                 </strong>
                 <span>
                   Experience full-scale pivot doors, acoustic sliding
-                  partitions, and walk-in shower suites
+                  partitions, and walk-in shower suites in person
                 </span>
               </li>
               <li>
@@ -79,17 +79,17 @@ export default function Footer({ onNavClick }) {
                   GURUGRAM DESIGN STUDIO
                 </strong>
                 <span>
-                  Architectural consultations, glass sampling, and custom profile
-                  curation
+                  Consultations for architects, designers, and homeowners with
+                  full glass and frame samples
                 </span>
               </li>
               <li>
                 <strong className="block text-white text-[12px]">
-                  FABRICATION ATELIER
+                  CENTRAL WORKSHOP
                 </strong>
                 <span>
-                  Precision CNC edge-polishing, tempering, and PVD titanium metal
-                  finishing
+                  In-house precision cutting, tempering, custom frame joinery,
+                  and pre-fit testing
                 </span>
               </li>
             </ul>
@@ -98,7 +98,7 @@ export default function Footer({ onNavClick }) {
           {/* Col 3: Navigation */}
           <div>
             <h4 className="text-[11px] font-bold tracking-[2px] text-[#e8b95d] uppercase mb-6">
-              Atelier Directory
+              Quick Links
             </h4>
 
             <ul className="space-y-3 text-[12px] text-[#9a948c]">
@@ -108,7 +108,7 @@ export default function Footer({ onNavClick }) {
                   onClick={(e) => handleLinkClick(e, "home")}
                   className="hover:text-[#e8b95d] transition"
                 >
-                  Principal Overview
+                  Home
                 </a>
               </li>
               <li>
@@ -117,7 +117,7 @@ export default function Footer({ onNavClick }) {
                   onClick={(e) => handleLinkClick(e, "about")}
                   className="hover:text-[#e8b95d] transition"
                 >
-                  Artisanal Heritage & Ethos
+                  About Us
                 </a>
               </li>
               <li>
@@ -126,7 +126,7 @@ export default function Footer({ onNavClick }) {
                   onClick={(e) => handleLinkClick(e, "portfolio")}
                   className="hover:text-[#e8b95d] transition"
                 >
-                  Product Categories (11 Collections)
+                  Product Categories
                 </a>
               </li>
               <li>
@@ -135,7 +135,16 @@ export default function Footer({ onNavClick }) {
                   onClick={(e) => handleLinkClick(e, "process")}
                   className="hover:text-[#e8b95d] transition"
                 >
-                  6-Step Execution Methodology
+                  Our 6-Step Process
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#transformations"
+                  onClick={(e) => handleLinkClick(e, "transformations")}
+                  className="hover:text-[#e8b95d] transition"
+                >
+                  Before & After Transformations
                 </a>
               </li>
               <li>
@@ -144,7 +153,7 @@ export default function Footer({ onNavClick }) {
                   onClick={(e) => handleLinkClick(e, "artisans")}
                   className="hover:text-[#e8b95d] transition"
                 >
-                  Master Joiners & Leadership
+                  Our Team & Craftsmen
                 </a>
               </li>
               <li>
@@ -153,7 +162,7 @@ export default function Footer({ onNavClick }) {
                   onClick={(e) => handleLinkClick(e, "testimonials")}
                   className="hover:text-[#e8b95d] transition"
                 >
-                  Client Perspectives & Endorsements
+                  Client Testimonials
                 </a>
               </li>
               <li>
@@ -162,7 +171,7 @@ export default function Footer({ onNavClick }) {
                   onClick={(e) => handleLinkClick(e, "journal")}
                   className="hover:text-[#e8b95d] transition"
                 >
-                  Materiality & Acoustic Journal
+                  Design Guides & Tips
                 </a>
               </li>
             </ul>
@@ -171,12 +180,12 @@ export default function Footer({ onNavClick }) {
           {/* Col 4: Private Concierge & Newsletter */}
           <div>
             <h4 className="text-[11px] font-bold tracking-[2px] text-[#e8b95d] uppercase mb-6">
-              Private Dispatch
+              Stay in Touch
             </h4>
 
             <p className="text-[12px] leading-[1.7] text-[#8e8880] mb-4">
-              Receive confidential biannual monographs on rare architectural
-              glass innovations and residential door systems.
+              Subscribe for new door designs, glass innovations, and helpful
+              tips for your home or project.
             </p>
 
             <form onSubmit={handleSubscribe} className="space-y-3">
@@ -186,7 +195,7 @@ export default function Footer({ onNavClick }) {
                   required
                   value={newsletterEmail}
                   onChange={(e) => setNewsletterEmail(e.target.value)}
-                  placeholder="Enter private email"
+                  placeholder="Enter your email"
                   className="w-full rounded border border-white/10 bg-[#111] px-4 py-2.5 text-[12px] text-white placeholder-[#555] focus:border-[#e8b95d] focus:outline-none"
                 />
                 <button
@@ -200,7 +209,7 @@ export default function Footer({ onNavClick }) {
               {subscribed && (
                 <div className="flex items-center gap-2 text-[11px] text-[#e8b95d]">
                   <FiCheck size={12} />
-                  <span>Subscribed to Private Dispatch</span>
+                  <span>Subscribed to updates</span>
                 </div>
               )}
             </form>
@@ -263,13 +272,13 @@ export default function Footer({ onNavClick }) {
 
           <div className="flex items-center gap-6">
             <span className="hover:text-[#999] cursor-pointer">
-              Privacy Protocols
+              Privacy Policy
             </span>
             <span className="hover:text-[#999] cursor-pointer">
-              Bilateral NDA Terms
+              Terms of Service
             </span>
             <span className="hover:text-[#999] cursor-pointer">
-              Architectural Provenance
+              Warranty & Support
             </span>
 
             {/* Back to top */}

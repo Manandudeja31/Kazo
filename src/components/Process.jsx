@@ -14,79 +14,79 @@ const phases = [
   {
     step: "01",
     icon: FiMessageSquare,
-    title: "QUERY REQUIREMENTS",
+    title: "UNDERSTANDING YOUR NEEDS",
     tagline: "Step 01",
     summary:
-      "Initial client consultation to understand spatial design intent, functional criteria, and design vision.",
+      "We listen to your ideas, discuss how you want your space to function, and recommend the best door and glass options for your style and budget.",
     deliverables: [
-      "Consultation on spatial aesthetics & usage needs",
-      "Acoustic and transparency requirement analysis",
-      "Preliminary typology & mechanism guidance",
+      "Personal consultation on your project vision and daily needs",
+      "Advice on natural lighting, privacy, and noise reduction",
+      "Initial recommendations on door mechanisms and glass types",
     ],
   },
   {
     step: "02",
     icon: FiCompass,
-    title: "MEASUREMENTS OF AREA",
+    title: "SITE VISIT & ACCURATE SIZING",
     tagline: "Step 02",
     summary:
-      "On-site precision laser surveying to inspect opening dimensions, floor level variances, and wall plumb.",
+      "Our technical team visits your site to take precise measurements of every opening and ensure floor and wall levels are ready for a clean fit.",
     deliverables: [
-      "Sub-millimeter laser-calibrated aperture mapping",
-      "Floor level, ceiling track, and plumb check",
-      "Structural load & jamb capacity verification",
+      "Accurate laser measurement of every door and window opening",
+      "Checking floor levels, ceiling support, and wall alignment",
+      "Identifying on-site conditions early to avoid installation delays",
     ],
   },
   {
     step: "03",
     icon: FiLayers,
-    title: "CHOOSE OF PRODUCT",
+    title: "SELECTING PRODUCTS & FINISHES",
     tagline: "Step 03",
     summary:
-      "Selecting bespoke door typologies, fluted or clear glass variants, profile aesthetics, and hardware finishes.",
+      "Choose your door style, glass texture (clear, fluted, frosted, or tinted), slim frame profile, and matching handle finishes.",
     deliverables: [
-      "Door system choice (pivot, sliding, telescopic, partition)",
-      "Glass texture selection (low-iron, fluted, reeded, tinted)",
-      "Anodized aluminium & PVD titanium hardware sampling",
+      "Choose door mechanisms: pivot, sliding, bi-fold, or fixed partitions",
+      "Select glass textures: clear, extra-clear low-iron, fluted, or tinted",
+      "Pick durable aluminium frame colors and premium handle finishes",
     ],
   },
   {
     step: "04",
     icon: FiFileText,
-    title: "QUOTATION OFFER",
+    title: "TRANSPARENT QUOTATION",
     tagline: "Step 04",
     summary:
-      "Transparent commercial quotation detailing engineered specifications, material costs, and delivery timeline.",
+      "We share a straightforward, detailed quotation with honest pricing, exact material specifications, and a clear timeline.",
     deliverables: [
-      "Transparent, itemized pricing breakdown",
-      "Production timeline and handover schedule",
-      "Engineering specifications & warranty coverage terms",
+      "Itemized pricing breakdown with zero hidden surprises",
+      "Clear production schedule and delivery dates",
+      "Complete material specifications and warranty terms",
     ],
   },
   {
     step: "05",
     icon: FiCpu,
-    title: "PRODUCTION & MANUFACTURING",
+    title: "PRECISION CRAFTING",
     tagline: "Step 05",
     summary:
-      "High-precision CNC cutting, automated tempering furnaces, and custom profile joinery off-site in our atelier.",
+      "Every glass panel and frame is custom-cut, tempered for safety, carefully finished, and pre-tested in our workshop to ensure smooth movement.",
     deliverables: [
-      "Automated CNC glass edge-polishing and waterjet cutouts",
-      "Thermal glass tempering with distortion quality testing",
-      "Factory dry-fit assembly & pivot mechanism calibration",
+      "Precision CNC glass cutting and smooth, safe edge polishing",
+      "Toughened safety glass treated for maximum strength and clarity",
+      "Workshop pre-testing of pivot hinges and sliding tracks before dispatch",
     ],
   },
   {
     step: "06",
     icon: FiAward,
-    title: "INSTALLATION",
+    title: "EXPERT INSTALLATION & HANDOVER",
     tagline: "Step 06",
     summary:
-      "White-glove on-site installation by certified glaziers, laser alignment, and soft-close calibration.",
+      "Our trained technicians install everything neatly on-site, test the movement for smooth and quiet operation, clean up, and walk you through.",
     deliverables: [
-      "Dust-free on-site mounting by specialized technicians",
-      "Hydraulic soft-close speed and zero-gap alignment tuning",
-      "Final optical polish, inspection, and ceremonial handover",
+      "Clean and careful on-site installation by our own experienced team",
+      "Fine-tuning soft-close dampers and door alignment for silent glide",
+      "Final cleaning, thorough quality check, and walkthrough with you",
     ],
   },
 ];
@@ -105,22 +105,22 @@ export default function Process() {
           <div className="mb-4 inline-flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-[#e8b95d]" />
             <span className="text-[10px] font-semibold tracking-[2px] text-[#e8b95d]">
-              OUR METHODOLOGY
+              HOW WE WORK
             </span>
           </div>
 
           <h2 className="font-serif text-[34px] sm:text-[46px] lg:text-[52px] leading-[1.1] text-[#f1eee9]">
-            Rigorous Execution Framework
+            From First Idea to Final Fit.
             <br />
             <em className="text-[#e8b95d] not-italic italic font-serif">
-              6 Steps of Our Process.
+              Our 6-Step Process.
             </em>
           </h2>
 
           <p className="mt-5 text-[13px] sm:text-[15px] leading-[1.8] text-[#9a948c]">
-            A seamless, transparent architectural journey from initial query
-            consultation through laser measurement, production, and white-glove
-            installation.
+            We guide you through every stage—from discussing your ideas and
+            measuring your space accurately, to crafting each piece and
+            installing it neatly in your home.
           </p>
         </div>
 
@@ -190,7 +190,7 @@ export default function Process() {
           <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-8 items-center">
             <div>
               <div className="flex items-center gap-3 text-[#e8b95d] text-[10px] font-bold tracking-[2px] mb-2">
-                <span>STEP {phases[activeStep].step} DEEP DIVE</span>
+                <span>STEP {phases[activeStep].step} OVERVIEW</span>
                 <span>•</span>
                 <span>{phases[activeStep].tagline}</span>
               </div>
@@ -201,14 +201,14 @@ export default function Process() {
 
               <p className="mt-3 text-[13px] sm:text-[14px] leading-[1.8] text-[#9f9a91]">
                 {phases[activeStep].summary} Executed by Kazo Glass & Door’s
-                in-house engineering team and certified glazier technicians to
-                guarantee 0.4mm tolerance standards.
+                in-house team to ensure every door and window fits smoothly and
+                lasts for years.
               </p>
             </div>
 
             <div className="bg-[#181818] p-5 sm:p-6 rounded-lg border border-white/5">
               <p className="text-[10px] font-bold tracking-[1.5px] text-[#e8b95d] mb-4">
-                CORE PROTOCOLS & DELIVERABLES:
+                WHAT WE DELIVER IN THIS STEP:
               </p>
 
               <ul className="space-y-3">
@@ -238,10 +238,10 @@ export default function Process() {
 
             <div>
               <h5 className="font-serif text-[18px] sm:text-[20px] text-[#f4efe8]">
-                Rigorous Turnkey Delivery & Handover Guarantee*
+                Complete Peace of Mind From Start to Finish
               </h5>
               <p className="text-[11px] text-[#8e8880] mt-0.5">
-                Applicable across custom pivot doors, sliding partitions, and architectural glazing systems.
+                Every door, partition, and window comes with dependable craftsmanship, honest advice, and dedicated after-installation support.
               </p>
             </div>
           </div>
@@ -250,7 +250,7 @@ export default function Process() {
             href="#contact"
             className="shrink-0 bg-[#e8b95d] px-6 py-3 text-[10px] font-bold tracking-[1.5px] text-black hover:bg-[#f5d084] transition"
           >
-            START YOUR INQUIRY
+            GET IN TOUCH WITH US
           </a>
         </div>
       </div>

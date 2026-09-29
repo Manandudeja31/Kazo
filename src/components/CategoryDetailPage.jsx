@@ -132,18 +132,18 @@ export default function CategoryDetailPage({
           {/* Direct WhatsApp Callout */}
           <div className="flex items-center gap-3">
             <span className="hidden md:inline text-[11px] text-[#888]">
-              Need custom fabrication specs?
+              Have questions about this category?
             </span>
             <a
               href={`https://wa.me/918810369142?text=${encodeURIComponent(
-                `Hi Kazo, I'm viewing your "${currentCategory.title}" gallery and have a query.`
+                `Hi Kazo, I'm viewing your "${currentCategory.title}" gallery and have a question.`
               )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-full bg-[#25D366]/15 hover:bg-[#25D366] text-[#25D366] hover:text-black border border-[#25D366]/30 px-3.5 py-1 text-[11px] font-bold tracking-wider transition-all"
             >
               <FaWhatsapp size={14} />
-              <span>WhatsApp Inquiry</span>
+              <span>Chat on WhatsApp</span>
             </a>
           </div>
         </div>
@@ -219,7 +219,7 @@ export default function CategoryDetailPage({
               <div className="mb-3 flex items-center gap-2.5">
                 <span className="h-2 w-2 rounded-full bg-[#e8b95d] shadow-[0_0_8px_#e8b95d]" />
                 <span className="text-[10px] font-bold tracking-[2px] text-[#e8b95d] uppercase">
-                  Product Image Showcase • Category {currentCategory.id} of 11
+                  Product Showcase • Category {currentCategory.id} of 11
                 </span>
               </div>
 
@@ -241,7 +241,7 @@ export default function CategoryDetailPage({
                   {products.length}
                 </span>
                 <p className="text-[10px] font-semibold tracking-[1.5px] text-[#888] uppercase">
-                  Product Models Shown
+                  Featured Designs
                 </p>
               </div>
               <div className="h-8 w-px bg-white/10 mx-2" />
@@ -250,7 +250,7 @@ export default function CategoryDetailPage({
                   0.4mm
                 </span>
                 <p className="text-[10px] font-semibold tracking-[1.5px] text-[#888] uppercase">
-                  Precision Standard
+                  Built to Last
                 </p>
               </div>
             </div>
@@ -263,7 +263,7 @@ export default function CategoryDetailPage({
         <div className="mx-auto max-w-[1700px]">
           <div className="mb-8 flex items-center justify-between text-left">
             <h2 className="text-[12px] font-bold tracking-[2px] text-[#888] uppercase">
-              Curated Architectural Gallery ({products.length} Items)
+              Product Gallery & Designs ({products.length} Items)
             </h2>
             <p className="text-[11px] text-[#666]">
               Click any image to view in high resolution
@@ -351,14 +351,14 @@ export default function CategoryDetailPage({
           <div className="mt-16 sm:mt-20 rounded-2xl bg-gradient-to-r from-[#171717] via-[#1c1c1c] to-[#171717] border border-[#e8b95d]/30 p-8 sm:p-12 text-center lg:text-left flex flex-col lg:flex-row items-center justify-between gap-8 shadow-2xl">
             <div className="max-w-2xl">
               <span className="text-[10px] font-bold tracking-[2px] text-[#e8b95d] uppercase">
-                Custom Architectural Commissioning
+                Custom Sizes & Fitting
               </span>
               <h3 className="font-serif text-[24px] sm:text-[32px] text-white mt-1">
-                Need tailored dimensions or site measurements?
+                Need custom sizes or an on-site visit?
               </h3>
               <p className="mt-2 text-[13px] sm:text-[14px] text-[#a8a298] leading-relaxed">
-                Our master fabricators and engineers provide on-site laser
-                surveying, CAD detailing, and precision manufacturing for all{" "}
+                Our team provides site visits, accurate measurements, and custom
+                fabrication for all{" "}
                 <span className="text-[#e8b95d]">{currentCategory.title}</span>.
               </p>
             </div>
@@ -373,7 +373,7 @@ export default function CategoryDetailPage({
                 className="inline-flex items-center justify-center gap-2.5 rounded-full bg-[#e8b95d] hover:bg-[#f3cd82] text-black px-7 py-3 text-[12px] font-bold tracking-[1.5px] uppercase transition shadow-lg shadow-[#e8b95d]/20"
               >
                 <FaWhatsapp size={16} />
-                <span>Chat with Architect</span>
+                <span>Chat on WhatsApp</span>
               </a>
 
               <button

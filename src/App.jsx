@@ -6,6 +6,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Philosophy from "./components/Philosophy";
 import Process from "./components/Process";
+import Transformations from "./components/Transformations";
 import Artisans from "./components/Artisans";
 import Testimonials from "./components/Testimonials";
 import Journal from "./components/Journal";
@@ -94,6 +95,7 @@ function App() {
           <Portfolio onSelectCategory={handleSelectCategory} />
           <Philosophy />
           <Process />
+          <Transformations />
           <Artisans />
           <Testimonials />
           <Journal />

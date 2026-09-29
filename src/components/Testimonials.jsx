@@ -3,27 +3,27 @@ import { FiStar } from "react-icons/fi";
 const testimonials = [
   {
     quote:
-      "Atelier Obsidian transformed our duplex into an acoustic haven. The Calacatta bookmatching in the salon is nothing short of museum sculpture.",
-    author: "LORD SEBASTIAN K.",
-    residence: "Mayfair Penthouse, London",
-    commissionYear: "COMMISSION 2024",
-    initials: "SK",
+      "The pivot front door and slim sliding glass partitions completely transformed our living space. The door moves with zero effort and closes with a quiet, satisfying feel. The Kazo team handled everything cleanly from measurement to final fitting.",
+    author: "VIKRAM MALHOTRA",
+    residence: "Private Villa, New Delhi",
+    commissionYear: "PROJECT COMPLETED 2025",
+    initials: "VM",
   },
   {
     quote:
-      "Their 0.4mm tolerance standard is genuine. In 30 years of commissioning residential properties globally, I have never seen timber joinery executed with such immaculate silence.",
-    author: "HIROSHI TANAKA",
-    residence: "Private Villa, Kyoto",
-    commissionYear: "COMMISSION 2025",
-    initials: "HT",
+      "As an architect, finding dependable partners who deliver clean glass detailing on schedule is rare. Kazo fabricated our office fluted partitions and acoustic meeting room doors with great precision. Our clients love the space.",
+    author: "ANANYA SEN",
+    residence: "Principal Architect, Gurugram",
+    commissionYear: "COMMERCIAL PROJECT 2025",
+    initials: "AS",
   },
   {
     quote:
-      "From direct quarry selection in Carrara to the final ceremonial key handover, the bureau exhibited unparalleled discretion, timing, and architectural prowess.",
-    author: "MARIE-CLAIRE DE LA TOUR",
-    residence: "Alpine Retreat, Gstaad",
-    commissionYear: "COMMISSION 2025",
-    initials: "MC",
+      "We visited their showroom in Delhi before deciding on our wardrobe glass shutters and walk-in shower cubicles. Seeing the quality in person made the decision easy. The fitting was smooth, clean, and done right on schedule.",
+    author: "RAJESH & NEHA KAPOOR",
+    residence: "Apartment Renovation, South Delhi",
+    commissionYear: "HOME RENOVATION 2024",
+    initials: "RK",
   },
 ];
 
@@ -39,20 +39,20 @@ export default function Testimonials() {
           <div className="mb-4 inline-flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-[#e8b95d]" />
             <span className="text-[10px] font-semibold tracking-[2px] text-[#e8b95d]">
-              CLIENT PERSPECTIVES
+              WHAT OUR CLIENTS SAY
             </span>
           </div>
 
           <h2 className="font-serif text-[34px] sm:text-[46px] lg:text-[50px] leading-[1.1] text-[#f1eee9]">
-            Endorsement of{" "}
+            Real Experiences from{" "}
             <em className="text-[#e8b95d] not-italic italic font-serif">
-              Bespoke Mastery.
+              People Who Chose Kazo.
             </em>
           </h2>
 
           <p className="mt-4 text-[13px] sm:text-[14px] leading-[1.8] text-[#938e87]">
-            Strict discretion governs our relationships. Client identities are
-            redacted in accordance with international Non-Disclosure Agreements.
+            Honest feedback from homeowners, architects, and interior designers
+            who trusted Kazo Glass & Door for their spaces.
           </p>
         </div>
 

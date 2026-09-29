@@ -6,7 +6,7 @@ export default function FloatingWhatsApp() {
 
   const whatsappNumber = "918810369142";
   const defaultMessage = encodeURIComponent(
-    "Hello Kazo Glass & Door, I would like to inquire about your architectural glass and bespoke door solutions."
+    "Hello Kazo Glass & Door, I would like to know more about your doors, windows, and glass solutions."
   );
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${defaultMessage}`;
 

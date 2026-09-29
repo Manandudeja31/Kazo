@@ -4,45 +4,45 @@ import { FiArrowRight, FiClock, FiX } from "react-icons/fi";
 const articles = [
   {
     id: 1,
-    tag: "OPTICAL CLARITY • 5 MIN READ",
-    category: "GLASS INNOVATION",
-    title: "The Optical Purity of Low-Iron Crystal in Contemporary Spaces",
+    tag: "GLASS GUIDE • 4 MIN READ",
+    category: "GLASS CLARITY",
+    title: "Why Clear, Low-Iron Glass Makes Rooms Look Bigger and Brighter",
     summary:
-      "Why eliminating iron oxide creates crystal-clear transparency, truer color fidelity, and breathtaking light transmission.",
+      "Standard glass often has a subtle greenish tint. Here's why low-iron clear glass gives you cleaner, brighter views and truer colors.",
     image:
       "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=1000&auto=format&fit=crop",
     date: "OCTOBER 2025",
-    author: "Kazo Glazing Bureau",
+    author: "Kazo Design Team",
     content:
-      "Standard architectural glass contains ferric oxide, casting a greenish hue that compromises modern neutral interiors. Low-iron glass (Starphire) eliminates this tint, offering 91% light transmittance and absolute color neutrality. When applied in full-height partitions and luxury shower cubicles, the glass virtually dissolves, allowing continuous spatial sightlines.",
+      "Most standard architectural glass has a slight greenish tint caused by iron content. If you want pure clarity—especially for walk-in shower enclosures, large windows, and open glass partitions—low-iron glass is the ideal choice. It lets in up to 91% of natural daylight and shows the true colors of your interior finishes, tiles, and furnishings without any dark or greenish tint.",
   },
   {
     id: 2,
     tag: "DOOR MECHANICS • 4 MIN READ",
     category: "PIVOT SYSTEMS",
-    title: "The Engineering of Silent Glide: Pivot & Telescopic Sliding Doors",
+    title: "How Heavy Pivot Doors Move with Just a Gentle Push",
     summary:
-      "Balancing monumental glass weights with effortless zero-resistance movement and concealed hydraulic dampening.",
+      "Learn how modern floor pivot systems carry large door weights effortlessly, giving you silent and smooth movement every time.",
     image:
       "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1000&auto=format&fit=crop",
     date: "NOVEMBER 2025",
-    author: "Kazo Technical Team",
+    author: "Kazo Engineering Team",
     content:
-      "A 3.5-meter glass pivot door can easily weigh upwards of 180 kilograms. Our German concealed floor pivots distribute this structural load directly onto the sub-floor slab, eliminating structural frame sag. Paired with magnetic acoustic drop seals and magnetic latch catches, closing the door produces a deep, satisfying tactile thud with zero mechanical rattle.",
+      "A large 8-to-10 foot glass pivot door can easily weigh over 150 kg, but opening it shouldn't feel like a workout. By anchoring the pivot mechanism into the floor rather than hanging all the weight from the wall frame, the door swings smoothly with just a fingertip touch. Paired with soft-close hydraulic dampers, it closes securely and quietly without slamming or vibrating.",
   },
   {
     id: 3,
-    tag: "FRAMELESS SYSTEMS • 7 MIN READ",
-    category: "ARCHITECTURAL GLAZING",
-    title: "The Art of Minimalist Profiles: Fluted Glass & PVD Titanium Finishes",
+    tag: "DESIGN TIPS • 5 MIN READ",
+    category: "PARTITIONS & SHUTTERS",
+    title: "Fluted Glass & Slim Frames: Light and Privacy in Perfect Balance",
     summary:
-      "A study of textured architectural glass, acoustic transmission barriers, and surgical PVD surface metallurgy.",
+      "Why textured fluted glass and slim aluminum frames are a favorite choice for modern room dividers, bathrooms, and wardrobes.",
     image:
       "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=1000&auto=format&fit=crop",
     date: "DECEMBER 2025",
-    author: "Kazo Design Atelier",
+    author: "Kazo Studio Team",
     content:
-      "Fluted and reeded architectural glass introduces tactile rhythm while diffusing directional glare into soft ambient illumination. When framed with ultra-slim aerospace-grade aluminium finished with vacuum-deposited PVD titanium in champagne bronze or deep matte obsidian, doors become sculptural architectural thresholds rather than utilitarian barriers.",
+      "Fluted (or reeded) glass creates a beautiful striped texture that lets light flow freely while gently blurring the view for privacy. Combined with ultra-slim aluminum frames in matte black, brass, or champagne finishes, it adds character to room dividers, wardrobe doors, and bathroom partitions without blocking natural daylight.",
   },
 ];
 
@@ -61,14 +61,14 @@ export default function Journal() {
             <div className="mb-4 flex items-center gap-3">
               <span className="h-2 w-2 rounded-full bg-[#e8b95d]" />
               <span className="text-[10px] font-semibold tracking-[2px] text-[#e8b95d]">
-                ATELIER DISCOURSE
+                HELPFUL TIPS & GUIDES
               </span>
             </div>
 
             <h2 className="font-serif text-[34px] sm:text-[44px] lg:text-[48px] leading-[1.15] text-[#f1eee9]">
-              Insights on{" "}
+              Simple Guides to Choosing{" "}
               <em className="text-[#e8b95d] not-italic italic font-serif">
-                Materiality & Space.
+                Doors, Windows & Glass.
               </em>
             </h2>
           </div>
@@ -77,7 +77,7 @@ export default function Journal() {
             href="#journal"
             className="group inline-flex items-center gap-2 text-[11px] font-bold tracking-[1.5px] text-[#e8b95d] hover:text-[#f4d186] transition"
           >
-            <span>EXPLORE ALL ESSAYS</span>
+            <span>EXPLORE ALL GUIDES</span>
             <FiArrowRight
               size={14}
               className="transition-transform group-hover:translate-x-1"
@@ -124,7 +124,7 @@ export default function Journal() {
 
               {/* Read Link */}
               <div className="px-7 pb-7 pt-2 flex items-center gap-2 text-[10px] font-bold tracking-[1px] text-[#e8b95d]">
-                <span>READ MONOGRAPH</span>
+                <span>READ ARTICLE</span>
                 <FiArrowRight
                   size={12}
                   className="transition-transform group-hover:translate-x-1"
@@ -181,7 +181,7 @@ export default function Journal() {
                 onClick={() => setSelectedArticle(null)}
                 className="bg-[#e8b95d] px-6 py-2.5 text-[11px] font-bold tracking-[1.5px] text-black hover:bg-[#f5d084] transition"
               >
-                CLOSE ESSAY
+                CLOSE ARTICLE
               </button>
             </div>
           </div>

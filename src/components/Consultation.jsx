@@ -7,8 +7,8 @@ export default function Consultation() {
     email: "",
     phone: "",
     location: "",
-    typology: "Penthouse",
-    investment: "$3M - $7M",
+    typology: "Pivot Doors (Entrance / Internal)",
+    investment: "₹5,00,000 — ₹15,00,000",
     message: "",
   });
 
@@ -38,21 +38,21 @@ export default function Consultation() {
           <div className="mb-4 inline-flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-[#e8b95d]" />
             <span className="text-[10px] font-semibold tracking-[2px] text-[#e8b95d]">
-              COMMISSION AN ATELIER
+              GET IN TOUCH
             </span>
           </div>
 
           <h2 className="font-serif text-[34px] sm:text-[46px] lg:text-[52px] leading-[1.1] text-[#f1eee9]">
-            Reserve Your{" "}
+            Let’s Talk About{" "}
             <em className="text-[#e8b95d] not-italic italic font-serif">
-              Private Consultation.
+              Your Project.
             </em>
           </h2>
 
           <p className="mt-4 max-w-xl mx-auto text-[13px] sm:text-[14px] leading-[1.8] text-[#938e87]">
-            We accept a strictly limited number of private residential
-            commissions annually to ensure direct principal immersion and
-            sub-millimeter craftsmanship.
+            Whether you're planning a new home, upgrading your windows, or
+            designing an office, our team is ready to answer questions, share
+            samples, and help you find the right fit.
           </p>
         </div>
 
@@ -64,12 +64,12 @@ export default function Consultation() {
                 <FiCheckCircle size={32} />
               </div>
               <h3 className="font-serif text-[26px] sm:text-[30px] text-white">
-                Consultation Request Received
+                Thank You! We’ve Received Your Inquiry
               </h3>
               <p className="mt-3 max-w-md mx-auto text-[13px] leading-[1.7] text-[#9a948c]">
-                Our Managing Principal will review your project brief under
-                strict confidentiality and contact you within 24 hours to schedule
-                a private virtual or in-person briefing.
+                Our team will review your requirements and get in touch with you
+                within 24 hours to discuss options or schedule a visit to our
+                Delhi showroom.
               </p>
               <button
                 onClick={() => setSubmitted(false)}
@@ -93,14 +93,14 @@ export default function Consultation() {
                     onChange={(e) =>
                       setFormData({ ...formData, fullName: e.target.value })
                     }
-                    placeholder="e.g. Alistair Vance"
+                    placeholder="e.g. Rahul Sharma"
                     className="w-full rounded-md border border-white/10 bg-[#181818] px-4 py-3 text-[13px] text-white placeholder-[#555] focus:border-[#e8b95d] focus:outline-none transition"
                   />
                 </div>
 
                 <div>
                   <label className="block text-[10px] font-bold tracking-[1.5px] text-[#aaa] uppercase mb-2">
-                    Confidential Email *
+                    Email Address *
                   </label>
                   <input
                     type="email"
@@ -109,7 +109,7 @@ export default function Consultation() {
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
                     }
-                    placeholder="e.g. principal@estate.ch"
+                    placeholder="e.g. rahul@example.com"
                     className="w-full rounded-md border border-white/10 bg-[#181818] px-4 py-3 text-[13px] text-white placeholder-[#555] focus:border-[#e8b95d] focus:outline-none transition"
                   />
                 </div>
@@ -119,15 +119,16 @@ export default function Consultation() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-[10px] font-bold tracking-[1.5px] text-[#aaa] uppercase mb-2">
-                    Direct Phone Number
+                    Phone Number *
                   </label>
                   <input
                     type="tel"
+                    required
                     value={formData.phone}
                     onChange={(e) =>
                       setFormData({ ...formData, phone: e.target.value })
                     }
-                    placeholder="+1 (212) 000-0000"
+                    placeholder="e.g. +91 98765 43210"
                     className="w-full rounded-md border border-white/10 bg-[#181818] px-4 py-3 text-[13px] text-white placeholder-[#555] focus:border-[#e8b95d] focus:outline-none transition"
                   />
                 </div>
@@ -143,7 +144,7 @@ export default function Consultation() {
                     onChange={(e) =>
                       setFormData({ ...formData, location: e.target.value })
                     }
-                    placeholder="e.g. London, Zurich, Aspen, Minato"
+                    placeholder="e.g. South Delhi, Gurugram, Noida"
                     className="w-full rounded-md border border-white/10 bg-[#181818] px-4 py-3 text-[13px] text-white placeholder-[#555] focus:border-[#e8b95d] focus:outline-none transition"
                   />
                 </div>
@@ -153,7 +154,7 @@ export default function Consultation() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-[10px] font-bold tracking-[1.5px] text-[#aaa] uppercase mb-2">
-                    Spatial Glazing & Door Typology
+                    What are you looking for?
                   </label>
                   <select
                     value={formData.typology}
@@ -162,18 +163,19 @@ export default function Consultation() {
                     }
                     className="w-full rounded-md border border-white/10 bg-[#181818] px-4 py-3 text-[13px] text-[#e8b95d] focus:border-[#e8b95d] focus:outline-none transition"
                   >
-                    <option value="Bespoke Pivot Doors">Bespoke Pivot Doors (Internal / Entrance)</option>
-                    <option value="Sliding Glass Partitions">Telescopic & Sliding Glass Partitions</option>
-                    <option value="Wardrobe Glass Doors">Bespoke Glass Wardrobe Doors</option>
-                    <option value="Acoustic Partitions">Acoustic Fluted Glass Dividers</option>
-                    <option value="Shower Enclosures">Luxury Shower Cubicles & Enclosures</option>
-                    <option value="Glass Railings">Glass Railings & Architectural Facades</option>
+                    <option value="Pivot Doors (Entrance / Internal)">Pivot Doors (Entrance / Internal)</option>
+                    <option value="Sliding Glass Doors & Partitions">Sliding Glass Doors & Room Partitions</option>
+                    <option value="Glass Wardrobe Shutters">Glass Wardrobe Doors & Closets</option>
+                    <option value="Shower Cubicles & Enclosures">Shower Cubicles & Enclosures</option>
+                    <option value="Aluminium & uPVC Windows">Aluminium & uPVC Doors / Windows</option>
+                    <option value="Glass Railings & Balconies">Glass Railings & Balconies</option>
+                    <option value="Multiple / Full Project">Multiple / Full House Package</option>
                   </select>
                 </div>
 
                 <div>
                   <label className="block text-[10px] font-bold tracking-[1.5px] text-[#aaa] uppercase mb-2">
-                    Anticipated Investment Scope
+                    Estimated Budget Range
                   </label>
                   <select
                     value={formData.investment}
@@ -182,10 +184,10 @@ export default function Consultation() {
                     }
                     className="w-full rounded-md border border-white/10 bg-[#181818] px-4 py-3 text-[13px] text-[#e8b95d] focus:border-[#e8b95d] focus:outline-none transition"
                   >
-                    <option value="Under ₹5 Lakhs">Under ₹5,00,000</option>
-                    <option value="₹5L - ₹15L">₹5,00,000 — ₹15,00,000</option>
-                    <option value="₹15L - ₹35L">₹15,00,000 — ₹35,00,000</option>
-                    <option value="₹35L+">₹35,00,000+ (Full Residence / Estate)</option>
+                    <option value="Under ₹5,00,000">Under ₹5,00,000</option>
+                    <option value="₹5,00,000 — ₹15,00,000">₹5,00,000 — ₹15,00,000</option>
+                    <option value="₹15,00,000 — ₹35,00,000">₹15,00,000 — ₹35,00,000</option>
+                    <option value="₹35,00,000+ (Full Home or Commercial Space)">₹35,00,000+ (Full Home or Commercial Space)</option>
                   </select>
                 </div>
               </div>
@@ -193,7 +195,7 @@ export default function Consultation() {
               {/* Row 4: Project Brief */}
               <div>
                 <label className="block text-[10px] font-bold tracking-[1.5px] text-[#aaa] uppercase mb-2">
-                  Project Brief & Material Preferences
+                  Tell us a bit about your project
                 </label>
                 <textarea
                   rows="4"
@@ -201,7 +203,7 @@ export default function Consultation() {
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
-                  placeholder="Describe your aperture dimensions, door mechanism (pivot/sliding), glass texture (fluted/low-iron), or architectural requirements..."
+                  placeholder="Tell us what you have in mind—such as room type, glass style (clear, fluted, tinted), rough sizes, or any questions you have..."
                   className="w-full rounded-md border border-white/10 bg-[#181818] px-4 py-3 text-[13px] text-white placeholder-[#555] focus:border-[#e8b95d] focus:outline-none transition resize-none"
                 ></textarea>
               </div>
@@ -210,7 +212,7 @@ export default function Consultation() {
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="flex items-center gap-2 text-[11px] text-[#777]">
                   <FiLock className="text-[#e8b95d]" size={14} />
-                  <span>Strict confidentiality & bilateral NDAs honored</span>
+                  <span>We respect your privacy and never share your details</span>
                 </div>
 
                 <button
@@ -219,10 +221,10 @@ export default function Consultation() {
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#e8b95d] px-8 py-3.5 text-[11px] font-bold tracking-[1.5px] text-black hover:bg-[#f5d084] transition shadow-lg shadow-[#e8b95d]/20 cursor-pointer disabled:opacity-70"
                 >
                   {isSubmitting ? (
-                    <span>PROCESSING...</span>
+                    <span>SENDING...</span>
                   ) : (
                     <>
-                      <span>CONFIRM CONSULTATION REQUEST</span>
+                      <span>SEND INQUIRY</span>
                       <FiSend size={13} />
                     </>
                   )}
