@@ -53,7 +53,7 @@ export default function Footer({ onNavClick }) {
                 SHOWROOM & STUDIOS:
               </span>
               <p className="text-[11px] text-[#666] mt-1">
-                Delhi NCR • Mansarover Garden, Ring Road Showroom
+                Rajouri Garden, Delhi
               </p>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Footer({ onNavClick }) {
                   partitions, and walk-in shower suites in person
                 </span>
               </li>
-              <li>
+              {/* <li>
                 <strong className="block text-white text-[12px]">
                   GURUGRAM DESIGN STUDIO
                 </strong>
@@ -82,7 +82,7 @@ export default function Footer({ onNavClick }) {
                   Consultations for architects, designers, and homeowners with
                   full glass and frame samples
                 </span>
-              </li>
+              </li> */}
               <li>
                 <strong className="block text-white text-[12px]">
                   CENTRAL WORKSHOP
@@ -265,13 +265,13 @@ export default function Footer({ onNavClick }) {
         </div>
 
         {/* ================= BOTTOM BAR ================= */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#666]">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-center gap-4 text-[11px] text-[#666]">
           <p>
             © {new Date().getFullYear()} KAZO GLASS & DOOR™. ALL RIGHTS RESERVED.
           </p>
 
           <div className="flex items-center gap-6">
-            <span className="hover:text-[#999] cursor-pointer">
+            {/* <span className="hover:text-[#999] cursor-pointer">
               Privacy Policy
             </span>
             <span className="hover:text-[#999] cursor-pointer">
@@ -279,16 +279,16 @@ export default function Footer({ onNavClick }) {
             </span>
             <span className="hover:text-[#999] cursor-pointer">
               Warranty & Support
-            </span>
+            </span> */}
 
             {/* Back to top */}
-            <button
+            {/* <button
               onClick={scrollToTop}
               className="flex h-8 w-8 items-center justify-center rounded-full bg-[#181818] text-[#e8b95d] hover:bg-[#e8b95d] hover:text-black transition cursor-pointer"
               aria-label="Back to top"
             >
               <FiArrowUp size={14} />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
