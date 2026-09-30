@@ -6,12 +6,18 @@ const navLinks = [
   { name: "HOME", id: "home" },
   { name: "ABOUT US", id: "about" },
   { name: "PORTFOLIO", id: "portfolio" },
+  { name: "GUIDES", id: "blogs" },
   { name: "CONTACT", id: "contact" },
 ];
 
-export default function Navbar({ onNavClick }) {
+export default function Navbar({ onNavClick, currentRoute }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedLink, setSelectedLink] = useState("");
+
+  const activeId =
+    currentRoute === "blogs" || currentRoute === "blog-detail"
+      ? "blogs"
+      : selectedLink;
 
   const handleNavClick = (id) => {
     setMenuOpen(false);
@@ -49,14 +55,14 @@ export default function Navbar({ onNavClick }) {
               key={link.name}
               onClick={() => handleNavClick(link.id)}
               className={`relative py-7 text-[10px] font-semibold tracking-[1.5px] cursor-pointer transition-colors ${
-                link.id === selectedLink
+                link.id === activeId
                   ? "text-[#e8bb68]"
                   : "text-[#aaa39a] hover:text-[#e8bb68]"
               }`}
             >
               {link.name}
 
-              {link.id === selectedLink && (
+              {link.id === activeId && (
                 <span className="absolute bottom-0 left-0 h-[2px] w-full bg-[#e8bb68]" />
               )}
             </button>
@@ -108,7 +114,7 @@ export default function Navbar({ onNavClick }) {
               key={link.name}
               onClick={() => handleNavClick(link.id)}
               className={`block w-full text-left border-b border-white/5 py-4 text-[11px] font-semibold tracking-[1.5px] cursor-pointer ${
-                link.id === selectedLink ? "text-[#e8bb68]" : "text-[#aaa39a]"
+                link.id === activeId ? "text-[#e8bb68]" : "text-[#aaa39a]"
               }`}
             >
               {link.name}

@@ -14,21 +14,54 @@ import Consultation from "./components/Consultation";
 import Footer from "./components/Footer";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import CategoryDetailPage from "./components/CategoryDetailPage";
+import ExploreBlogsPage from "./components/ExploreBlogsPage";
+import BlogDetailPage from "./components/BlogDetailPage";
 
-function parseCategoryFromHash() {
+function parseRouteFromHash() {
   const hash = window.location.hash || "";
-  const match = hash.match(/^#\/?category\/([a-zA-Z0-9_-]+)/);
-  return match ? match[1] : null;
+
+  // Blog Detail: #/blog/:slug or #/journal/:slug
+  const blogDetailMatch = hash.match(/^#\/?(?:blog|journal)\/([a-zA-Z0-9_-]+)/);
+  if (blogDetailMatch) {
+    return { type: "blog-detail", slug: blogDetailMatch[1] };
+  }
+
+  // Explore All Blogs: #/blogs or #blogs
+  if (hash === "#/blogs" || hash === "#blogs") {
+    return { type: "blogs" };
+  }
+
+  // Category Detail: #/category/:slug
+  const categoryMatch = hash.match(/^#\/?category\/([a-zA-Z0-9_-]+)/);
+  if (categoryMatch) {
+    return { type: "category-detail", slug: categoryMatch[1] };
+  }
+
+  // Default to home page
+  const section = hash.startsWith("#") ? hash.slice(1) : "";
+  return { type: "home", section };
 }
 
 function App() {
-  const [categorySlug, setCategorySlug] = useState(() => parseCategoryFromHash());
+  const [currentRoute, setCurrentRoute] = useState(() => parseRouteFromHash());
 
   useEffect(() => {
     const handleHashChange = () => {
-      const slug = parseCategoryFromHash();
-      setCategorySlug(slug);
-      if (slug) {
+      const route = parseRouteFromHash();
+      setCurrentRoute(route);
+
+      if (route.type === "home") {
+        if (route.section) {
+          setTimeout(() => {
+            const el = document.getElementById(route.section);
+            if (el) {
+              el.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          }, 80);
+        } else {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      } else {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
     };
@@ -37,41 +70,73 @@ function App() {
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
-  const handleSelectCategory = (slug) => {
-    window.location.hash = `#/category/${slug}`;
-    setCategorySlug(slug);
+  // Handlers for navigation
+  const handleSelectBlog = (slug) => {
+    window.location.hash = `#/blog/${slug}`;
+    setCurrentRoute({ type: "blog-detail", slug });
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handleBackToHome = () => {
-    window.location.hash = "#portfolio";
-    setCategorySlug(null);
-    setTimeout(() => {
-      const el = document.getElementById("portfolio");
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      } else {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
-    }, 50);
+  const handleExploreBlogs = () => {
+    window.location.hash = "#/blogs";
+    setCurrentRoute({ type: "blogs" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handleNavClick = (id) => {
-    if (categorySlug) {
-      window.location.hash = `#${id}`;
-      setCategorySlug(null);
+  const handleSelectCategory = (slug) => {
+    window.location.hash = `#/category/${slug}`;
+    setCurrentRoute({ type: "category-detail", slug });
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleBackToHome = (section = null) => {
+    if (section) {
+      window.location.hash = `#${section}`;
+      setCurrentRoute({ type: "home", section });
       setTimeout(() => {
-        const el = document.getElementById(id);
+        const el = document.getElementById(section);
         if (el) {
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          el.scrollIntoView({ behavior: "smooth" });
         } else {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }
-      }, 80);
+      }, 50);
     } else {
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      window.location.hash = "";
+      setCurrentRoute({ type: "home", section: "" });
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+  const handleNavClick = (id) => {
+    if (id === "blogs") {
+      handleExploreBlogs();
+      return;
+    }
+
+    if (currentRoute.type !== "home") {
+      window.location.hash = `#${id}`;
+      setCurrentRoute({ type: "home", section: id });
+      setTimeout(() => {
+        if (id === "home") {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+          const el = document.getElementById(id);
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth", block: "start" });
+          } else {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        }
+      }, 100);
+    } else {
+      if (id === "home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
       }
     }
   };
@@ -79,13 +144,30 @@ function App() {
   return (
     <div className="min-h-screen bg-[#090909] text-[#f4f1ec] selection:bg-[#e8b95d]/30 selection:text-[#f4f1ec]">
       {/* Universal Navbar */}
-      <Navbar onNavClick={handleNavClick} />
+      <Navbar
+        onNavClick={handleNavClick}
+        currentRoute={currentRoute.type}
+      />
 
-      {/* Main Content: Category Page or Full Landing Page */}
-      {categorySlug ? (
+      {/* Main Content Router */}
+      {currentRoute.type === "blog-detail" ? (
+        <BlogDetailPage
+          blogSlug={currentRoute.slug}
+          onBackToBlogs={handleExploreBlogs}
+          onBackToHome={() => handleBackToHome("journal")}
+          onSelectBlog={handleSelectBlog}
+          onNavClick={handleNavClick}
+        />
+      ) : currentRoute.type === "blogs" ? (
+        <ExploreBlogsPage
+          onSelectBlog={handleSelectBlog}
+          onBackToHome={() => handleBackToHome("journal")}
+          onNavClick={handleNavClick}
+        />
+      ) : currentRoute.type === "category-detail" ? (
         <CategoryDetailPage
-          categorySlug={categorySlug}
-          onBack={handleBackToHome}
+          categorySlug={currentRoute.slug}
+          onBack={() => handleBackToHome("portfolio")}
           onSelectCategory={handleSelectCategory}
         />
       ) : (
@@ -98,7 +180,10 @@ function App() {
           <Transformations />
           <Artisans />
           <Testimonials />
-          <Journal />
+          <Journal
+            onSelectBlog={handleSelectBlog}
+            onExploreBlogs={handleExploreBlogs}
+          />
           <Consultation />
         </>
       )}

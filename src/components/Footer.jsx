@@ -167,11 +167,11 @@ export default function Footer({ onNavClick }) {
               </li>
               <li>
                 <a
-                  href="#journal"
-                  onClick={(e) => handleLinkClick(e, "journal")}
+                  href="#/blogs"
+                  onClick={(e) => handleLinkClick(e, "blogs")}
                   className="hover:text-[#e8b95d] transition"
                 >
-                  Design Guides & Tips
+                  Design Guides & Journal
                 </a>
               </li>
             </ul>

@@ -69,7 +69,7 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-5",
     height: "h-[360px] sm:h-[420px]",
     image:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop",
+      "/categories/upvc-doors-windows.jpg",
     description:
       "Durable uPVC windows and doors designed to keep out street noise, reduce air conditioning bills, and stay completely leak-proof during monsoons.",
     products: [
@@ -79,7 +79,7 @@ export const categoriesData = [
         spec: "Multi-chamber frame | Double rubber seals to block rain and dust",
         badge: "Noise Guard",
         image:
-          "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop",
+          "/categories/upvc-doors-windows.jpg",
       },
       {
         id: "upvc-2",
@@ -131,7 +131,7 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-4",
     height: "h-[280px] sm:h-[320px]",
     image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
+      "/transformations/project2-after.jpg",
     description:
       "Glass room dividers and sliding partitions that open up your living space, slide effortlessly, and keep floor walkways clean and seamless.",
     products: [
@@ -141,7 +141,7 @@ export const categoriesData = [
         spec: "Top ceiling track with no floor groove to trip on | Soft-close slide",
         badge: "Zero Threshold",
         image:
-          "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
+          "/transformations/project2-after.jpg",
       },
       {
         id: "part-2",
@@ -193,7 +193,7 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-4",
     height: "h-[280px] sm:h-[320px]",
     image:
-      "https://images.unsplash.com/photo-1558997519-83ea9252edf8?q=80&w=1200&auto=format&fit=crop",
+      "/transformations/project3-after.jpg",
     description:
       "Modern glass wardrobe doors with slim metal frames, tinted or fluted glass, soft-close hinges, and warm interior lighting.",
     products: [
@@ -203,7 +203,7 @@ export const categoriesData = [
         spec: "Smoked bronze tinted glass | Warm integrated vertical LED lighting",
         badge: "Luxury Master",
         image:
-          "https://images.unsplash.com/photo-1558997519-83ea9252edf8?q=80&w=1200&auto=format&fit=crop",
+          "/transformations/project3-after.jpg",
       },
       {
         id: "ward-2",
@@ -317,7 +317,7 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-6",
     height: "h-[300px] sm:h-[350px]",
     image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
+      "/transformations/project5-after.jpg",
     description:
       "Strong laminated safety glass railings for balconies, staircases, and terraces. Built to withstand strong winds while keeping views open and unobstructed.",
     products: [
@@ -327,7 +327,7 @@ export const categoriesData = [
         spec: "Concealed floor channel | Unbroken panoramic glass view",
         badge: "Clear Sightline",
         image:
-          "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
+          "/transformations/project5-after.jpg",
       },
       {
         id: "rail-2",
@@ -441,7 +441,7 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-3",
     height: "h-[260px] sm:h-[300px]",
     image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
+      "/categories/designer-mirrors.jpg",
     description:
       "Custom wall mirrors with warm LED backlighting, defoggers for bathrooms, antique tinted finishes, and custom shapes to add depth and style to any room.",
     products: [
@@ -451,7 +451,7 @@ export const categoriesData = [
         spec: "Natural pebble curved shape | Dimmable warm and white LED light",
         badge: "Organic Shape",
         image:
-          "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
+          "/categories/designer-mirrors.jpg",
       },
       {
         id: "mir-2",
@@ -503,7 +503,7 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-3",
     height: "h-[260px] sm:h-[300px]",
     image:
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
+      "/categories/louvers.jpg",
     description:
       "Adjustable glass and aluminium louvers that give you natural airflow, comfortable shade from direct sunlight, and extra privacy without feeling boxed in.",
     products: [
@@ -513,7 +513,7 @@ export const categoriesData = [
         spec: "Motorized aluminium blades | Remote and switch control",
         badge: "Motorized",
         image:
-          "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
+          "/categories/louvers.jpg",
       },
       {
         id: "louv-2",
@@ -565,7 +565,7 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-3",
     height: "h-[260px] sm:h-[300px]",
     image:
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=1200&auto=format&fit=crop",
+      "/categories/surfaces-ceilings.jpg",
     description:
       "Glossy back-painted glass wall panels, stain-resistant kitchen backsplashes, and soft illuminated glass ceilings that brighten up interiors.",
     products: [
@@ -575,7 +575,7 @@ export const categoriesData = [
         spec: "Custom colored glossy back-painted glass with safety backing film",
         badge: "Lacquered Glass",
         image:
-          "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=1200&auto=format&fit=crop",
+          "/categories/surfaces-ceilings.jpg",
       },
       {
         id: "surf-2",
@@ -583,7 +583,7 @@ export const categoriesData = [
         spec: "Evenly lit glass ceiling panels that diffuse pleasant ambient daylight",
         badge: "Luminous Ceiling",
         image:
-          "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
+          "/categories/surfaces-ceilings.jpg",
       },
       {
         id: "surf-3",
