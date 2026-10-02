@@ -1,21 +1,21 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Philosophy from "./components/Philosophy";
-import Process from "./components/Process";
-import Transformations from "./components/Transformations";
-import Artisans from "./components/Artisans";
-import Testimonials from "./components/Testimonials";
-import Journal from "./components/Journal";
-import Consultation from "./components/Consultation";
-import Footer from "./components/Footer";
-import FloatingWhatsApp from "./components/FloatingWhatsApp";
-import CategoryDetailPage from "./components/CategoryDetailPage";
-import ExploreBlogsPage from "./components/ExploreBlogsPage";
 import BlogDetailPage from "./components/BlogDetailPage";
+import CategoryDetailPage from "./components/CategoryDetailPage";
+import Consultation from "./components/Consultation";
+import ExploreBlogsPage from "./components/ExploreBlogsPage";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Journal from "./components/Journal";
+import Navbar from "./components/Navbar";
+import Philosophy from "./components/Philosophy";
+import Portfolio from "./components/Portfolio";
+import Process from "./components/Process";
+import Teams from "./components/Teams";
+import Testimonials from "./components/Testimonials";
+import Transformations from "./components/Transformations";
 
 function parseRouteFromHash() {
   const hash = window.location.hash || "";
@@ -178,7 +178,7 @@ function App() {
           <Philosophy />
           <Process />
           <Transformations />
-          <Artisans />
+          <Teams />
           <Testimonials />
           <Journal
             onSelectBlog={handleSelectBlog}

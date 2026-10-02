@@ -1,28 +1,26 @@
 import { FiAward, FiArrowRight } from "react-icons/fi";
+import PankajPic from '../assets/team/pankaj.jpeg'
+import ArshPic from '../assets/team/arsh.jpeg'
+
 
 const team = [
   {
-    name: "RAJESH MALHOTRA",
+    name: "Pankaj",
     role: "FOUNDER & MANAGING DIRECTOR",
-    location: "DELHI NCR",
-    bio: "Over 25 years guiding architectural glass solutions and custom door engineering for residences, villas, and commercial spaces across India.",
-    credentials: "25+ YRS INDUSTRY EXPERIENCE",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=900&auto=format&fit=crop",
+    bio: "An MCA graduate and former DevOps Engineer at a top MNC, he chose entrepreneurship to build Kazo. He is driven by curiosity, ambition, and a passion for creating something meaningful of his own.",
+    credentials: "MCA • FORMER DEVOPS ENGINEER",
+    image: PankajPic,
   },
   {
-    name: "PRIYA SHARMA",
-    role: "HEAD OF ARCHITECTURAL CONSULTING",
-    location: "DELHI STUDIO",
-    bio: "Works closely with architects, interior designers, and homeowners to select the ideal glass textures, partition layouts, and acoustic solutions.",
-    credentials: "B.ARCH • 14 YRS SPATIAL DESIGN",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=900&auto=format&fit=crop",
+    name: "Arshpreet Singh Sandhu",
+    role: "FOUNDER & DIRECTOR",
+    bio: "Passionate about business since Class 12 Commerce, he founded Kazo to bring modern design, reliable quality, and complete glass and door solutions under one trusted name.",
+    credentials: "FOUNDER • DESIGN & INNOVATION",
+    image: ArshPic,
   },
   {
-    name: "SUNIL VERMA",
+    name: "Sunil Verma",
     role: "CHIEF FABRICATION & INSTALLATION LEAD",
-    location: "CENTRAL WORKSHOP",
     bio: "Supervises precision glass cutting, tempering quality, and on-site fitting to make sure every pivot door swings silently and every frame aligns perfectly.",
     credentials: "MASTER FABRICATOR • 20 YRS MASTERY",
     image:
@@ -30,7 +28,7 @@ const team = [
   },
 ];
 
-export default function Artisans() {
+export default function Teams() {
   return (
     <section
       id="artisans"
@@ -82,10 +80,6 @@ export default function Artisans() {
                 {/* Dramatic Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#101010] via-black/30 to-transparent" />
 
-                {/* Location Badge */}
-                <div className="absolute top-5 right-5 bg-black/70 backdrop-blur-md px-3 py-1 rounded text-[9px] font-bold tracking-[1.5px] text-[#e8b95d] border border-white/10">
-                  {member.location}
-                </div>
               </div>
 
               {/* Bio Content */}
