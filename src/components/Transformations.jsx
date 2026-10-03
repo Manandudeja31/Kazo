@@ -1,97 +1,46 @@
 import { useState, useRef, useEffect, useCallback } from "react";
-import {
-  FiChevronLeft,
-  FiChevronRight,
-  FiArrowRight,
-  FiCheck,
-} from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const projects = [
   {
     id: 1,
-    title: "Grand Entrance Pivot Door",
-    category: "Main Entrance Doors",
-    location: "Private Villa, New Delhi",
+    title: "Sonam Kokra",
+    subtitle: "Aluminium Window",
+    fullName: "Sonam Kokra — Aluminium Window",
     beforeImage: "/transformations/project1-before.jpg",
     afterImage: "/transformations/project1-after.jpg",
-    beforeLabel: "Architectural Concept",
-    afterLabel: "Completed Execution",
-    description:
-      "From technical architectural sketch to an imposing 3.8-meter tall glass and timber pivot door that glides open effortlessly with just a fingertip touch.",
-    features: [
-      "3.8m Single Leaf Pivot Door",
-      "Concealed Hydraulic Floor Closer",
-      "Toughened Clear Safety Glass",
-    ],
   },
   {
     id: 2,
-    title: "Acoustic Glass Sliding Partition",
-    category: "Partitions & Sliding Systems",
-    location: "Duplex Residence, Gurugram",
+    title: "Surinder Kaur",
+    subtitle: "Sliding Glass",
+    fullName: "Surinder Kaur — Sliding Glass",
     beforeImage: "/transformations/project2-before.jpg",
     afterImage: "/transformations/project2-after.jpg",
-    beforeLabel: "Room Layout Plan",
-    afterLabel: "Installed Partition",
-    description:
-      "Replacing closed, dark walls with a floor-to-ceiling fluted glass sliding partition that lets daylight flow freely while maintaining quiet privacy.",
-    features: [
-      "Zero-Threshold Ceiling Recessed Track",
-      "Textured Fluted Privacy Glass",
-      "Ultra-Slim Black Aluminium Frame",
-    ],
   },
   {
     id: 3,
-    title: "Smoked Glass Walk-In Wardrobe",
-    category: "Wardrobe Glass Doors",
-    location: "Penthouse Suite, South Delhi",
+    title: "Bobby",
+    subtitle: "Shower Cubicle & Designer Mirror",
+    fullName: "Bobby — Shower Cubicle & Designer Mirror",
     beforeImage: "/transformations/project3-before.jpg",
     afterImage: "/transformations/project3-after.jpg",
-    beforeLabel: "Cabinetry Blueprint",
-    afterLabel: "Finished Wardrobe",
-    description:
-      "Transforming ordinary closets into an open boutique dressing room with smoked bronze glass doors, soft-close dampers, and warm integrated LED lighting.",
-    features: [
-      "Smoked Bronze Tinted Glass",
-      "Built-in 2700K Warm LED Channels",
-      "Soft Air-Damped Sliding Shutters",
-    ],
   },
   {
     id: 4,
-    title: "Frameless Spa Shower Enclosure",
-    category: "Shower Cubicles",
-    location: "Master Bathroom, Noida",
+    title: "Shveta",
+    subtitle: "UPVC Window",
+    fullName: "Shveta — UPVC Window",
     beforeImage: "/transformations/project4-before.jpg",
     afterImage: "/transformations/project4-after.jpg",
-    beforeLabel: "Bathroom CAD Layout",
-    afterLabel: "Installed Shower Suite",
-    description:
-      "Replacing cramped bathroom layouts with a clean, walk-in 10mm toughened glass shower cubicle, brushed brass fixtures, and a floating backlit LED mirror.",
-    features: [
-      "10mm Toughened Low-Iron Glass",
-      "Brushed Gold Brass Hardware",
-      "Anti-Spot Water-Repellent Coating",
-    ],
   },
   {
     id: 5,
-    title: "Panoramic Balcony Glass Railing",
-    category: "Glass Railings & Balustrades",
-    location: "Terrace Villa, Delhi NCR",
+    title: "Gurveer Singh",
+    subtitle: "Fabric Glass",
+    fullName: "Gurveer Singh — Fabric Glass",
     beforeImage: "/transformations/project5-before.jpg",
     afterImage: "/transformations/project5-after.jpg",
-    beforeLabel: "Structural Terrace Drawing",
-    afterLabel: "Completed Balustrade",
-    description:
-      "Opening up the rooftop view with a continuous concealed-channel laminated glass railing and slimline aluminium sliding patio glass doors.",
-    features: [
-      "Concealed Base Shoe Floor Channel",
-      "SentryGlas High-Impact Laminated Glass",
-      "Unbroken Panoramic Horizon View",
-    ],
   },
 ];
 
@@ -185,12 +134,12 @@ export default function Transformations() {
     >
       <div className="mx-auto max-w-[1700px]">
         {/* ================= HEADER ================= */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12 sm:mb-16">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 sm:mb-14">
           <div>
             <div className="mb-4 flex items-center gap-3">
               <span className="h-2 w-2 rounded-full bg-[#e8b95d]" />
               <span className="text-[10px] font-semibold tracking-[2px] text-[#e8b95d] uppercase">
-                From Design to Reality
+                From Design Concept to Reality
               </span>
             </div>
 
@@ -203,18 +152,18 @@ export default function Transformations() {
             </h2>
           </div>
 
-          <div className="max-w-[500px]">
+          <div className="max-w-[540px]">
             <p className="text-[13px] sm:text-[14px] leading-[1.8] text-[#9a948c]">
-              Drag the slider on any image below to compare our architectural
-              design blueprints with the completed on-site glass and door
+              Drag the interactive slider to compare our architectural concept
+              drafts with the completed on-site glass, door, and window
               installations.
             </p>
           </div>
         </div>
 
-        {/* ================= PROJECT SELECTOR TABS (SCROLLABLE) ================= */}
+        {/* ================= PROJECT SELECTOR TABS ================= */}
         <div className="mb-8 flex items-center justify-between gap-4 border-b border-white/10 pb-4">
-          {/* Scrollable pill list */}
+          {/* Scrollable project pills */}
           <div
             ref={thumbnailsRef}
             className="no-scrollbar flex items-center gap-2 overflow-x-auto scroll-smooth py-1"
@@ -240,7 +189,7 @@ export default function Transformations() {
                   >
                     0{idx + 1}
                   </span>
-                  <span>{proj.title}</span>
+                  <span>{proj.fullName}</span>
                 </button>
               );
             })}
@@ -279,16 +228,18 @@ export default function Transformations() {
           >
             {/* 1. AFTER IMAGE (BASE FULL BACKGROUND) */}
             <img
+              key={`after-${currentProject.id}`}
               src={currentProject.afterImage}
-              alt={`${currentProject.title} - Completed Installation`}
+              alt={`${currentProject.fullName} - Completed Installation`}
               className="absolute inset-0 h-full w-full object-cover object-center pointer-events-none"
               draggable={false}
             />
 
             {/* 2. BEFORE IMAGE (CLIPPED USING CSS INSET) */}
             <img
+              key={`before-${currentProject.id}`}
               src={currentProject.beforeImage}
-              alt={`${currentProject.title} - Architectural Design`}
+              alt={`${currentProject.fullName} - Architectural Concept Drawing`}
               className="absolute inset-0 h-full w-full object-cover object-center pointer-events-none"
               style={{
                 clipPath: `inset(0 ${100 - sliderPos}% 0 0)`,
@@ -300,21 +251,21 @@ export default function Transformations() {
             {/* Subtle Vignette Shadows */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none" />
 
-            {/* BEFORE PILL BADGE (Top Left - Exactly like the reference image) */}
+            {/* BEFORE PILL BADGE (Top Left) */}
             <div className="absolute top-5 left-5 z-20 pointer-events-none">
-              <span className="rounded-lg bg-black/75 px-4 py-1.5 text-[11px] font-bold tracking-wider text-white uppercase backdrop-blur-md border border-white/20 shadow-lg">
+              <span className="rounded-lg bg-black/80 px-4 py-1.5 text-[11px] font-bold tracking-wider text-white uppercase backdrop-blur-md border border-white/20 shadow-lg">
                 Before
               </span>
             </div>
 
             {/* AFTER PILL BADGE (Top Right) */}
             <div className="absolute top-5 right-5 z-20 pointer-events-none">
-              <span className="rounded-lg bg-[#e8b95d]/90 px-4 py-1.5 text-[11px] font-bold tracking-wider text-black uppercase backdrop-blur-md shadow-lg">
+              <span className="rounded-lg bg-[#e8b95d]/95 px-4 py-1.5 text-[11px] font-bold tracking-wider text-black uppercase backdrop-blur-md shadow-lg">
                 After
               </span>
             </div>
 
-            {/* DRAGGABLE VERTICAL DIVIDER & CIRCULAR HANDLE (Identical to reference image) */}
+            {/* DRAGGABLE VERTICAL DIVIDER & CIRCULAR HANDLE */}
             <div
               className="absolute top-0 bottom-0 z-30 pointer-events-none"
               style={{ left: `${sliderPos}%` }}
@@ -344,68 +295,9 @@ export default function Transformations() {
               </span>
             </div>
           </div>
-
-          {/* ================= DETAILS BAR UNDER SLIDER ================= */}
-          <div className="p-6 sm:p-8 lg:p-10 bg-[#141414] border-t border-white/5 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-            <div className="max-w-3xl">
-              <div className="flex flex-wrap items-center gap-3 mb-2">
-                <span className="rounded bg-[#e8b95d]/10 px-2.5 py-0.5 text-[9px] font-bold tracking-[1.5px] text-[#e8b95d] uppercase border border-[#e8b95d]/20">
-                  {currentProject.category}
-                </span>
-                <span className="text-[11px] text-[#777]">•</span>
-                <span className="text-[11px] text-[#aaa]">
-                  {currentProject.location}
-                </span>
-              </div>
-
-              <h3 className="font-serif text-[22px] sm:text-[26px] text-white">
-                {currentProject.title}
-              </h3>
-
-              <p className="mt-2 text-[13px] leading-[1.7] text-[#9a948c]">
-                {currentProject.description}
-              </p>
-
-              {/* Key Features Chips */}
-              <div className="mt-4 flex flex-wrap gap-2 sm:gap-3">
-                {currentProject.features.map((feat, i) => (
-                  <span
-                    key={i}
-                    className="inline-flex items-center gap-1.5 rounded-full bg-[#1b1b1b] border border-white/5 px-3 py-1 text-[11px] text-[#cfc8be]"
-                  >
-                    <FiCheck size={12} className="text-[#e8b95d]" />
-                    <span>{feat}</span>
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Action CTA */}
-            <div className="shrink-0 flex flex-col sm:flex-row lg:flex-col gap-3">
-              <a
-                href={`https://wa.me/918810369142?text=${encodeURIComponent(
-                  `Hi Kazo, I saw your before/after transformation for "${currentProject.title}" and would like to know if something similar can be done for my space.`
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] hover:bg-[#20ba59] px-6 py-3 text-[11px] font-bold tracking-wider text-black transition shadow-lg"
-              >
-                <FaWhatsapp size={15} />
-                <span>Discuss Similar Project</span>
-              </a>
-
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 px-6 py-3 text-[11px] font-semibold tracking-wider text-white transition"
-              >
-                <span>Book Free Site Visit</span>
-                <FiArrowRight size={13} />
-              </a>
-            </div>
-          </div>
         </div>
 
-        {/* ================= 5 THUMBNAIL CARDS STRIP FOR QUICK SCROLLING ================= */}
+        {/* ================= 5 THUMBNAIL CARDS STRIP FOR QUICK SWITCHING ================= */}
         <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
           {projects.map((proj, idx) => {
             const isActive = idx === activeIdx;
@@ -422,7 +314,7 @@ export default function Transformations() {
                 <div className="relative h-24 sm:h-28 w-full overflow-hidden rounded-lg bg-black">
                   <img
                     src={proj.afterImage}
-                    alt={proj.title}
+                    alt={proj.fullName}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-1.5 left-1.5 bg-black/80 px-2 py-0.5 rounded text-[8px] font-bold text-[#e8b95d]">
@@ -441,7 +333,7 @@ export default function Transformations() {
                     {proj.title}
                   </h4>
                   <p className="text-[10px] text-[#777] line-clamp-1">
-                    {proj.category}
+                    {proj.subtitle}
                   </p>
                 </div>
               </div>

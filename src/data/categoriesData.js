@@ -193,7 +193,7 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-4",
     height: "h-[280px] sm:h-[320px]",
     image:
-      "/transformations/project3-after.jpg",
+      "/transformations/project5-after.jpg",
     description:
       "Modern glass wardrobe doors with slim metal frames, tinted or fluted glass, soft-close hinges, and warm interior lighting.",
     products: [
@@ -203,7 +203,7 @@ export const categoriesData = [
         spec: "Smoked bronze tinted glass | Warm integrated vertical LED lighting",
         badge: "Luxury Master",
         image:
-          "/transformations/project3-after.jpg",
+          "/transformations/project5-after.jpg",
       },
       {
         id: "ward-2",
@@ -317,7 +317,7 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-6",
     height: "h-[300px] sm:h-[350px]",
     image:
-      "/transformations/project5-after.jpg",
+      "/transformations/project1-after.jpg",
     description:
       "Strong laminated safety glass railings for balconies, staircases, and terraces. Built to withstand strong winds while keeping views open and unobstructed.",
     products: [
@@ -327,7 +327,7 @@ export const categoriesData = [
         spec: "Concealed floor channel | Unbroken panoramic glass view",
         badge: "Clear Sightline",
         image:
-          "/transformations/project5-after.jpg",
+          "/transformations/project1-after.jpg",
       },
       {
         id: "rail-2",
