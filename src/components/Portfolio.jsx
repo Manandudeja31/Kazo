@@ -3,13 +3,13 @@ import { FiArrowRight } from "react-icons/fi";
 
 // Attractive, category-specific showcase covers exclusively for the home page Portfolio bento grid
 const portfolioCoverImages = {
-  "aluminium-doors-windows": "/transformations/project1-after.jpg",
+  "aluminium-doors-windows": "/categories/aluminium-doors-windows.jpg",
   "upvc-doors-windows": "/categories/upvc-doors-windows.jpg",
-  "partitions-sliding-systems": "/transformations/project2-after.jpg",
-  "wardrobe-systems": "/transformations/project3-after.jpg",
-  "shower-cubicles": "/transformations/shower_real_1790705500243.jpg",
-  "glass-railings": "/transformations/project5-after.jpg",
-  "exterior-facade-design": "/transformations/facade_real_1790705376980.jpg",
+  "partitions-sliding-systems": "/categories/partitions-sliding-systems.jpg",
+  "wardrobe-systems": "/categories/wardrobe-systems.jpg",
+  "shower-cubicles": "/categories/shower-cubicles.jpg",
+  "glass-railings": "/categories/glass-railings.jpg",
+  "exterior-facade-design": "/categories/exterior-facade-design.jpg",
   "designer-mirrors": "/categories/designer-mirrors.jpg",
   "louvers": "/categories/louvers.jpg",
   "surfaces-ceilings": "/categories/surfaces-ceilings.jpg",
