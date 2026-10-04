@@ -1,6 +1,21 @@
 import { categoriesData } from "../data/categoriesData";
 import { FiArrowRight } from "react-icons/fi";
 
+// Attractive, category-specific showcase covers exclusively for the home page Portfolio bento grid
+const portfolioCoverImages = {
+  "aluminium-doors-windows": "/transformations/project1-after.jpg",
+  "upvc-doors-windows": "/categories/upvc-doors-windows.jpg",
+  "partitions-sliding-systems": "/transformations/project2-after.jpg",
+  "wardrobe-systems": "/transformations/project3-after.jpg",
+  "shower-cubicles": "/transformations/shower_real_1790705500243.jpg",
+  "glass-railings": "/transformations/project5-after.jpg",
+  "exterior-facade-design": "/transformations/facade_real_1790705376980.jpg",
+  "designer-mirrors": "/categories/designer-mirrors.jpg",
+  "louvers": "/categories/louvers.jpg",
+  "surfaces-ceilings": "/categories/surfaces-ceilings.jpg",
+  "decorative-architectural-glass": "/categories/decorative-architectural-glass.png",
+};
+
 export default function Portfolio({ onSelectCategory }) {
   const handleCategoryClick = (slug) => {
     if (onSelectCategory) {
@@ -56,7 +71,7 @@ export default function Portfolio({ onSelectCategory }) {
             >
               {/* Image Frame */}
               <img
-                src={item.image}
+                src={portfolioCoverImages[item.slug] || item.image}
                 alt={item.title}
                 className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-108"
                 loading="lazy"

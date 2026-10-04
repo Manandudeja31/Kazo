@@ -7,57 +7,57 @@ export const categoriesData = [
     colSpan: "col-span-12 lg:col-span-7",
     height: "h-[360px] sm:h-[420px]",
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop",
+      "/categories/aluminium-doors-windows/0146C6D0-B30C-4A21-80D9-D9FB68385356.png",
     description:
       "Strong, slim aluminium doors and windows built for wide panoramic views, smooth sliding, and protection against outdoor heat, rain, and city dust.",
     products: [
       {
         id: "al-1",
-        title: "Thermal Break Slimline Sliding System",
-        spec: "45mm slim profile | Double glazed for heat and noise insulation",
+        title: "Minimalist Slim-Profile Sliding Patio System",
+        spec: "Ultra-slim aluminium sightlines | Heavy-duty dual roller track with whisper-quiet sliding",
         badge: "Bestseller",
         image:
-          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+          "/categories/aluminium-doors-windows/0146C6D0-B30C-4A21-80D9-D9FB68385356.png",
       },
       {
         id: "al-2",
-        title: "Concealed Pivot Master Entry Door",
-        spec: "Up to 3.8m tall single door | Smooth hydraulic floor closer",
-        badge: "Architectural",
+        title: "Thermal-Break Architectural Casement & Fixed Glazing",
+        spec: "High-grade architectural powder coat | Multi-point compression locking against wind & rain",
+        badge: "Thermal Break",
         image:
-          "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=1200&auto=format&fit=crop",
+          "/categories/aluminium-doors-windows/6F2D3DA8-D74E-4A18-BF14-235A6749E51D.png",
       },
       {
         id: "al-3",
-        title: "Panoramic Bi-Fold Patio System",
-        spec: "Flush floor track | Foldable multi-panel patio system",
+        title: "Floor-to-Ceiling Grand Panoramic Sliding Door",
+        spec: "Concealed bottom sub-sill track | Heavy double-glazed toughened acoustic glass",
         badge: "Panoramic",
         image:
-          "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
+          "/categories/aluminium-doors-windows/A3504F2F-DE09-43DF-A2C1-708D7098DF27.png",
       },
       {
         id: "al-4",
-        title: "Acoustic Tilt & Turn Casement Window",
-        spec: "Dual opening tilt and turn | Excellent sound reduction",
-        badge: "Soundproof",
+        title: "Concealed Frame Architectural Entry & Fixed Window",
+        spec: "Concealed perimeter outer frame | Maximum daylight aperture and structural rigidity",
+        badge: "Minimalist",
         image:
-          "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200&auto=format&fit=crop",
+          "/categories/aluminium-doors-windows/AAFEB6DC-FA24-4DE6-B20A-4680FCB2E69F.png",
       },
       {
         id: "al-5",
-        title: "Floor-to-Ceiling Structural Glazing Wall",
-        spec: "Concealed perimeter frame | Clear floor-to-ceiling glass",
-        badge: "Minimalist",
+        title: "Multi-Track Telescopic Sliding Glass Wall",
+        spec: "3-track sliding configuration | Interlocking slim stiles with integrated brush weatherstripping",
+        badge: "Multi-Track",
         image:
-          "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?q=80&w=1200&auto=format&fit=crop",
+          "/categories/aluminium-doors-windows/D86309AC-F357-4F55-9CDC-F42AED429540.png",
       },
       {
         id: "al-6",
-        title: "Motorized Guillotine Vertical Sash Window",
-        spec: "Motorized vertical sliding window | Weather sensor options",
-        badge: "Motorized",
+        title: "Heavy-Duty Anodized Balcony Sliding Door",
+        spec: "Weather-sealed EPDM gaskets | High wind-load certified corner joints",
+        badge: "All-Weather",
         image:
-          "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop",
+          "/categories/aluminium-doors-windows/E203D94A-F7E0-4F98-8C1E-0EC94B26557F.png",
       },
     ],
   },
@@ -69,57 +69,73 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-5",
     height: "h-[360px] sm:h-[420px]",
     image:
-      "/categories/upvc-doors-windows.jpg",
+      "/categories/upvc-doors-windows/307a0ddc-5c6b-4217-b979-402315ed6620.jpg",
     description:
       "Durable uPVC windows and doors designed to keep out street noise, reduce air conditioning bills, and stay completely leak-proof during monsoons.",
     products: [
       {
         id: "upvc-1",
-        title: "Multi-Chambered Acoustic Sliding Window",
-        spec: "Multi-chamber frame | Double rubber seals to block rain and dust",
-        badge: "Noise Guard",
+        title: "Prominance Premium uPVC Casement Window",
+        spec: "Galvanized steel core chamber | Multi-point locking security with friction hinges",
+        badge: "Prominance Series",
         image:
-          "/categories/upvc-doors-windows.jpg",
+          "/categories/upvc-doors-windows/307a0ddc-5c6b-4217-b979-402315ed6620.jpg",
       },
       {
         id: "upvc-2",
-        title: "Heavy-Duty uPVC French Balcony Door",
-        spec: "Steel-reinforced frame | Multi-point secure locking",
-        badge: "High Strength",
+        title: "Dual-Sash Fixed & Operable Elevation Window",
+        spec: "Double glazing with argon gas spacer | 100% monsoon leak-proof drainage channel",
+        badge: "Monsoon Proof",
         image:
-          "https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1200&auto=format&fit=crop",
+          "/categories/upvc-doors-windows/3b9424ba-420f-438d-b426-fb1c4aa8250b.jpg",
       },
       {
         id: "upvc-3",
-        title: "Architectural Arch-Top Fixed Bay Window",
-        spec: "Custom curved arch design | UV-resistant finish that never yellows",
-        badge: "Custom Shape",
+        title: "High-Rise Villa uPVC Fenestration Suite",
+        spec: "UV-stabilized tropical compound | Zero discoloration or warping under intense sun",
+        badge: "UV Resistant",
         image:
-          "https://images.unsplash.com/photo-1600607687644-c7171b42498b?q=80&w=1200&auto=format&fit=crop",
+          "/categories/upvc-doors-windows/43bcaecb-4e3f-480b-b14c-c5cdbacf0869.jpg",
       },
       {
         id: "upvc-4",
-        title: "Tilt & Slide Energy-Saving Patio Door",
-        spec: "Airtight sliding door | Keeps indoor cooling inside",
-        badge: "Energy Saver",
+        title: "Heavy-Duty French Balcony uPVC Door",
+        spec: "Reinforced frame corners with dual handle latching | Low aluminum threshold transition",
+        badge: "Heavy Duty",
         image:
-          "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1200&auto=format&fit=crop",
+          "/categories/upvc-doors-windows/ac381099-3c10-469c-8f21-d960a94f9baa.jpg",
       },
       {
         id: "upvc-5",
-        title: "Casement Window with Mosquito Screen",
-        spec: "Built-in stainless steel mosquito mesh screen",
-        badge: "Insect Screen",
+        title: "Acoustic Double-Glazed uPVC Master Suite Window",
+        spec: "Up to 40dB ambient sound reduction | Energy-efficient Low-E coated glass",
+        badge: "Soundproof",
         image:
-          "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?q=80&w=1200&auto=format&fit=crop",
+          "/categories/upvc-doors-windows/c254a8f9-9856-4bdc-abc5-ccaad679adfb.jpg",
       },
       {
         id: "upvc-6",
-        title: "Woodgrain Textured Foil uPVC Door",
-        spec: "Warm woodgrain texture | Looks like real wood with zero maintenance",
-        badge: "Woodgrain Finish",
+        title: "Panoramic uPVC Bay Elevation Assembly",
+        spec: "Modular bay couplings | High wind-load structural engineering for elevated floors",
+        badge: "Panoramic Bay",
         image:
-          "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=1200&auto=format&fit=crop",
+          "/categories/upvc-doors-windows/df6b4dd6-d8ec-4924-80c4-648f23a03c2a.jpg",
+      },
+      {
+        id: "upvc-7",
+        title: "Contemporary White uPVC Casement & Mosquito Mesh",
+        spec: "Integrated stainless steel anti-mosquito fly mesh | Stainless steel friction stays",
+        badge: "Fly Mesh Ready",
+        image:
+          "/categories/upvc-doors-windows/ee4a24a1-7ec3-4274-951a-f5ab1414885f.jpg",
+      },
+      {
+        id: "upvc-8",
+        title: "Multi-Track uPVC Sliding Balcony Door",
+        spec: "High-precision nylon roller wheels | Smooth effortless glide on heavy double panels",
+        badge: "Smooth Glide",
+        image:
+          "/categories/upvc-doors-windows/f5ab844e-7a15-49c8-9bec-b958cd1559fd.jpg",
       },
     ],
   },
@@ -131,57 +147,113 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-4",
     height: "h-[280px] sm:h-[320px]",
     image:
-      "/transformations/project2-after.jpg",
+      "/categories/partitions-sliding-systems/6BDC1F8C-53C0-44EE-BD6A-8104F0470ECE.png",
     description:
       "Glass room dividers and sliding partitions that open up your living space, slide effortlessly, and keep floor walkways clean and seamless.",
     products: [
       {
         id: "part-1",
-        title: "Ceiling-Recessed Concealed Track Partition",
-        spec: "Top ceiling track with no floor groove to trip on | Soft-close slide",
+        title: "Architectural Slimline Sliding Room Divider",
+        spec: "Concealed top ceiling-hung track | Soft-closing damper mechanism with zero bottom floor track",
         badge: "Zero Threshold",
         image:
-          "/transformations/project2-after.jpg",
+          "/categories/partitions-sliding-systems/6BDC1F8C-53C0-44EE-BD6A-8104F0470ECE.png",
       },
       {
         id: "part-2",
-        title: "Black Anodized French Atelier Grid Divider",
-        spec: "Slim black metal grid design | 10mm toughened safety glass",
-        badge: "Loft Style",
+        title: "Fluted Reeded Glass Pocket Sliding Wall",
+        spec: "Textured Moru fluted safety glass | Slim dark profile with effortless sliding motion",
+        badge: "Fluted Glass",
         image:
-          "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop",
+          "/categories/partitions-sliding-systems/0DB671FF-BF3E-4A8C-801B-8920761F0B18.png",
       },
       {
         id: "part-3",
-        title: "Synchronized Telescopic 3-Leaf Sliding Glass",
-        spec: "3-panel cascading glass doors | Creates wide open room transitions",
-        badge: "Telescopic",
+        title: "Minimalist Aluminium Framed Glass Room Divider",
+        spec: "Sleek anodized frame with high transparency | Ideal for living room and dining demarcation",
+        badge: "Minimalist",
         image:
-          "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop",
+          "/categories/partitions-sliding-systems/220C4AA6-5B45-40AE-8D4F-5F902AA94181.png",
       },
       {
         id: "part-4",
-        title: "Double-Glazed Acoustic Office Divider",
-        spec: "Sound-insulated glass divider | Built-in blinds between glass panels",
-        badge: "Office Soundproof",
+        title: "Slimline Concealed Pocket Sliding Partition",
+        spec: "Smooth recess wall pocket design | Maximize walkway width with clean hidden profiles",
+        badge: "Pocket System",
         image:
-          "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+          "/categories/partitions-sliding-systems/6C040F37-FE4E-4C32-8334-84741B41A052.png",
       },
       {
         id: "part-5",
-        title: "Fluted Reeded Glass Pocket Sliding Wall",
-        spec: "Textured fluted glass that slides into wall pockets for privacy",
-        badge: "Pocket System",
+        title: "Synchronized Telescopic Multi-Leaf Sliding Partition",
+        spec: "Interconnected multi-panel cascading slide | Wide open living room to patio transition",
+        badge: "Telescopic",
         image:
-          "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?q=80&w=1200&auto=format&fit=crop",
+          "/categories/partitions-sliding-systems/833EC0A4-5BFF-4967-A835-8902AD59A7A9.png",
       },
       {
         id: "part-6",
-        title: "Frameless 360° Glass Pivot Wall Panel",
-        spec: "Center pivot glass door panel | Swings open smoothly both ways",
-        badge: "Pivot Action",
+        title: "Tinted Bronze Glass Architectural Screen",
+        spec: "Warm bronze tinted laminated glass | Elegant subtle privacy for luxury interior suites",
+        badge: "Tinted Glass",
         image:
-          "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop",
+          "/categories/partitions-sliding-systems/8F54BCF2-AEA2-4596-A0D1-E788AE79C06A.png",
+      },
+      {
+        id: "part-7",
+        title: "Ceiling-Recessed Concealed Track Partition",
+        spec: "Top ceiling track with flush floor transition | Whisper-quiet roller bearings",
+        badge: "Concealed Track",
+        image:
+          "/categories/partitions-sliding-systems/A0120B40-66D9-46B2-A0A1-0C63977ECCD8.png",
+      },
+      {
+        id: "part-8",
+        title: "Black Anodized French Atelier Grid Divider",
+        spec: "Modern industrial black grid aesthetic | 10mm toughened safety glass with bevel finish",
+        badge: "Loft Grid",
+        image:
+          "/categories/partitions-sliding-systems/CD2825A5-0F41-4B08-ACA4-F4EF83AC3AE8.png",
+      },
+      {
+        id: "part-9",
+        title: "Satin Acid-Etched Privacy Glazed Partition",
+        spec: "Translucent satin matte finish | Soft natural light diffusion with total room privacy",
+        badge: "Privacy Screen",
+        image:
+          "/categories/partitions-sliding-systems/74D62D83-0C10-4C19-85E8-E8538A434F2A.png",
+      },
+      {
+        id: "part-10",
+        title: "Modern Open Living Sliding Glass Enclosure",
+        spec: "Contemporary slim vertical profile | Perfect division between lounge, study, and kitchen",
+        badge: "Open Living",
+        image:
+          "/categories/partitions-sliding-systems/73AC6CB2-0B9F-46D4-B309-5D5C3E39ACA8.png",
+      },
+      {
+        id: "part-11",
+        title: "Showroom Master Slim Sliding Glass Suite",
+        spec: "Premium showroom grade sliding mechanism | Heavy-duty dual carriage rollers",
+        badge: "Showroom Spec",
+        image:
+          "/categories/partitions-sliding-systems/IMG_20260926_152330363.jpeg",
+      },
+      {
+        id: "part-12",
+        title: "Full-Height Architectural Glass Divider Wall",
+        spec: "Continuous vertical glass expanse | Concealed perimeter ceiling and floor channels",
+        badge: "Full Height",
+        image:
+          "/categories/partitions-sliding-systems/IMG_20260926_152407073.jpeg",
+      },
+      {
+        id: "part-13",
+        title: "Vertical Reeded Glass Interior Partition",
+        spec: "Deep textured Moru fluted glass | Light refractive visual barrier with designer allure",
+        badge: "Textured Reeded",
+        image:
+          "/categories/partitions-sliding-systems/IMG_20260926_152601651.jpeg",
       },
     ],
   },
@@ -193,57 +265,105 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-4",
     height: "h-[280px] sm:h-[320px]",
     image:
-      "/transformations/project3-after.jpg",
+      "/categories/wardrobe-systems/E1E8E35F-301C-4B2B-A722-55A8D3867134.png",
     description:
       "Modern glass wardrobe doors with slim metal frames, tinted or fluted glass, soft-close hinges, and warm interior lighting.",
     products: [
       {
         id: "ward-1",
         title: "Smoked Bronze Glass Walk-In Wardrobe Suite",
-        spec: "Smoked bronze tinted glass | Warm integrated vertical LED lighting",
+        spec: "Smoked bronze tinted glass | Integrated vertical concealed LED lighting and air-cushion dampers",
         badge: "Luxury Master",
         image:
-          "/transformations/project3-after.jpg",
+          "/categories/wardrobe-systems/E1E8E35F-301C-4B2B-A722-55A8D3867134.png",
       },
       {
         id: "ward-2",
-        title: "Fluted Glass Minimalist Wardrobe Shutter",
-        spec: "Fluted ribbed glass with soft-close air dampers",
-        badge: "Fluted Glass",
+        title: "Slim Black Frame Glass Wardrobe Shutter",
+        spec: "Ultra-thin aluminium profile | 5mm toughened safety glass with seamless magnetic latching",
+        badge: "Slim Frame",
         image:
-          "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop",
+          "/categories/wardrobe-systems/1B84DF83-0715-45BB-9D42-EDD110FF940C.png",
       },
       {
         id: "ward-3",
-        title: "Black Tinted Mirrored Sliding Closet",
-        spec: "Black tinted mirror sliding doors | Smooth scratch-resistant finish",
-        badge: "Dark Mirror",
+        title: "Illuminated Display Glass Wardrobe System",
+        spec: "Warm 3000K LED illumination | High-precision pivot hinges for smooth silent door swing",
+        badge: "Backlit Display",
         image:
-          "https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=1200&auto=format&fit=crop",
+          "/categories/wardrobe-systems/8C300E3F-71D7-4EDF-9A61-CE883D02213C.png",
       },
       {
         id: "ward-4",
-        title: "Illuminated Glass Island Accessory Display",
-        spec: "Jewelry and accessory display island | Crystal-clear top glass",
-        badge: "Display Island",
+        title: "Dark Tinted Glass Dressing Shutter",
+        spec: "Reflective dark tint glass | Conceals wardrobe contents until interior LED illuminates",
+        badge: "Dark Tint",
         image:
-          "https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1200&auto=format&fit=crop",
+          "/categories/wardrobe-systems/ACDA08AF-F121-49B3-8649-9A1D018347B0.png",
       },
       {
         id: "ward-5",
-        title: "Cornerless Glass Wardrobe Enclosure",
-        spec: "Seamless 90° corner glass wardrobe | Magnetic soft door latch",
-        badge: "Cornerless",
+        title: "Bespoke Master Dressing Room Cabinetry",
+        spec: "Full-height glass cabinetry suite | Custom compartment layouts with leather pull accents",
+        badge: "Bespoke Suite",
         image:
-          "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
+          "/categories/wardrobe-systems/D1098810-F862-4CDA-A677-6228651FD401.png",
       },
       {
         id: "ward-6",
-        title: "Concealed Pivot Glass Dressing Room Shutter",
-        spec: "Floor-to-ceiling pivot glass door | Clean minimalist dressing room shutter",
-        badge: "Pivot Shutter",
+        title: "Integrated Sensor LED Wardrobe Unit",
+        spec: "Automatic motion sensor illumination | Warm diffused light bars built into vertical profiles",
+        badge: "Smart Sensor",
         image:
-          "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop",
+          "/categories/wardrobe-systems/IMG_20260926_153424743.jpeg",
+      },
+      {
+        id: "ward-7",
+        title: "Fluted & Tinted Glass Closet Doors",
+        spec: "Textured fluted safety glass with soft-close hydraulic hinges | High privacy elegance",
+        badge: "Fluted Glass",
+        image:
+          "/categories/wardrobe-systems/IMG_20260926_153426022.jpeg",
+      },
+      {
+        id: "ward-8",
+        title: "Illuminated Glass Wardrobe Interior Bay",
+        spec: "Interior LED strip integration | Scratch-resistant anodized aluminium shelf brackets",
+        badge: "Interior Detail",
+        image:
+          "/categories/wardrobe-systems/IMG_20260926_153427216.jpeg",
+      },
+      {
+        id: "ward-9",
+        title: "Minimalist Profile Shutter Joinery",
+        spec: "Precision micro-bevelled aluminium profile | Available in Matte Black, Champagne, and Bronze",
+        badge: "Precision Profile",
+        image:
+          "/categories/wardrobe-systems/IMG_20260926_161456316.jpeg",
+      },
+      {
+        id: "ward-10",
+        title: "Custom Walk-In Glass Closet Ensemble",
+        spec: "Modular walk-in closet arrangement | Transparent display shelving with perimeter lighting",
+        badge: "Walk-In Ensemble",
+        image:
+          "/categories/wardrobe-systems/IMG_20260926_163435930.jpeg",
+      },
+      {
+        id: "ward-11",
+        title: "Smoked Mirror Glass Sliding Shutter",
+        spec: "Reflective smoked mirror finish | Smooth bottom running track with anti-jump mechanism",
+        badge: "Smoked Mirror",
+        image:
+          "/categories/wardrobe-systems/IMG_20260926_163449288.jpeg",
+      },
+      {
+        id: "ward-12",
+        title: "Architectural Glass Display Wardrobe Corner",
+        spec: "Seamless 90° glass return | Corner display boutique styling with internal backlighting",
+        badge: "Corner Showcase",
+        image:
+          "/categories/wardrobe-systems/IMG_4207.JPG",
       },
     ],
   },
@@ -255,57 +375,113 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-4",
     height: "h-[280px] sm:h-[320px]",
     image:
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop",
+      "/categories/shower-cubicles/40B3796D-4449-4ED1-8478-F92964A84FFC.png",
     description:
       "Strong toughened safety glass enclosures with rust-proof stainless steel fittings, leak-proof magnetic seals, and easy-clean water-repellent glass.",
     products: [
       {
         id: "shw-1",
-        title: "Frameless Diamond Cut Corner Shower Enclosure",
-        spec: "10mm toughened clear glass | Leak-proof magnetic corner door seal",
-        badge: "Corner Enclosure",
+        title: "Minimalist Frameless Glass Shower Enclosure",
+        spec: "10mm toughened safety glass | Premium solid brass hardware with watertight magnetic seals",
+        badge: "Bestseller",
         image:
-          "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop",
+          "/categories/shower-cubicles/40B3796D-4449-4ED1-8478-F92964A84FFC.png",
       },
       {
         id: "shw-2",
-        title: "Matte Black Minimalist Walk-In Screen",
-        spec: "Minimalist black walk-in screen | Water-repellent glass coating",
-        badge: "Walk-In",
+        title: "Diamond Cut Corner Glass Shower Cubicle",
+        spec: "90° corner configuration | Dual magnetic strike strips for complete dry bathroom separation",
+        badge: "Corner Cubicle",
         image:
-          "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=1200&auto=format&fit=crop",
+          "/categories/shower-cubicles/297E03D3-BCBD-4154-9E28-CE53CCDA3655.png",
       },
       {
         id: "shw-3",
-        title: "Top-Hung Overhead Roller Sliding Shower",
-        spec: "Exposed stainless steel top roller | Whisper-quiet sliding action",
-        badge: "Sliding Enclosure",
+        title: "Brushed Gold Luxury Shower Enclosure",
+        spec: "Brushed gold PVD-coated stainless steel hardware | Nano easy-clean anti-limescale glass coating",
+        badge: "Brushed Gold",
         image:
-          "https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1200&auto=format&fit=crop",
+          "/categories/shower-cubicles/428EA2E7-6534-4DE8-995C-6C628995AC81.png",
       },
       {
         id: "shw-4",
-        title: "Brushed Gold Fluted Glass Enclosure",
-        spec: "Textured fluted privacy glass with brushed gold metal hardware",
-        badge: "Brushed Gold",
+        title: "Matte Black Minimalist Walk-In Screen",
+        spec: "Fixed walk-in glass divider | Matte black wall stabilizer bar with bottom leak-guard seal",
+        badge: "Walk-In Screen",
         image:
-          "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1200&auto=format&fit=crop",
+          "/categories/shower-cubicles/57907863-2C5C-4AF4-AE7B-F144992E5264.png",
       },
       {
         id: "shw-5",
-        title: "Floor-to-Ceiling Steam Enclosure Glass",
-        spec: "Floor-to-ceiling steam-sealed enclosure with ventilation transom",
-        badge: "Steam Sealed",
+        title: "Sliding Glass Shower Enclosure with Soft Close",
+        spec: "Top-hung stainless steel roller track | Dual soft-close dampers with effortless sliding motion",
+        badge: "Soft Close",
         image:
-          "https://images.unsplash.com/photo-1564540586988-aa4e53c3d799?q=80&w=1200&auto=format&fit=crop",
+          "/categories/shower-cubicles/6AD802EB-E359-4374-A989-8D7067199600.png",
       },
       {
         id: "shw-6",
-        title: "Curved Radius Toughened Corner Enclosure",
-        spec: "Curved corner toughened glass with custom matching smooth track",
-        badge: "Curved Glass",
+        title: "Frameless In-Line Glass Shower Door System",
+        spec: "Inline fixed panel with swing glass door | Heavy-duty 180° glass-to-glass hinges",
+        badge: "In-Line System",
         image:
-          "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop",
+          "/categories/shower-cubicles/6F37BFA8-432A-4890-B649-7FBC4E652326.png",
+      },
+      {
+        id: "shw-7",
+        title: "Wall-to-Wall Glass Shower Enclosure",
+        spec: "Recessed alcove bathroom enclosure | Precision engineered wall profiles with concealed screws",
+        badge: "Alcove Enclosure",
+        image:
+          "/categories/shower-cubicles/95BE211A-F4E0-48B4-9CAB-AE29A6A76166.png",
+      },
+      {
+        id: "shw-8",
+        title: "Premium Hinged Pivot Master Shower Suite",
+        spec: "Continuous pivot hinge rod | Self-centering door return with zero floor threshold",
+        badge: "Pivot Suite",
+        image:
+          "/categories/shower-cubicles/98A74F11-C69F-4151-9CBF-43DA3A82D36B.png",
+      },
+      {
+        id: "shw-9",
+        title: "Slim Profile Architectural Shower Cubicle",
+        spec: "Ultra-slim perimeter channel | High-durability anodized aluminium with water-stop threshold",
+        badge: "Slim Profile",
+        image:
+          "/categories/shower-cubicles/B6D76D46-87C1-4F89-AE55-1C3014BE959E.png",
+      },
+      {
+        id: "shw-10",
+        title: "Brushed Gold Hardware Showcase Display",
+        spec: "Showroom gold finish hardware | High-grade SS-304 hinges, handles, and support bars",
+        badge: "Gold Hardware",
+        image:
+          "/categories/shower-cubicles/IMG_20260926_152749286.jpeg",
+      },
+      {
+        id: "shw-11",
+        title: "Heavy-Duty Stainless Steel Glass Clamps & Hinges",
+        spec: "Solid stainless steel construction | Salt-spray tested for lifelong rust immunity",
+        badge: "SS-304 Hardware",
+        image:
+          "/categories/shower-cubicles/IMG_20260926_152755903.jpeg",
+      },
+      {
+        id: "shw-12",
+        title: "Magnetic Seal Glass Shower Cubicle",
+        spec: "Translucent magnetic vinyl seals | Zero water splash escape for dry bathroom zones",
+        badge: "Dry Zone Safe",
+        image:
+          "/categories/shower-cubicles/IMG_20260926_152800249.jpeg",
+      },
+      {
+        id: "shw-13",
+        title: "Architectural Bathroom Glass Enclosure Suite",
+        spec: "Tailored custom fabrication | Precise site measurement and installation for luxury residences",
+        badge: "Custom Crafted",
+        image:
+          "/categories/shower-cubicles/IMG_20260926_153332217.jpeg",
       },
     ],
   },
@@ -317,57 +493,33 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-6",
     height: "h-[300px] sm:h-[350px]",
     image:
-      "/transformations/project5-after.jpg",
+      "/categories/glass-railings/IMG_3925.jpeg",
     description:
       "Strong laminated safety glass railings for balconies, staircases, and terraces. Built to withstand strong winds while keeping views open and unobstructed.",
     products: [
       {
         id: "rail-1",
         title: "Base-Shoe Concealed Channel Balustrade",
-        spec: "Concealed floor channel | Unbroken panoramic glass view",
-        badge: "Clear Sightline",
+        spec: "Heavy extruded aluminium base shoe profile | Engineered for high wind-load certified balustrades",
+        badge: "Concealed Base",
         image:
-          "/transformations/project5-after.jpg",
+          "/categories/glass-railings/IMG_3925.jpeg",
       },
       {
         id: "rail-2",
-        title: "Solid Stainless Steel Standoff Spigot Railing",
-        spec: "Solid stainless steel side-mount brackets | Open floating staircase design",
-        badge: "Staircase",
+        title: "Heavy Duty Continuous Channel Balustrade Section",
+        spec: "Concealed fixing anchors with drainage slots | Structural glass grip without drilling glass",
+        badge: "Heavy Duty",
         image:
-          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+          "/categories/glass-railings/IMG_3926.jpeg",
       },
       {
         id: "rail-3",
-        title: "Curved Helical Laminated Glass Balustrade",
-        spec: "Smooth curved laminated glass with slim top handrail",
-        badge: "Curved Glass",
+        title: "Frameless Toughened Laminated Balustrade Mounting",
+        spec: "Clamping wedge profile system | Slim aesthetic top cap handrail in stainless steel or aluminium",
+        badge: "Frameless Mounting",
         image:
-          "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        id: "rail-4",
-        title: "Rooftop Terrace Windbreak Glass Wall",
-        spec: "Tall glass windbreak wall for rooftop terraces and open decks",
-        badge: "Wind Barrier",
-        image:
-          "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        id: "rail-5",
-        title: "Frameless Swimming Pool Glass Fence",
-        spec: "Frameless swimming pool safety fence with self-closing gate",
-        badge: "Pool Safety",
-        image:
-          "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        id: "rail-6",
-        title: "Integrated LED Illuminated Glass Handrail",
-        spec: "Built-in soft LED light under handrail for staircases and balconies",
-        badge: "LED Handrail",
-        image:
-          "https://images.unsplash.com/photo-1600607687644-c7171b42498b?q=80&w=1200&auto=format&fit=crop",
+          "/categories/glass-railings/IMG_3927.jpeg",
       },
     ],
   },
@@ -379,57 +531,113 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-6",
     height: "h-[300px] sm:h-[350px]",
     image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
+      "/categories/exterior-facade-design/3439182D-B4BE-4CF4-8AD4-9454CF48AD01.png",
     description:
       "Full exterior glass walls, building façades, and glass entrance canopies that keep interiors cool, look stunning from outside, and withstand all weather.",
     products: [
       {
         id: "fac-1",
-        title: "Double-Glazed Energy-Efficient Curtain Wall",
-        spec: "Factory pre-assembled double-glazed panels | Tested for heat and weather",
-        badge: "Energy Saver",
+        title: "High-Performance Structural Curtain Glazing",
+        spec: "Double-glazed Low-E glass panels | Thermal break framing engineered for extreme wind and thermal cycles",
+        badge: "Structural Glazing",
         image:
-          "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
+          "/categories/exterior-facade-design/3439182D-B4BE-4CF4-8AD4-9454CF48AD01.png",
       },
       {
         id: "fac-2",
-        title: "Point-Fixed Spider Fitting Atrium Canopy",
-        spec: "Point-fixed stainless steel spider fittings | Heavy laminated canopy glass",
-        badge: "Spider Canopy",
+        title: "Continuous Glass Elevation Facade",
+        spec: "Concealed mullion and transom system | Continuous sleek glass skin for corporate and residential villas",
+        badge: "Continuous Glaze",
         image:
-          "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop",
+          "/categories/exterior-facade-design/0A96FA63-C26C-4FB7-81CE-E06B2EB1BFAE.png",
       },
       {
         id: "fac-3",
-        title: "Structural Silicone Continuous Glass Elevation",
-        spec: "Flush exterior glass surface with durable weatherproof seals",
-        badge: "Flush Glaze",
+        title: "Architectural Glass Fin Elevation System",
+        spec: "Vertical laminated glass fins | Structural support with unbroken transparency and wind protection",
+        badge: "Glass Fin",
         image:
-          "https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1200&auto=format&fit=crop",
+          "/categories/exterior-facade-design/1E56FFC3-5267-4D16-A1A0-1503C78B72C5.png",
       },
       {
         id: "fac-4",
-        title: "Solar Regulating Thermal Glass Envelope",
-        spec: "Solar-control double glass wall that helps reduce air conditioning costs",
+        title: "Commercial Continuous Glass Facade Envelope",
+        spec: "Solar reflective coated glazing | Significant reduction in HVAC energy consumption",
         badge: "Solar Control",
         image:
-          "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1200&auto=format&fit=crop",
+          "/categories/exterior-facade-design/2CF1F99E-B508-409F-891B-15FBCBCE3110.png",
       },
       {
         id: "fac-5",
-        title: "Suspended Glass Fin Structural Elevation",
-        spec: "Full-glass fin structural elevation for clear views and strong wind resistance",
-        badge: "Glass Fin",
+        title: "Modern Residential Villa Glass Elevation",
+        spec: "Floor-to-ceiling panoramic glass panels | Weatherproof silicone joints with lifelong flexibility",
+        badge: "Villa Facade",
         image:
-          "https://images.unsplash.com/photo-1577495508048-b635879837f1?q=80&w=1200&auto=format&fit=crop",
+          "/categories/exterior-facade-design/43CB0C6F-798A-4474-9E45-6C69BEE76062.png",
       },
       {
         id: "fac-6",
-        title: "Cantilevered Entry Glass Portico",
-        spec: "Sturdy glass entrance canopy with stainless steel tension rods",
+        title: "Point-Fixed Spider Glazed Canopy & Facade",
+        spec: "SS-316 spider fittings with tension rod supports | Heavy laminated safety canopy glass",
+        badge: "Spider Glazed",
+        image:
+          "/categories/exterior-facade-design/48140675-54C1-4BD5-B2E3-F47200343AA9.png",
+      },
+      {
+        id: "fac-7",
+        title: "Double-Glazed Solar Regulating Envelope",
+        spec: "Argon filled double glazed units | Neutral tint high-performance acoustic and thermal insulation",
+        badge: "Double Glazed",
+        image:
+          "/categories/exterior-facade-design/5292EE07-357E-41EE-BBB1-6905D8186C28.png",
+      },
+      {
+        id: "fac-8",
+        title: "Unitized Curtain Wall Elevation",
+        spec: "Factory-glazed modular units | Fast on-site installation with superior seismic tolerance",
+        badge: "Unitized Wall",
+        image:
+          "/categories/exterior-facade-design/58C5D784-29B6-4C62-ACD4-76ADCFCFDC54.png",
+      },
+      {
+        id: "fac-9",
+        title: "Geometric Architectural Facade Cladding",
+        spec: "Custom geometric angles and glass return panels | Signature visual impact for landmarks",
+        badge: "Geometric Facade",
+        image:
+          "/categories/exterior-facade-design/604BC60A-E5AA-4949-8CAC-582D980A69FE.png",
+      },
+      {
+        id: "fac-10",
+        title: "Flush Glazed Corporate Glass Elevation",
+        spec: "Zero external metal caps | Flush silicone structural joints for modern minimalist appearance",
+        badge: "Flush Glaze",
+        image:
+          "/categories/exterior-facade-design/631BC75F-AF49-42F9-81BC-77DAB4D0AB70.png",
+      },
+      {
+        id: "fac-11",
+        title: "Cantilevered Entrance Glass Portico",
+        spec: "Heavy-duty cantilevered glass entry portico | High impact resistance against rain and debris",
         badge: "Entrance Portico",
         image:
-          "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop",
+          "/categories/exterior-facade-design/753090C1-B537-47F0-9ECD-0CE4012921DA.png",
+      },
+      {
+        id: "fac-12",
+        title: "Luxury Modern Residence Facade Design",
+        spec: "Curated blend of architectural glass and slim aluminium framing | Seamless indoor-outdoor view",
+        badge: "Luxury Residence",
+        image:
+          "/categories/exterior-facade-design/C861F1F4-BDB0-4D80-A79C-DAC7C00ACE22.png",
+      },
+      {
+        id: "fac-13",
+        title: "Architectural Ribbon Window Facade Glazing",
+        spec: "Continuous horizontal glass ribbon | Maximizes natural interior illumination on all floors",
+        badge: "Ribbon Glaze",
+        image:
+          "/categories/exterior-facade-design/D5BDA55F-AC01-482C-8569-1FCB71CAB3C6.png",
       },
     ],
   },
@@ -441,57 +649,57 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-3",
     height: "h-[260px] sm:h-[300px]",
     image:
-      "/categories/designer-mirrors.jpg",
+      "/categories/designer-mirrors/9750981D-5F6F-45DA-ACAB-4D6892311B6E.png",
     description:
       "Custom wall mirrors with warm LED backlighting, defoggers for bathrooms, antique tinted finishes, and custom shapes to add depth and style to any room.",
     products: [
       {
         id: "mir-1",
-        title: "Organic Asymmetrical Backlit LED Mirror",
-        spec: "Natural pebble curved shape | Dimmable warm and white LED light",
-        badge: "Organic Shape",
+        title: "Organic Pebble Backlit LED Mirror",
+        spec: "Fluid contoured silhouette | Touch sensor switch with continuous brightness control",
+        badge: "Bestseller",
         image:
-          "/categories/designer-mirrors.jpg",
+          "/categories/designer-mirrors/9750981D-5F6F-45DA-ACAB-4D6892311B6E.png",
       },
       {
         id: "mir-2",
-        title: "Floor-Length Arch Brass Leaner Mirror",
-        spec: "Solid brass arched frame | High-definition distortion-free reflection",
-        badge: "Statement Mirror",
+        title: "Showroom Illuminated Capsule Mirror",
+        spec: "Pill-shaped capsule design | Front and back ambient dual illumination for luxury vanity spaces",
+        badge: "Capsule Mirror",
         image:
-          "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop",
+          "/categories/designer-mirrors/IMG_20260926_152905530.jpeg",
       },
       {
         id: "mir-3",
-        title: "Bronze Tinted Segmented Wall Mirror Grid",
-        spec: "Tinted bronze mirror grid with beveled polished edges",
-        badge: "Bronze Grid",
+        title: "Dual-Tone Illuminated Vanity Mirror",
+        spec: "Integrated demister pad with defogger | High-definition copper-free silver mirror backing",
+        badge: "Anti-Defogger",
         image:
-          "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
+          "/categories/designer-mirrors/IMG_20260926_152907268.jpeg",
       },
       {
         id: "mir-4",
-        title: "Floating Vanity Mirror with Defogger",
-        spec: "Bathroom vanity mirror with anti-steam heated demister pad",
-        badge: "Anti-Steam",
+        title: "Fluted Frame Architectural Wall Mirror",
+        spec: "Decorative fluted glass perimeter border | Bevel cut edges with elegant wall mounting",
+        badge: "Fluted Frame",
         image:
-          "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop",
+          "/categories/designer-mirrors/IMG_20260926_153041172.jpeg",
       },
       {
         id: "mir-5",
-        title: "Hand-Crafted Antique Oxidized Mirror Panel",
-        spec: "Handcrafted vintage antique silver leaf mirror paneling",
-        badge: "Antique Finish",
+        title: "Backlit Floating Bathroom Demister Mirror",
+        spec: "Heated demister backing | Soft halo ambient backlighting for steamy bathroom environments",
+        badge: "Floating Halo",
         image:
-          "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop",
+          "/categories/designer-mirrors/IMG_20260926_153043010.jpeg",
       },
       {
         id: "mir-6",
-        title: "Convex Round Accent Mirror",
-        spec: "Round decorative convex accent mirror with deep brass frame",
-        badge: "Convex Accent",
+        title: "Full-Length Luxury Metal Frame Dressing Mirror",
+        spec: "Solid slim metal casing in brass and matte black | Floor leaner or wall-mount options",
+        badge: "Full Length",
         image:
-          "https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1200&auto=format&fit=crop",
+          "/categories/designer-mirrors/IMG_20260926_153433870.jpeg",
       },
     ],
   },
@@ -504,58 +712,10 @@ export const categoriesData = [
     height: "h-[260px] sm:h-[300px]",
     image:
       "/categories/louvers.jpg",
+    isComingSoon: true,
     description:
       "Adjustable glass and aluminium louvers that give you natural airflow, comfortable shade from direct sunlight, and extra privacy without feeling boxed in.",
-    products: [
-      {
-        id: "louv-1",
-        title: "Motorized Aluminium Shading Louvers",
-        spec: "Motorized aluminium blades | Remote and switch control",
-        badge: "Motorized",
-        image:
-          "/categories/louvers.jpg",
-      },
-      {
-        id: "louv-2",
-        title: "Frosted Glass Adjustable Louver Window",
-        spec: "Frosted adjustable glass blades | 100% natural breeze with privacy",
-        badge: "Glass Blades",
-        image:
-          "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        id: "louv-3",
-        title: "Exterior Architectural Vertical Slat Louvers",
-        spec: "Exterior vertical slat louvers for sun shading and building privacy",
-        badge: "Vertical Slats",
-        image:
-          "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        id: "louv-4",
-        title: "Acoustic Noise-Baffling Aluminium Louver",
-        spec: "Sound-damped aluminium louver that lets air pass while reducing street noise",
-        badge: "Acoustic Louver",
-        image:
-          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        id: "louv-5",
-        title: "Balcony Privacy Screen Louvers",
-        spec: "Sliding balcony privacy screen louvers for shade and wind control",
-        badge: "Privacy Screen",
-        image:
-          "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        id: "louv-6",
-        title: "Continuous Rooftop Plantroom Louver Enclosure",
-        spec: "Heavy-duty rooftop and plantroom weatherproof louver enclosure",
-        badge: "Heavy Duty",
-        image:
-          "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=1200&auto=format&fit=crop",
-      },
-    ],
+    products: [],
   },
   {
     id: 10,
@@ -565,57 +725,89 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-3",
     height: "h-[260px] sm:h-[300px]",
     image:
-      "/categories/surfaces-ceilings.jpg",
+      "/categories/surfaces-ceilings/IMG_3904.jpeg",
     description:
       "Glossy back-painted glass wall panels, stain-resistant kitchen backsplashes, and soft illuminated glass ceilings that brighten up interiors.",
     products: [
       {
         id: "surf-1",
-        title: "High-Gloss Lacquered Glass Wall Cladding",
-        spec: "Custom colored glossy back-painted glass with safety backing film",
-        badge: "Lacquered Glass",
+        title: "Tetra 3D Fluted Wall Cladding Panels",
+        spec: "High-definition 3D geometric wall panels | Rich texture for living room and lobby feature walls",
+        badge: "Tetra Series",
         image:
-          "/categories/surfaces-ceilings.jpg",
+          "/categories/surfaces-ceilings/IMG_3904.jpeg",
       },
       {
         id: "surf-2",
-        title: "Diffused Luminous Glass Ceiling",
-        spec: "Evenly lit glass ceiling panels that diffuse pleasant ambient daylight",
-        badge: "Luminous Ceiling",
+        title: "Geometric Tetra Surface Cladding Textures",
+        spec: "Modular decorative surface panels | Scratch-resistant finish available in custom architectural tones",
+        badge: "Geometric Surface",
         image:
-          "/categories/surfaces-ceilings.jpg",
+          "/categories/surfaces-ceilings/IMG_3905.jpeg",
       },
       {
         id: "surf-3",
-        title: "Scratch-Resistant Toughened Dining Top",
-        spec: "Toughened clear glass tabletop surface with polished smooth edges",
-        badge: "Toughened Top",
+        title: "High-End Architectural Wall Surface Profiles",
+        spec: "Multi-groove surface cladding | Interlocking tongue-and-groove jointing for seamless installation",
+        badge: "Wall Cladding",
         image:
-          "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?q=80&w=1200&auto=format&fit=crop",
+          "/categories/surfaces-ceilings/IMG_3906.jpeg",
       },
       {
         id: "surf-4",
-        title: "Backlit Translucent Art Glass Feature Wall",
-        spec: "Backlit translucent stone-look glass feature wall with warm lighting",
-        badge: "Feature Wall",
+        title: "Decorative Multi-Facet Surface Cladding",
+        spec: "Multi-faceted architectural paneling | Durable surface treatment with tactile luxury finish",
+        badge: "Multi-Facet",
         image:
-          "https://images.unsplash.com/photo-1558997519-83ea9252edf8?q=80&w=1200&auto=format&fit=crop",
+          "/categories/surfaces-ceilings/IMG_3907.jpeg",
       },
       {
         id: "surf-5",
-        title: "Seamless Toughened Glass Kitchen Backsplash",
-        spec: "Heat-resistant toughened glass backsplash | Grout-free and easy to wipe clean",
-        badge: "Kitchen Splash",
+        title: "Architectural Woodgrain & Polymer Surface Louvers",
+        spec: "Moisture-proof decorative surface louvers | Zero termite maintenance with wood warmth",
+        badge: "Woodgrain Finish",
         image:
-          "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1200&auto=format&fit=crop",
+          "/categories/surfaces-ceilings/IMG_3908.jpeg",
       },
       {
         id: "surf-6",
-        title: "Reflective Mirror Ceiling System",
-        spec: "Reflective mirror ceiling panels that make rooms look taller and spacious",
-        badge: "Mirror Ceiling",
+        title: "Luxury Interior Accent Wall Cladding",
+        spec: "Precision cut architectural panels | Creates stunning backdrop for TV units and bed headboards",
+        badge: "Accent Wall",
         image:
-          "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop",
+          "/categories/surfaces-ceilings/IMG_3912.jpeg",
+      },
+      {
+        id: "surf-7",
+        title: "Custom 3D Textured Decorative Panels",
+        spec: "Sculptural decorative wall panels | Enhances ambient lighting with captivating shadow play",
+        badge: "3D Sculptural",
+        image:
+          "/categories/surfaces-ceilings/IMG_3913.jpeg",
+      },
+      {
+        id: "surf-8",
+        title: "Acoustic & Thermal Decorative Ceiling Tiles",
+        spec: "Decorative false ceiling tiles | Concealed grid support system with integrated lighting recesses",
+        badge: "Ceiling System",
+        image:
+          "/categories/surfaces-ceilings/IMG_3914.jpeg",
+      },
+      {
+        id: "surf-9",
+        title: "Architectural Vertical Slat Cladding",
+        spec: "Vertical slat cladding system with natural grain and metallic luster | Easy clip installation",
+        badge: "Slat Cladding",
+        image:
+          "/categories/surfaces-ceilings/IMG_3921.jpeg",
+      },
+      {
+        id: "surf-10",
+        title: "Fluted Linear Decorative Surface System",
+        spec: "Vertical fluted decorative panels | High impact resistance with clean modern aesthetics",
+        badge: "Fluted Linear",
+        image:
+          "/categories/surfaces-ceilings/IMG_3941.jpeg",
       },
     ],
   },
@@ -627,58 +819,10 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-3",
     height: "h-[260px] sm:h-[300px]",
     image:
-      "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=1200&auto=format&fit=crop",
+      "/categories/decorative-architectural-glass.png",
+    isComingSoon: true,
     description:
       "Fluted, reeded, frosted, and decorative patterned glass options that balance natural light with privacy for doors, partitions, and furniture.",
-    products: [
-      {
-        id: "dec-1",
-        title: "Narrow-Reeded Fluted Architectural Glass",
-        spec: "Narrow fluted ribbed glass | Toughened safety grade for doors and screens",
-        badge: "Moru Fluted",
-        image:
-          "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        id: "dec-2",
-        title: "Woven Brass Metal Mesh Laminated Glass",
-        spec: "Real copper and brass woven metal mesh laminated between glass",
-        badge: "Metal Mesh",
-        image:
-          "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        id: "dec-3",
-        title: "Satin Acid-Etched Frosted Glass",
-        spec: "Smooth acid-etched frosted glass | Fingerprint resistant with soft light diffusion",
-        badge: "Frosted Glass",
-        image:
-          "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        id: "dec-4",
-        title: "Dichroic Color-Shifting Glass",
-        spec: "Prismatic color-changing glass that shifts tones with viewing angle",
-        badge: "Dichroic Glass",
-        image:
-          "https://images.unsplash.com/photo-1577495508048-b635879837f1?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        id: "dec-5",
-        title: "Fabric & Natural Linen Interlayer Glass",
-        spec: "Natural linen fabric laminated inside glass for warmth and sound softening",
-        badge: "Textile Laminated",
-        image:
-          "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        id: "dec-6",
-        title: "Chiseled Kiln Cast Textured Glass",
-        spec: "Handmade chiseled kiln-cast textured art glass panel",
-        badge: "Kiln Cast",
-        image:
-          "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?q=80&w=1200&auto=format&fit=crop",
-      },
-    ],
+    products: [],
   },
 ];
