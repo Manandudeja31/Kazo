@@ -108,7 +108,7 @@ export default function Hero() {
               />
             </a>
 
-            <a
+            {/* <a
               href="#contact"
               className="flex h-12 w-full sm:w-auto items-center justify-center gap-3 border border-white/10 bg-[#202020]/90 px-6 text-[11px] font-semibold tracking-[1.5px] text-[#ddd] transition hover:bg-[#292929] cursor-pointer"
             >
@@ -116,7 +116,7 @@ export default function Hero() {
                 <FiPlay size={10} fill="currentColor" />
               </span>
               WATCH OUR STORY (2:14)
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
