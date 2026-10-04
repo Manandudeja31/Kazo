@@ -27,7 +27,7 @@ export default function Consultation() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-[#090909] py-20 sm:py-28 lg:py-32 px-5 sm:px-10 md:px-20 text-center border-t border-white/5"
+      className="relative overflow-hidden bg-[#090909] py-14 sm:py-16 lg:py-20 px-5 sm:px-10 md:px-20 text-center border-t border-white/5"
     >
       {/* Background Glow */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-[700px] rounded-full bg-[#e8b95d]/5 blur-[140px]" />
