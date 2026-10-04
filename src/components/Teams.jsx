@@ -1,7 +1,7 @@
-import { FiAward, FiArrowRight } from "react-icons/fi";
-import PankajPic from '../assets/team/pankaj.jpeg'
-import ArshPic from '../assets/team/arsh.jpeg'
-
+import { FiAward } from "react-icons/fi";
+import PankajPic from '../assets/team/pankaj.jpeg';
+import ArshPic from '../assets/team/arsh.jpeg';
+import RajPic from '../assets/team/raj.jpg';
 
 const team = [
   {
@@ -10,6 +10,7 @@ const team = [
     bio: "An MCA graduate and former DevOps Engineer at a top MNC, he chose entrepreneurship to build Kazo. He is driven by curiosity, ambition, and a passion for creating something meaningful of his own.",
     credentials: "MCA • FORMER DEVOPS ENGINEER",
     image: PankajPic,
+    imageClass: "object-center",
   },
   {
     name: "Arshpreet Singh Sandhu",
@@ -17,14 +18,15 @@ const team = [
     bio: "Passionate about business since Class 12 Commerce, he founded Kazo to bring modern design, reliable quality, and complete glass and door solutions under one trusted name.",
     credentials: "FOUNDER • DESIGN & INNOVATION",
     image: ArshPic,
+    imageClass: "object-center",
   },
   {
-    name: "Sunil Verma",
-    role: "CHIEF FABRICATION & INSTALLATION LEAD",
-    bio: "Supervises precision glass cutting, tempering quality, and on-site fitting to make sure every pivot door swings silently and every frame aligns perfectly.",
-    credentials: "MASTER FABRICATOR • 20 YRS MASTERY",
-    image:
-      "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=900&auto=format&fit=crop",
+    name: "Raj",
+    role: "CO-FOUNDER & DIRECTOR",
+    bio: "Born and raised in Delhi, he spent nearly 10 years studying and living abroad before moving back home to start his own venture. That passion led to Kazo Glass & Door. Today, he is committed to serving Delhi NCR and helping homeowners and businesses transform their properties to the best scale possible.",
+    credentials: "CO-FOUNDER • 10 YRS OVERSEAS EXPERIENCE",
+    image: RajPic,
+    imageClass: "object-top",
   },
 ];
 
@@ -32,7 +34,7 @@ export default function Teams() {
   return (
     <section
       id="artisans"
-      className="relative overflow-hidden bg-[#090909] py-24 sm:py-28 lg:py-32 px-6 sm:px-10 md:px-20 text-left border-t border-white/5"
+      className="relative overflow-hidden bg-[#090909] py-14 sm:py-16 lg:py-20 px-6 sm:px-10 md:px-20 text-left border-t border-white/5"
     >
       <div className="mx-auto max-w-[1700px]">
         {/* ================= HEADER ================= */}
@@ -73,7 +75,7 @@ export default function Teams() {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="h-full w-full object-cover grayscale contrast-115 transition-all duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0"
+                  className={`h-full w-full object-cover ${member.imageClass || "object-center"} grayscale contrast-115 transition-all duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0`}
                   loading="lazy"
                 />
 

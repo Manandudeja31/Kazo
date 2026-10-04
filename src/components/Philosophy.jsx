@@ -41,7 +41,7 @@ export default function Philosophy() {
     <section
       ref={sectionRef}
       id="philosophy"
-      className="relative overflow-hidden py-28 sm:py-36 lg:py-44 px-6 sm:px-10 text-center border-t border-b border-white/5 select-none"
+      className="relative overflow-hidden py-16 sm:py-20 lg:py-24 px-6 sm:px-10 text-center border-t border-b border-white/5 select-none"
     >
       <div
         className="pointer-events-none absolute inset-x-0 -top-[25%] -bottom-[25%] w-full h-[150%] overflow-hidden"

@@ -15,7 +15,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative mx-auto overflow-hidden bg-[#090909] py-20 sm:py-24 lg:py-28 px-10 md:px-20"
+      className="relative mx-auto overflow-hidden bg-[#090909] py-14 sm:py-16 lg:py-20 px-10 md:px-20"
     >
       <div className="mx-auto grid grid-cols-1 gap-12 lg:grid-cols-[1fr_0.95fr] lg:gap-14 lg:px-0">
         {/* ================= LEFT CONTENT ================= */}

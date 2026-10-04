@@ -28,7 +28,7 @@ export default function Portfolio({ onSelectCategory }) {
   return (
     <section
       id="portfolio"
-      className="relative overflow-hidden bg-[#090909] py-24 sm:py-28 lg:py-32 px-5 sm:px-8 md:px-14 lg:px-20 border-t border-white/5"
+      className="relative overflow-hidden bg-[#090909] py-14 sm:py-16 lg:py-20 px-5 sm:px-8 md:px-14 lg:px-20 border-t border-white/5"
     >
       <div className="mx-auto max-w-[1700px]">
         {/* ================= HEADER ================= */}

@@ -27,7 +27,7 @@ export default function Footer({ onNavClick }) {
   };
 
   return (
-    <footer className="relative overflow-hidden bg-[#060606] text-left border-t border-white/10 pt-20 pb-12 px-6 sm:px-10 md:px-20">
+    <footer className="relative overflow-hidden bg-[#060606] text-left border-t border-white/10 pt-14 sm:pt-16 pb-12 px-6 sm:px-10 md:px-20">
       <div className="mx-auto max-w-[1700px]">
         {/* ================= TOP SECTION ================= */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-14 pb-16 border-b border-white/5">
