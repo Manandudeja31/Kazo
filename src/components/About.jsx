@@ -1,4 +1,5 @@
 import { FiAward } from "react-icons/fi";
+import showroomImg from "../assets/showroom.webp";
 
 const highlights = [
   {
@@ -87,22 +88,22 @@ export default function About() {
         </div>
 
         {/* ================= RIGHT IMAGE ================= */}
-        <div className="relative">
-          {/* Image */}
-          <div className="relative h-[470px] overflow-hidden rounded-t-xl sm:h-[550px] lg:h-[650px] bg-[#141414]">
+        <div className="relative flex flex-col justify-center pb-8 sm:pb-6 lg:pb-0">
+          {/* Image Container with exact 3:4 aspect ratio matching the showroom facade */}
+          <div className="relative w-full aspect-[3/4] max-h-[760px] overflow-hidden rounded-2xl bg-[#141414] border border-white/10 shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
-              alt="Kazo Glass & Door architectural space"
+              src={showroomImg}
+              alt="Kazo Glass & Door flagship Delhi showroom facade with illuminated brand signage"
               className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
               loading="lazy"
             />
 
-            {/* Image dark gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
+            {/* Subtle luxury edge ring and delicate gradient */}
+            <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
           </div>
 
           {/* Precision Standard Card */}
-          <div className="absolute -bottom-8 left-0 z-10 w-[90%] rounded-xl bg-[#292929] p-5 shadow-2xl sm:-left-8 sm:w-[320px] border border-white/10">
+          <div className="relative mt-4 sm:mt-0 sm:absolute sm:-bottom-6 sm:-left-6 z-10 w-full sm:w-[320px] rounded-xl bg-[#1d1d1d]/95 backdrop-blur-md p-5 shadow-2xl border border-white/10">
             <div className="flex items-center gap-3">
               <div className="flex h-8 w-8 items-center justify-center text-[#e7b85d]">
                 <FiAward size={19} />
