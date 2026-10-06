@@ -98,123 +98,126 @@ export default function CategoryDetailPage({
 
   return (
     <div className="min-h-screen bg-[#090909] text-[#f2efe9] pt-24 sm:pt-28">
-      {/* ================= SUB-NAVIGATION / BREADCRUMB BAR ================= */}
-      <div className="border-b border-white/10 bg-[#0d0d0d]/85 backdrop-blur-md px-5 sm:px-8 md:px-14 lg:px-20 py-3.5">
-        <div className="mx-auto flex max-w-[1700px] flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            {/* Back Button */}
-            <button
-              onClick={onBack}
-              className="group inline-flex items-center gap-2 rounded-full border border-[#e8b95d]/30 bg-[#e8b95d]/10 px-4 py-1.5 text-[11px] font-semibold tracking-wider text-[#e8b95d] hover:bg-[#e8b95d] hover:text-black transition-all cursor-pointer shadow-sm"
-            >
-              <FiArrowLeft
-                size={14}
-                className="transition-transform group-hover:-translate-x-1"
-              />
-              <span className="uppercase tracking-[1px]">Back to Categories</span>
-            </button>
 
-            {/* Breadcrumb text */}
-            <div className="hidden sm:flex items-center gap-2 text-[11px] text-[#777]">
-              <span>/</span>
+      <div className="sticky top-[65px] sm:top-[95px] z-30 bg-[#0d0d0d]/95 backdrop-blur-md shadow-lg shadow-black/40">
+        {/* ================= SUB-NAVIGATION / BREADCRUMB BAR ================= */}
+        <div className="border-b border-white/10 bg-[#0d0d0d]/85 backdrop-blur-md px-5 sm:px-8 md:px-14 lg:px-20 py-3.5">
+          <div className="mx-auto flex max-w-[1700px] flex-wrap items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              {/* Back Button */}
               <button
                 onClick={onBack}
-                className="hover:text-white transition cursor-pointer"
+                className="group inline-flex items-center gap-2 rounded-full border border-[#e8b95d]/30 bg-[#e8b95d]/10 px-4 py-1.5 text-[11px] font-semibold tracking-wider text-[#e8b95d] hover:bg-[#e8b95d] hover:text-black transition-all cursor-pointer shadow-sm"
               >
-                Categories
+                <FiArrowLeft
+                  size={14}
+                  className="transition-transform group-hover:-translate-x-1"
+                />
+                <span className="uppercase tracking-[1px]">Back to Categories</span>
               </button>
-              <span>/</span>
-              <span className="text-[#ccc] font-medium">
-                {currentCategory.title}
+
+              {/* Breadcrumb text */}
+              <div className="hidden sm:flex items-center gap-2 text-[11px] text-[#777]">
+                <span>/</span>
+                <button
+                  onClick={onBack}
+                  className="hover:text-white transition cursor-pointer"
+                >
+                  Categories
+                </button>
+                <span>/</span>
+                <span className="text-[#ccc] font-medium">
+                  {currentCategory.title}
+                </span>
+              </div>
+            </div>
+
+            {/* Direct WhatsApp Callout */}
+            <div className="flex items-center gap-3">
+              <span className="hidden md:inline text-[11px] text-[#888]">
+                Have questions about this category?
               </span>
+              <a
+                href={`https://wa.me/918810369142?text=${encodeURIComponent(
+                  `Hi Kazo, I'm viewing your "${currentCategory.title}" gallery and have a question.`
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-full bg-[#25D366]/15 hover:bg-[#25D366] text-[#25D366] hover:text-black border border-[#25D366]/30 px-3.5 py-1 text-[11px] font-bold tracking-wider transition-all"
+              >
+                <FaWhatsapp size={14} />
+                <span>Chat on WhatsApp</span>
+              </a>
             </div>
           </div>
-
-          {/* Direct WhatsApp Callout */}
-          <div className="flex items-center gap-3">
-            <span className="hidden md:inline text-[11px] text-[#888]">
-              Have questions about this category?
-            </span>
-            <a
-              href={`https://wa.me/918810369142?text=${encodeURIComponent(
-                `Hi Kazo, I'm viewing your "${currentCategory.title}" gallery and have a question.`
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-full bg-[#25D366]/15 hover:bg-[#25D366] text-[#25D366] hover:text-black border border-[#25D366]/30 px-3.5 py-1 text-[11px] font-bold tracking-wider transition-all"
-            >
-              <FaWhatsapp size={14} />
-              <span>Chat on WhatsApp</span>
-            </a>
-          </div>
         </div>
-      </div>
 
-      {/* ================= CATEGORY SWITCHER PILLS (NO SCROLLBAR + ARROW BUTTONS) ================= */}
-      <div className="border-b border-white/5 bg-[#121212]/95 backdrop-blur-md px-3 sm:px-6 md:px-12 lg:px-16 py-3">
-        <div className="mx-auto flex max-w-[1700px] items-center gap-2.5">
-          <span className="text-[10px] font-bold tracking-[1.5px] text-[#777] uppercase shrink-0 hidden xl:inline">
-            Browse Categories:
-          </span>
+        {/* ================= CATEGORY SWITCHER PILLS (NO SCROLLBAR + ARROW BUTTONS) ================= */}
+        <div className="border-b border-white/5 bg-[#121212]/95 backdrop-blur-md px-3 sm:px-6 md:px-12 lg:px-16 py-3">
+          <div className="mx-auto flex max-w-[1700px] items-center gap-2.5">
+            <span className="text-[10px] font-bold tracking-[1.5px] text-[#777] uppercase shrink-0 hidden xl:inline">
+              Browse Categories:
+            </span>
 
-          {/* Left Arrow Button */}
-          <button
-            onClick={() => handlePillsScroll("left")}
-            disabled={!canScrollLeft}
-            className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ${canScrollLeft
+            {/* Left Arrow Button */}
+            <button
+              onClick={() => handlePillsScroll("left")}
+              disabled={!canScrollLeft}
+              className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ${canScrollLeft
                 ? "border-white/20 bg-[#1e1e1e] text-[#e8b95d] hover:bg-[#e8b95d] hover:text-black cursor-pointer shadow-md hover:scale-105"
                 : "border-white/5 bg-[#141414] text-[#444] cursor-not-allowed opacity-30"
-              }`}
-            aria-label="Scroll categories left"
-          >
-            <FiChevronLeft size={16} />
-          </button>
+                }`}
+              aria-label="Scroll categories left"
+            >
+              <FiChevronLeft size={16} />
+            </button>
 
-          {/* Horizontal Pills Container without visible scrollbar */}
-          <div
-            ref={pillsContainerRef}
-            className="no-scrollbar flex-1 overflow-x-auto scroll-smooth py-1 flex items-center gap-2"
-          >
-            {categoriesData.map((cat) => {
-              const isActive = cat.slug === currentCategory.slug;
-              return (
-                <button
-                  key={cat.id}
-                  data-active={isActive}
-                  onClick={() => onSelectCategory(cat.slug)}
-                  className={`rounded-full px-4 py-2 text-[11px] font-medium tracking-wide transition-all duration-300 cursor-pointer whitespace-nowrap shrink-0 flex items-center gap-1.5 ${isActive
+            {/* Horizontal Pills Container without visible scrollbar */}
+            <div
+              ref={pillsContainerRef}
+              className="no-scrollbar flex-1 overflow-x-auto scroll-smooth py-1 flex items-center gap-2"
+            >
+              {categoriesData.map((cat) => {
+                const isActive = cat.slug === currentCategory.slug;
+                return (
+                  <button
+                    key={cat.id}
+                    data-active={isActive}
+                    onClick={() => onSelectCategory(cat.slug)}
+                    className={`rounded-full px-4 py-2 text-[11px] font-medium tracking-wide transition-all duration-300 cursor-pointer whitespace-nowrap shrink-0 flex items-center gap-1.5 ${isActive
                       ? "bg-[#e8b95d] text-black font-semibold shadow-md shadow-[#e8b95d]/20 scale-102"
                       : "bg-[#1c1c1c] text-[#aaa] hover:text-white hover:bg-[#262626] border border-white/5"
-                    }`}
-                >
-                  <span>{cat.title}</span>
-                  {cat.isComingSoon && (
-                    <span
-                      className={`text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full ${isActive
+                      }`}
+                  >
+                    <span>{cat.title}</span>
+                    {cat.isComingSoon && (
+                      <span
+                        className={`text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full ${isActive
                           ? "bg-black/20 text-black"
                           : "bg-[#e8b95d]/20 text-[#e8b95d]"
-                        }`}
-                    >
-                      Soon
-                    </span>
-                  )}
-                </button>
-              );
-            })}
-          </div>
+                          }`}
+                      >
+                        Soon
+                      </span>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
 
-          {/* Right Arrow Button */}
-          <button
-            onClick={() => handlePillsScroll("right")}
-            disabled={!canScrollRight}
-            className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ${canScrollRight
+            {/* Right Arrow Button */}
+            <button
+              onClick={() => handlePillsScroll("right")}
+              disabled={!canScrollRight}
+              className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ${canScrollRight
                 ? "border-white/20 bg-[#1e1e1e] text-[#e8b95d] hover:bg-[#e8b95d] hover:text-black cursor-pointer shadow-md hover:scale-105"
                 : "border-white/5 bg-[#141414] text-[#444] cursor-not-allowed opacity-30"
-              }`}
-            aria-label="Scroll categories right"
-          >
-            <FiChevronRight size={16} />
-          </button>
+                }`}
+              aria-label="Scroll categories right"
+            >
+              <FiChevronRight size={16} />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -399,11 +402,11 @@ export default function CategoryDetailPage({
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-40" />
 
                       {/* Top Badge */}
-                      <div className="absolute top-4 left-4">
+                      {/* <div className="absolute top-4 left-4">
                         <span className="rounded bg-black/75 px-3 py-1 text-[9px] font-bold tracking-[1.5px] text-[#e8b95d] uppercase backdrop-blur-md border border-white/10">
                           {product.badge || "Bespoke"}
                         </span>
-                      </div>
+                      </div> */}
 
                       {/* Enlarge Hover Pill */}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">

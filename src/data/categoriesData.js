@@ -711,11 +711,51 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-3",
     height: "h-[260px] sm:h-[300px]",
     image:
-      "/categories/louvers.jpg",
-    isComingSoon: true,
+      "/categories/louvers/louvers1.jpg",
     description:
-      "Adjustable glass and aluminium louvers that give you natural airflow, comfortable shade from direct sunlight, and extra privacy without feeling boxed in.",
-    products: [],
+      "Precision-engineered architectural aluminium box louvers, aerofoil blades, and ceiling soffits designed for ventilation, solar shading, and contemporary facade aesthetics.",
+    products: [
+      {
+        id: "louv-1",
+        title: "Architectural Aluminium Box Louver Canopy & Ceilings",
+        spec: "Heavy extruded aluminium box profiles | Precision ceiling soffit grid with integrated shading and ventilation",
+        badge: "Bestseller",
+        image:
+          "/categories/louvers/louvers1.jpg",
+      },
+      {
+        id: "louv-2",
+        title: "Continuous Vertical Slat Box Louver Facade",
+        spec: "Powder-coated architectural aluminium stiles | All-weather solar heat rejection and privacy screening",
+        badge: "Facade System",
+        image:
+          "/categories/louvers/louvers2.jpg",
+      },
+      {
+        id: "louv-3",
+        title: "Dual-Tier Aerofoil & Linear Aluminium Louvers",
+        spec: "Tiered cantilevered elevation profile | High wind-load tested structure for rooftop terrace canopies",
+        badge: "Cantilevered",
+        image:
+          "/categories/louvers/louvers3.jpg",
+      },
+      {
+        id: "louv-4",
+        title: "Modern Exterior Terrace Louver Elevation & Cladding",
+        spec: "Rust-proof durable aluminium cladding | Provides optimal sunlight deflection and cooling airflow",
+        badge: "Terrace Suite",
+        image:
+          "/categories/louvers/louvers4.jpg",
+      },
+      {
+        id: "louv-5",
+        title: "Weather-Resistant Architectural Louver Soffit Suite",
+        spec: "Concealed fastener interlocking joints | Seamless aesthetic for commercial and luxury villa elevations",
+        badge: "Soffit Grid",
+        image:
+          "/categories/louvers/louvers5.jpg",
+      },
+    ],
   },
   {
     id: 10,
@@ -819,10 +859,162 @@ export const categoriesData = [
     colSpan: "col-span-12 sm:col-span-6 lg:col-span-3",
     height: "h-[260px] sm:h-[300px]",
     image:
-      "/categories/decorative-architectural-glass.png",
-    isComingSoon: true,
+      "/categories/decorative-architectural-glass/IMG_4527.jpg",
     description:
-      "Fluted, reeded, frosted, and decorative patterned glass options that balance natural light with privacy for doors, partitions, and furniture.",
-    products: [],
+      "Fluted, reeded, metallic fabric interlayer, and textured glass options that balance natural light with privacy for doors, partitions, and luxury furniture.",
+    products: [
+      {
+        id: "dec-1",
+        title: "Ultra-Clear Low-Iron Fluted Reeded Glass",
+        spec: "High-transparency low-iron glass | Continuous vertical flutes for soft light diffusion with privacy",
+        badge: "Bestseller",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4527.jpg",
+      },
+      {
+        id: "dec-2",
+        title: "Smoked Bronze Wide-Flute Glass",
+        spec: "Rich tinted bronze body | Deep concave fluting for partition walls and luxury wardrobe shutters",
+        badge: "Smoked Bronze",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4525.jpg",
+      },
+      {
+        id: "dec-3",
+        title: "Amber Bronze Ribbed Architectural Glass",
+        spec: "Warm amber luster | Linear relief texture ideal for backlit cabinets, partitions, and doors",
+        badge: "Amber Bronze",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4526.jpg",
+      },
+      {
+        id: "dec-4",
+        title: "Fine Reeded / Moru Micro-Fluted Glass",
+        spec: "Dense linear micro-ribbing | Exceptional obscurity while preserving daylight transmission",
+        badge: "Moru Series",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4528.jpg",
+      },
+      {
+        id: "dec-5",
+        title: "Micro-Ribbed Acoustic Fluted Glass",
+        spec: "Precision narrow ribs | Toughened safety glass compatible with shower cubicles and sliding doors",
+        badge: "Micro Fluted",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4529.jpg",
+      },
+      {
+        id: "dec-6",
+        title: "Gold Silk Metallic Thread Laminated Glass",
+        spec: "Swirling metallic gold fibers embedded in EVA interlayer | Signature feature for high-end luxury interiors",
+        badge: "Gold Silk Interlayer",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4535.jpg",
+      },
+      {
+        id: "dec-7",
+        title: "Radiant Gold Spun Fiber Architectural Glass",
+        spec: "Dense gold filament laminate | Shimmers under accent lighting for partitions and lobby feature panels",
+        badge: "Luxury Filament",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4536.jpg",
+      },
+      {
+        id: "dec-8",
+        title: "Chevron Herringbone Fabric Interlayer Glass",
+        spec: "Textured woven chevron fabric encapsulated between safety glass panels | Tactile luxury depth",
+        badge: "Textile Laminated",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4538.jpg",
+      },
+      {
+        id: "dec-9",
+        title: "Concentric Diamond Geometric Textile Glass",
+        spec: "Opulent 3D diamond fabric interlayer | Custom tailored for luxury wardrobe sliding shutters and dividers",
+        badge: "Geometric Textile",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4540.jpg",
+      },
+      {
+        id: "dec-10",
+        title: "Micro-Diamond Gold Lattice Interlayer Glass",
+        spec: "Precision crosshatch golden micro-grid | Glare-free light diffusion with regal aesthetic",
+        badge: "Gold Lattice",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4541.jpg",
+      },
+      {
+        id: "dec-11",
+        title: "Gold Basketweave Tapestry Interlayer Glass",
+        spec: "Architectural metallic basketweave textile interlayer | Premium acoustic and visual divider glass",
+        badge: "Woven Gold",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4544.jpg",
+      },
+      {
+        id: "dec-12",
+        title: "Bronze Wire Mesh Interlayer Laminated Glass",
+        spec: "Fine metallic bronze woven wire grid | Subtle industrial elegance with structural safety",
+        badge: "Wire Mesh",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4539.jpg",
+      },
+      {
+        id: "dec-13",
+        title: "Georgian Architectural Wire Mesh Glass",
+        spec: "Square steel wire reinforcement | Contemporary industrial aesthetic with high impact safety rating",
+        badge: "Industrial Mesh",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4542.jpg",
+      },
+      {
+        id: "dec-14",
+        title: "Aquatex Diamond Micro-Pyramid Glass",
+        spec: "Subtle geometric pyramid pattern | Balances privacy and brightness for bathrooms and entryways",
+        badge: "Aquatex Pattern",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4530.jpg",
+      },
+      {
+        id: "dec-15",
+        title: "Fine Diamond Grid Textured Glass",
+        spec: "High-density micro-textured grid | Obscures silhouettes while flooding spaces with natural sunlight",
+        badge: "Privacy Grid",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4531.jpg",
+      },
+      {
+        id: "dec-16",
+        title: "Stippolyte Hammered Ice Textured Glass",
+        spec: "Organic crystalline hammered texture | Timeless privacy glass for doors, partitions, and windows",
+        badge: "Hammered Ice",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4534.jpg",
+      },
+      {
+        id: "dec-17",
+        title: "Organic Woodgrain Tree-Bark Textured Glass",
+        spec: "Natural linear bark relief | Soft fluid striations creating natural organic light refractions",
+        badge: "Organic Texture",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4537.jpg",
+      },
+      {
+        id: "dec-18",
+        title: "Wavy Ripple & Amber Thread Accent Glass",
+        spec: "Flowing fluid wave contours with subtle golden amber veins | Art-grade decorative statement panel",
+        badge: "Fluid Wave",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4543.jpg",
+      },
+      {
+        id: "dec-19",
+        title: "Toughened Architectural High-Clarity Float Glass",
+        spec: "Optiwhite crystal-clear toughened float glass | Precision CNC polished edges for structural glazing",
+        badge: "Extra Clear",
+        image:
+          "/categories/decorative-architectural-glass/IMG_4532.jpg",
+      },
+    ],
   },
 ];

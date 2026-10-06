@@ -11,7 +11,7 @@ const portfolioCoverImages = {
   "glass-railings": "/categories/glass-railings.jpg",
   "exterior-facade-design": "/categories/exterior-facade-design.jpg",
   "designer-mirrors": "/categories/designer-mirrors.jpg",
-  "louvers": "/categories/louvers.jpg",
+  "louvers": "/categories/louvers/louvers1.jpg",
   "surfaces-ceilings": "/categories/surfaces-ceilings.jpg",
   "decorative-architectural-glass": "/categories/decorative-architectural-glass.png",
 };
@@ -90,7 +90,7 @@ export default function Portfolio({ onSelectCategory }) {
               {/* Bottom Content Area */}
               <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 flex items-end justify-between gap-4">
                 <div className="max-w-[80%]">
-                  <h3 className="font-serif text-[18px] sm:text-[22px] lg:text-[24px] font-semibold text-white leading-[1.2] drop-shadow-md group-hover:text-[#e8b95d] transition-colors">
+                  <h3 className="font-serif text-[16px] sm:text-[18px] lg:text-[20px] font-semibold text-white leading-[1.2] drop-shadow-md group-hover:text-[#e8b95d] transition-colors">
                     {item.title}
                   </h3>
                   <p className="mt-1 text-[11px] sm:text-[12px] text-[#aaa] line-clamp-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
