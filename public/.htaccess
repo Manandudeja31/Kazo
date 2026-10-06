@@ -1,0 +1,32 @@
+# ----------------------------------------------------------------------
+# Apache / LiteSpeed Configuration for Hostinger Single Web Hosting
+# ----------------------------------------------------------------------
+
+# Enable Rewrite Engine
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. API Route: Rewrite /api/send-email to PHP handler
+  RewriteRule ^api/send-email$ /api/send-email.php [L,QSA]
+  RewriteRule ^api/send-email\.php$ - [L]
+
+  # 2. Exclude existing physical files and directories from rewrite
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # 3. React SPA Fallback: Route all other client URLs to index.html
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Security: Block direct access to hidden files and .env configuration
+<FilesMatch "^\.|\.env$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Optimize compression for fast loading
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>

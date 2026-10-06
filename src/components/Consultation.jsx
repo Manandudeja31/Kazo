@@ -179,14 +179,39 @@ export default function Consultation() {
         images: encodedImages,
       };
 
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+      // Call PHP mailer endpoint for Hostinger with automatic fallback
+      let response;
+      try {
+        response = await fetch("/api/send-email.php", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(payload),
+        });
+
+        // If the server returns 404 for .php, try /api/send-email
+        if (response.status === 404) {
+          response = await fetch("/api/send-email", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify(payload),
+          });
+        }
+      } catch (postErr) {
+        response = await fetch("/api/send-email", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(payload),
+        });
+      }
 
       const data = await response.json();
 
